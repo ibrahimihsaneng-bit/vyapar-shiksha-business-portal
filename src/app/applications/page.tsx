@@ -15,6 +15,7 @@ import {
   Search,
   ExternalLink,
   ChevronRight,
+  ChevronLeft,
   X,
   Trophy,
   Laptop,
@@ -37,7 +38,8 @@ type KanbanStage = 'Saved' | 'Applied' | 'HR Screen' | 'Technical' | 'Offer' | '
 
 export default function ApplicationsPage() {
   const [apps, setApps] = useState<ApplicationItem[]>([]);
-  const [viewMode, setViewMode] = useState<'board' | 'table'>('board');
+  const [viewMode, setViewMode] = useState<'board' | 'table' | 'calendar'>('board');
+  const [selectedCalDay, setSelectedCalDay] = useState<number>(24); // Today Nov 24
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStageFilter, setSelectedStageFilter] = useState<string>('all');
   const [showAddModal, setShowAddModal] = useState(false);
@@ -307,6 +309,15 @@ export default function ApplicationsPage() {
             <TableIcon className="w-3.5 h-3.5" />
             <span>Table</span>
           </button>
+          <button
+            onClick={() => setViewMode('calendar')}
+            className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-1.5 transition-all ${
+              viewMode === 'calendar' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            <Calendar className="w-3.5 h-3.5" />
+            <span>Calendar</span>
+          </button>
         </div>
       </div>
 
@@ -497,6 +508,225 @@ export default function ApplicationsPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      )}
+
+      {/* Calendar Mode (Matching Coursify and My Board Reference Designs) */}
+      {viewMode === 'calendar' && (
+        <div className="space-y-6">
+          {/* Top Calendar Subheader & Category Filter Pills */}
+          <div className="bg-white rounded-3xl border border-slate-200 p-5 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-teal-50 border border-teal-200 text-teal-700 flex items-center justify-center font-bold">
+                <Calendar className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight">
+                    November 2026
+                  </h3>
+                  <div className="flex items-center gap-1">
+                    <button className="p-1 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-100">
+                      <ChevronLeft className="w-3.5 h-3.5" />
+                    </button>
+                    <button className="p-1 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-100">
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-500 font-medium">
+                  Application timelines, technical assessments & interview schedules
+                </p>
+              </div>
+            </div>
+
+            {/* Category Status Legend */}
+            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+              <span className="px-3 py-1 rounded-xl bg-slate-100 text-slate-700 border border-slate-200 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-slate-500" />
+                <span>Saved ({stats.saved})</span>
+              </span>
+              <span className="px-3 py-1 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                <span>Applied ({stats.applied})</span>
+              </span>
+              <span className="px-3 py-1 rounded-xl bg-purple-50 text-purple-800 border border-purple-200 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-purple-500" />
+                <span>Interviews ({stats.interviews})</span>
+              </span>
+              <span className="px-3 py-1 rounded-xl bg-amber-50 text-amber-800 border border-amber-200 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-amber-500" />
+                <span>Offers ({stats.offers})</span>
+              </span>
+              <button
+                onClick={() => setShowAddModal(true)}
+                className="px-3.5 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all shadow-xs flex items-center gap-1.5 ml-auto md:ml-2"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>+ New Schedule</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Dual-Pane Calendar & Agenda Details (Matching Coursify Layout) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            {/* 7-Day Month Grid (8 cols) */}
+            <div className="lg:col-span-8 bg-white rounded-3xl border border-slate-200 p-5 shadow-sm space-y-4">
+              {/* Day Name Headers */}
+              <div className="grid grid-cols-7 gap-1 text-center font-bold text-xs uppercase tracking-wider text-slate-400 pb-2 border-b border-slate-100">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+              </div>
+
+              {/* 30 Calendar Days for Nov 2026 (Nov 1 is Sunday) */}
+              <div className="grid grid-cols-7 gap-1.5 sm:gap-2 text-xs">
+                {Array.from({ length: 30 }, (_, i) => i + 1).map((day) => {
+                  const isToday = day === 24;
+                  const isSelected = selectedCalDay === day;
+
+                  // Applications mapped to specific days
+                  const dayEvents = filteredApps.filter((a, idx) => {
+                    const parsed = parseInt(a.appliedDate?.split('-')[2] || '0', 10);
+                    if (parsed === day) return true;
+                    return ((idx * 5 + 3) % 30 + 1) === day;
+                  });
+
+                  return (
+                    <div
+                      key={day}
+                      onClick={() => setSelectedCalDay(day)}
+                      className={`min-h-[75px] sm:min-h-[92px] p-1.5 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between ${
+                        isSelected
+                          ? 'border-emerald-500 bg-emerald-50/40 ring-2 ring-emerald-500/20 shadow-xs'
+                          : isToday
+                          ? 'border-teal-400 bg-teal-50/30 font-bold'
+                          : 'border-slate-100 bg-slate-50/50 hover:bg-slate-50 hover:border-slate-200'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span
+                          className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
+                            isToday
+                              ? 'bg-slate-900 text-white shadow-xs'
+                              : isSelected
+                              ? 'bg-emerald-600 text-white font-black'
+                              : 'text-slate-700'
+                          }`}
+                        >
+                          {day}
+                        </span>
+                        {isToday && (
+                          <span className="text-[9px] font-black uppercase text-teal-800 tracking-wider hidden sm:inline">
+                            Today
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Event Chips */}
+                      <div className="space-y-1 mt-1">
+                        {dayEvents.slice(0, 2).map((ev) => {
+                          const stage = normalizeStage(ev.status);
+                          const bg =
+                            stage === 'Offer' ? 'bg-amber-100 text-amber-900 border-amber-200' :
+                            stage === 'HR Screen' || stage === 'Technical' ? 'bg-purple-100 text-purple-900 border-purple-200' :
+                            stage === 'Applied' ? 'bg-emerald-100 text-emerald-900 border-emerald-200' :
+                            'bg-slate-200 text-slate-800 border-slate-300';
+
+                          return (
+                            <div
+                              key={ev.id}
+                              className={`px-1.5 py-0.5 rounded-md text-[10px] font-bold truncate border ${bg}`}
+                              title={`${ev.company} - ${ev.jobTitle}`}
+                            >
+                              {ev.company}
+                            </div>
+                          );
+                        })}
+                        {dayEvents.length > 2 && (
+                          <span className="text-[9px] text-slate-500 font-bold block pl-1">
+                            +{dayEvents.length - 2} more
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Right Pane: Schedule Details & Timeline (4 cols, matching Coursify Right Panel) */}
+            <div className="lg:col-span-4 bg-white rounded-3xl border border-slate-200 p-6 shadow-sm space-y-5">
+              <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                    Schedule Details
+                  </span>
+                  <h4 className="font-extrabold text-base text-slate-900">
+                    November {selectedCalDay}, 2026
+                  </h4>
+                </div>
+                <span className="px-2.5 py-1 rounded-xl bg-teal-50 border border-teal-200 text-teal-800 text-xs font-bold">
+                  {selectedCalDay === 24 ? 'Active Today' : `Day ${selectedCalDay}`}
+                </span>
+              </div>
+
+              {/* Day Events / Timeline */}
+              <div className="space-y-3">
+                <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-900">
+                      Corporate Bank Reconciliation Test
+                    </span>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+                      Technical Case
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Malabar Logistics &bull; Verification deliverable submission deadline (DocytBot reconciliation).
+                  </p>
+                  <div className="text-[11px] text-slate-500 flex items-center gap-1.5 pt-1">
+                    <Clock className="w-3.5 h-3.5 text-slate-400" />
+                    <span>3:30 PM &ndash; 4:30 PM IST</span>
+                  </div>
+                </div>
+
+                <div className="p-3.5 rounded-2xl bg-purple-50/60 border border-purple-200/80 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-purple-950">
+                      HR Screening Call
+                    </span>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">
+                      Video Interview
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Nexus Digital &bull; Initial fit discussion with Senior Talent Lead regarding Virtual Assistant position.
+                  </p>
+                  <div className="text-[11px] text-slate-500 flex items-center gap-1.5 pt-1">
+                    <Clock className="w-3.5 h-3.5 text-slate-400" />
+                    <span>5:00 PM IST (Google Meet)</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quick Actions in Schedule Details */}
+              <div className="pt-2 border-t border-slate-100 space-y-2">
+                <Link
+                  href="/interview-prep"
+                  className="w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-all shadow-sm flex items-center justify-center gap-2"
+                >
+                  <Sparkles className="w-4 h-4" />
+                  <span>Practice Interview Questions</span>
+                </Link>
+                <Link
+                  href="/simulator"
+                  className="w-full py-2 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all flex items-center justify-center gap-2"
+                >
+                  <Laptop className="w-4 h-4 text-slate-500" />
+                  <span>Launch Task in Simulator</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       )}

@@ -37,6 +37,7 @@ import { WorkplaceSimulatorTask } from '@/types';
 import { saveSimulatorScore, getSimulatorScores, addPortfolioProject } from '@/lib/storage';
 
 // Interactive Tools
+import AccountingStatementTool from '@/components/simulator/AccountingStatementTool';
 import InvoiceGeneratorTool from '@/components/simulator/InvoiceGeneratorTool';
 import SpreadsheetTool from '@/components/simulator/SpreadsheetTool';
 import HelpdeskConsoleTool from '@/components/simulator/HelpdeskConsoleTool';
@@ -59,7 +60,7 @@ export default function SimulatorPage() {
   const [completedScores, setCompletedScores] = useState<Record<string, any>>({});
 
   // Active Tool Sub-tab
-  const [activeToolId, setActiveToolId] = useState<string>('invoice');
+  const [activeToolId, setActiveToolId] = useState<string>('accounting');
 
   // Project Dossiers State
   const [projectSearch, setProjectSearch] = useState<string>('');
@@ -216,7 +217,7 @@ export default function SimulatorPage() {
             </div>
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700">
               <Laptop className="w-4 h-4 text-teal-400" />
-              <span><strong>7</strong> Browser Training Tools</span>
+              <span><strong>8</strong> Browser Training Tools</span>
             </div>
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700">
               <FileCheck className="w-4 h-4 text-blue-400" />
@@ -248,7 +249,7 @@ export default function SimulatorPage() {
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              Training Simulators (7)
+              Training Simulators (8)
             </button>
             <button
               onClick={() => setActiveTab('projects')}
@@ -264,7 +265,7 @@ export default function SimulatorPage() {
 
           <div className="text-xs text-slate-500 font-medium">
             {activeTab === 'simulations' && <span>Filter by department:</span>}
-            {activeTab === 'tools' && <span>7 Interactive educational training consoles</span>}
+            {activeTab === 'tools' && <span>8 Interactive educational training consoles</span>}
             {activeTab === 'projects' && <span>Filter by department:</span>}
           </div>
         </div>
@@ -584,11 +585,12 @@ export default function SimulatorPage() {
       {/* ========================================================================= */}
       {activeTab === 'tools' && (
         <div className="space-y-6">
-          {/* Sub-tabs for 7 Tools */}
+          {/* Sub-tabs for 8 Tools */}
           <div className="flex flex-wrap items-center gap-2 pb-2">
             {[
+              { id: 'accounting', label: 'Accounting Statements', icon: Calculator },
               { id: 'invoice', label: 'Invoice Generator', icon: FileText },
-              { id: 'spreadsheet', label: 'Spreadsheet Grid', icon: Calculator },
+              { id: 'spreadsheet', label: 'Spreadsheet Grid', icon: FileCheck },
               { id: 'helpdesk', label: 'Helpdesk Console', icon: LifeBuoy },
               { id: 'crm', label: 'CRM Contacts', icon: Users },
               { id: 'inventory', label: 'Inventory Tracker', icon: Package },
@@ -616,6 +618,7 @@ export default function SimulatorPage() {
           </div>
 
           {/* Render Active Tool */}
+          {activeToolId === 'accounting' && <AccountingStatementTool />}
           {activeToolId === 'invoice' && <InvoiceGeneratorTool />}
           {activeToolId === 'spreadsheet' && <SpreadsheetTool />}
           {activeToolId === 'helpdesk' && <HelpdeskConsoleTool />}
