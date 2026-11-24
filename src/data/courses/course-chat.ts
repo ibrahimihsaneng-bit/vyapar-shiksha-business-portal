@@ -26,8 +26,19 @@ export const customerChatCourse: Course = {
       weekNumber: 4,
       title: 'Portfolio Scenarios, Resume & Employment Readiness',
       objective: 'Complete 3 de-escalation ticket simulations, build a customer support resume, prepare mock interview scenarios, and apply for remote support roles.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: De-escalation Techniques, Macro Templates & Multi-Channel Tools',
+      objective: 'Handle angry customers with de-escalation psychology, create macro response libraries, and master WhatsApp Business.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: CSAT Metrics, Bug Escalations & Support Career Launch',
+      objective: 'Monitor CSAT & First Response Times, escalate engineering bugs via Jira, and land remote customer support roles.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-chat-1',
@@ -686,6 +697,374 @@ export const customerChatCourse: Course = {
             options: ['Taking customer anger personally', 'Remembering that customer frustration is directed at product failures, not at you, and taking structured brief recovery pauses between shifts', 'Quitting immediately', 'Arguing back'],
             correctOptionIndex: 1,
             explanation: 'Maintaining professional detachment and taking intentional recovery breaks ensures long-term career resilience.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-chat-5',
+      weekNumber: 5,
+      title: 'Week 5: De-escalation Techniques, Macro Templates & Multi-Channel Tools',
+      titleMl: 'ആഴ്ച 5: ഡി-എസ്കലേഷൻ രീതികൾ, മാക്രോ ടെംപ്ലേറ്റുകൾ & മൾട്ടി-ചാനൽ',
+      objective: 'Handle angry customers with de-escalation psychology, create macro response libraries, and master WhatsApp Business.',
+      lessons: [
+        {
+          id: 'les-chat-21',
+          dayNumber: 21,
+          title: 'Customer De-escalation & Empathy Phrases',
+          titleMl: 'ക്ഷോഭിച്ച കസ്റ്റമർമാരെ ശാന്തരാക്കുന്ന രീതികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional customer de-escalation & empathy phrases workflows used in real company environments.',
+          concepts: ["Foundations of Customer De-escalation & Empathy Phrases", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Diffusing angry complaints without defensiveness using empathy anchors.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്ഷോഭിച്ച കസ്റ്റമർമാരെ ശാന്തരാക്കുന്ന രീതികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Customer De-escalation & Empathy Phrases Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Customer De-escalation & Empathy Phrases — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Diffusing angry complaints without defensiveness using empathy anchors..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-21',
+            question: 'What is the key objective of Customer De-escalation & Empathy Phrases in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in customer de-escalation & empathy phrases", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering customer de-escalation & empathy phrases ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-chat-22',
+          dayNumber: 22,
+          title: 'Macro Template Libraries & Canned Responses',
+          titleMl: 'മാക്രോ ടെംപ്ലേറ്റുകൾ & ഓട്ടോമേറ്റഡ് മറുപടികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional macro template libraries & canned responses workflows used in real company environments.',
+          concepts: ["Foundations of Macro Template Libraries & Canned Responses", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Standardizing high-speed replies for the top 15 common inquiries.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'മാക്രോ ടെംപ്ലേറ്റുകൾ & ഓട്ടോമേറ്റഡ് മറുപടികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Macro Template Libraries & Canned Responses Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Macro Template Libraries & Canned Responses — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Standardizing high-speed replies for the top 15 common inquiries..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-22',
+            question: 'What is the key objective of Macro Template Libraries & Canned Responses in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in macro template libraries & canned responses", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering macro template libraries & canned responses ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-chat-23',
+          dayNumber: 23,
+          title: 'WhatsApp Business Operations & Quick Replies',
+          titleMl: 'വാട്സാപ്പ് ബിസിനസ്സ് ചാറ്റ് ഓപ്പറേഷൻസ്',
+          durationMinutes: 50,
+          overview: 'Master professional whatsapp business operations & quick replies workflows used in real company environments.',
+          concepts: ["Foundations of WhatsApp Business Operations & Quick Replies", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Managing catalog inquiries and automated greeting messages on WhatsApp.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'വാട്സാപ്പ് ബിസിനസ്സ് ചാറ്റ് ഓപ്പറേഷൻസ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'WhatsApp Business Operations & Quick Replies Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'WhatsApp Business Operations & Quick Replies — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Managing catalog inquiries and automated greeting messages on WhatsApp..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-23',
+            question: 'What is the key objective of WhatsApp Business Operations & Quick Replies in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in whatsapp business operations & quick replies", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering whatsapp business operations & quick replies ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-chat-24',
+          dayNumber: 24,
+          title: 'Handling Shipping Delays & Missing Orders',
+          titleMl: 'ഷിപ്പിംഗ് കാലതാമസങ്ങളും പാക്കേജ് പ്രശ്നങ്ങളും',
+          durationMinutes: 50,
+          overview: 'Master professional handling shipping delays & missing orders workflows used in real company environments.',
+          concepts: ["Foundations of Handling Shipping Delays & Missing Orders", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Resolving lost package inquiries with courier tracing and proactive updates.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഷിപ്പിംഗ് കാലതാമസങ്ങളും പാക്കേജ് പ്രശ്നങ്ങളും: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Handling Shipping Delays & Missing Orders Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Handling Shipping Delays & Missing Orders — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Resolving lost package inquiries with courier tracing and proactive updates..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-24',
+            question: 'What is the key objective of Handling Shipping Delays & Missing Orders in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in handling shipping delays & missing orders", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering handling shipping delays & missing orders ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-chat-25',
+          dayNumber: 25,
+          title: 'Refund & Chargeback Dispute Handling',
+          titleMl: 'റീഫണ്ട് & പേയ്‌മെന്റ് തർക്കങ്ങൾ പരിഹരിക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional refund & chargeback dispute handling workflows used in real company environments.',
+          concepts: ["Foundations of Refund & Chargeback Dispute Handling", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Following clear refund criteria while protecting the company against fraud.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'റീഫണ്ട് & പേയ്‌മെന്റ് തർക്കങ്ങൾ പരിഹരിക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Refund & Chargeback Dispute Handling Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Refund & Chargeback Dispute Handling — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Following clear refund criteria while protecting the company against fraud..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-25',
+            question: 'What is the key objective of Refund & Chargeback Dispute Handling in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in refund & chargeback dispute handling", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering refund & chargeback dispute handling ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-chat-6',
+      weekNumber: 6,
+      title: 'Week 6: CSAT Metrics, Bug Escalations & Support Career Launch',
+      titleMl: 'ആഴ്ച 6: സിസാറ്റ് മെട്രിക്സ്, ബഗ് എസ്കലേഷൻ & സപ്പോർട്ട് കരിയർ ലോഞ്ച്',
+      objective: 'Monitor CSAT & First Response Times, escalate engineering bugs via Jira, and land remote customer support roles.',
+      lessons: [
+        {
+          id: 'les-chat-26',
+          dayNumber: 26,
+          title: 'Escalating Bugs to Engineering (Jira / Slack)',
+          titleMl: 'സാങ്കേതിക തകരാറുകൾ എൻജിനീയർമാർക്ക് റിപ്പോർട്ട് ചെയ്യൽ',
+          durationMinutes: 50,
+          overview: 'Master professional escalating bugs to engineering (jira / slack) workflows used in real company environments.',
+          concepts: ["Foundations of Escalating Bugs to Engineering (Jira / Slack)", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Drafting actionable bug reports with browser logs, steps, and screenshots.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സാങ്കേതിക തകരാറുകൾ എൻജിനീയർമാർക്ക് റിപ്പോർട്ട് ചെയ്യൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Escalating Bugs to Engineering (Jira / Slack) Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Escalating Bugs to Engineering (Jira / Slack) — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Drafting actionable bug reports with browser logs, steps, and screenshots..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-26',
+            question: 'What is the key objective of Escalating Bugs to Engineering (Jira / Slack) in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in escalating bugs to engineering (jira / slack)", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering escalating bugs to engineering (jira / slack) ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-chat-27',
+          dayNumber: 27,
+          title: 'Mastering CSAT & First Response Time (FRT)',
+          titleMl: 'സിസാറ്റ് റേറ്റിംഗുകളും റെസ്പോൺസ് സമയവും',
+          durationMinutes: 50,
+          overview: 'Master professional mastering csat & first response time (frt) workflows used in real company environments.',
+          concepts: ["Foundations of Mastering CSAT & First Response Time (FRT)", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Maintaining 95%+ Customer Satisfaction ratings and under 2-min FRT.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സിസാറ്റ് റേറ്റിംഗുകളും റെസ്പോൺസ് സമയവും: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Mastering CSAT & First Response Time (FRT) Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Mastering CSAT & First Response Time (FRT) — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Maintaining 95%+ Customer Satisfaction ratings and under 2-min FRT..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-27',
+            question: 'What is the key objective of Mastering CSAT & First Response Time (FRT) in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in mastering csat & first response time (frt)", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering mastering csat & first response time (frt) ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-chat-28',
+          dayNumber: 28,
+          title: 'Capstone: 50 Live Chat Scenarios Simulation',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - 50 തത്സമയ ചാറ്റ് സിമുലേഷൻ',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: 50 live chat scenarios simulation workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: 50 Live Chat Scenarios Simulation", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Handling 50 rapid mock tickets across delivery, billing, and tech bugs.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - 50 തത്സമയ ചാറ്റ് സിമുലേഷൻ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: 50 Live Chat Scenarios Simulation Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: 50 Live Chat Scenarios Simulation — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Handling 50 rapid mock tickets across delivery, billing, and tech bugs..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-28',
+            question: 'What is the key objective of Capstone: 50 Live Chat Scenarios Simulation in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: 50 live chat scenarios simulation", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: 50 live chat scenarios simulation ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-chat-29',
+          dayNumber: 29,
+          title: 'Customer Support Proof-of-Work Showcase',
+          titleMl: 'കസ്റ്റമർ സപ്പോർട്ട് പോർട്ട്ഫോളിയോ ഷോക്കേസ്',
+          durationMinutes: 50,
+          overview: 'Master professional customer support proof-of-work showcase workflows used in real company environments.',
+          concepts: ["Foundations of Customer Support Proof-of-Work Showcase", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Compiling de-escalation scripts and macro libraries into a dossier.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'കസ്റ്റമർ സപ്പോർട്ട് പോർട്ട്ഫോളിയോ ഷോക്കേസ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Customer Support Proof-of-Work Showcase Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Customer Support Proof-of-Work Showcase — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Compiling de-escalation scripts and macro libraries into a dossier..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-29',
+            question: 'What is the key objective of Customer Support Proof-of-Work Showcase in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in customer support proof-of-work showcase", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering customer support proof-of-work showcase ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-chat-30',
+          dayNumber: 30,
+          title: 'Graduation & Landing Remote Chat Specialist Roles',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & റിമോട്ട് സപ്പോർട്ട് ജോലികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & landing remote chat specialist roles workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & Landing Remote Chat Specialist Roles", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Passing the final assessment and applying for remote helpdesk vacancies.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & റിമോട്ട് സപ്പോർട്ട് ജോലികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & Landing Remote Chat Specialist Roles Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & Landing Remote Chat Specialist Roles — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Passing the final assessment and applying for remote helpdesk vacancies..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-chat-30',
+            question: 'What is the key objective of Graduation & Landing Remote Chat Specialist Roles in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & landing remote chat specialist roles", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & landing remote chat specialist roles ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]

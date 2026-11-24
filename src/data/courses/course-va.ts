@@ -26,8 +26,19 @@ export const virtualAssistantCourse: Course = {
       weekNumber: 4,
       title: 'Portfolio Projects, Resume & First Job Preparation',
       objective: 'Complete 3 simulated client scenarios, build an ATS-friendly resume, prepare interview responses, and set up client outreach profiles.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: Project Management, CRM Hygiene & Meeting Operations',
+      objective: 'Master Asana/Trello task delegation, Zoom meeting minutes with action trackers, and CRM contact hygiene.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: SOP Documentation, Client Onboarding & Freelance Launch',
+      objective: 'Build standard operating procedure (SOP) playbooks, package your virtual assistant portfolio, and land contracts.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-va-1',
@@ -766,6 +777,374 @@ export const virtualAssistantCourse: Course = {
             options: ['In a public WhatsApp group', 'Using a secure password manager like Bitwarden or 1Password', 'Written on a paper and mailed', 'Posted on social media'],
             correctOptionIndex: 1,
             explanation: 'Encrypted password managers allow secure access sharing without revealing raw master passwords.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-va-5',
+      weekNumber: 5,
+      title: 'Week 5: Project Management, CRM Hygiene & Meeting Operations',
+      titleMl: 'ആഴ്ച 5: പ്രോജക്റ്റ് മാനേജ്‌മെന്റ്, സിആർഎം & മീറ്റിംഗ് ഓപ്പറേഷൻസ്',
+      objective: 'Master Asana/Trello task delegation, Zoom meeting minutes with action trackers, and CRM contact hygiene.',
+      lessons: [
+        {
+          id: 'les-va-21',
+          dayNumber: 21,
+          title: 'Asana & Trello Workspace Setup',
+          titleMl: 'അസാന & ട്രെല്ലോ പ്രോജക്റ്റ് മാനേജ്‌മെന്റ്',
+          durationMinutes: 50,
+          overview: 'Master professional asana & trello workspace setup workflows used in real company environments.',
+          concepts: ["Foundations of Asana & Trello Workspace Setup", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Organizing executive tasks into structured Kanban boards.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'അസാന & ട്രെല്ലോ പ്രോജക്റ്റ് മാനേജ്‌മെന്റ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Asana & Trello Workspace Setup Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Asana & Trello Workspace Setup — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Organizing executive tasks into structured Kanban boards..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-21',
+            question: 'What is the key objective of Asana & Trello Workspace Setup in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in asana & trello workspace setup", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering asana & trello workspace setup ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-va-22',
+          dayNumber: 22,
+          title: 'Meeting Operations & Action Minutes',
+          titleMl: 'മീറ്റിംഗ് അജണ്ട & മിനിറ്റ്സ് തയ്യാറാക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional meeting operations & action minutes workflows used in real company environments.',
+          concepts: ["Foundations of Meeting Operations & Action Minutes", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Drafting executive agendas and circulating 2-hour action minutes.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'മീറ്റിംഗ് അജണ്ട & മിനിറ്റ്സ് തയ്യാറാക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Meeting Operations & Action Minutes Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Meeting Operations & Action Minutes — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Drafting executive agendas and circulating 2-hour action minutes..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-22',
+            question: 'What is the key objective of Meeting Operations & Action Minutes in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in meeting operations & action minutes", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering meeting operations & action minutes ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-va-23',
+          dayNumber: 23,
+          title: 'Executive Travel & Itinerary Planning',
+          titleMl: 'എക്സിക്യൂട്ടീവ് യാത്രാ പ്ലാനിംഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional executive travel & itinerary planning workflows used in real company environments.',
+          concepts: ["Foundations of Executive Travel & Itinerary Planning", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Booking multi-city travel across conflicting international timezones.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'എക്സിക്യൂട്ടീവ് യാത്രാ പ്ലാനിംഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Executive Travel & Itinerary Planning Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Executive Travel & Itinerary Planning — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Booking multi-city travel across conflicting international timezones..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-23',
+            question: 'What is the key objective of Executive Travel & Itinerary Planning in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in executive travel & itinerary planning", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering executive travel & itinerary planning ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-va-24',
+          dayNumber: 24,
+          title: 'CRM Contact Hygiene & Data Enrichment',
+          titleMl: 'സിആർഎം കോൺടാക്റ്റ് ഹൈജീൻ & എൻറിച്ച്മെന്റ്',
+          durationMinutes: 50,
+          overview: 'Master professional crm contact hygiene & data enrichment workflows used in real company environments.',
+          concepts: ["Foundations of CRM Contact Hygiene & Data Enrichment", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Deduplicating entries and enriching client contact records in Notion.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സിആർഎം കോൺടാക്റ്റ് ഹൈജീൻ & എൻറിച്ച്മെന്റ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'CRM Contact Hygiene & Data Enrichment Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'CRM Contact Hygiene & Data Enrichment — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Deduplicating entries and enriching client contact records in Notion..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-24',
+            question: 'What is the key objective of CRM Contact Hygiene & Data Enrichment in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in crm contact hygiene & data enrichment", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering crm contact hygiene & data enrichment ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-va-25',
+          dayNumber: 25,
+          title: 'Email Newsletter Broadcast Operations',
+          titleMl: 'ഇമെയിൽ ന്യൂസ്‌ലെറ്റർ മാനേജ്‌മെന്റ്',
+          durationMinutes: 50,
+          overview: 'Master professional email newsletter broadcast operations workflows used in real company environments.',
+          concepts: ["Foundations of Email Newsletter Broadcast Operations", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Formatting weekly executive newsletters in Mailchimp and Substack.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇമെയിൽ ന്യൂസ്‌ലെറ്റർ മാനേജ്‌മെന്റ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Email Newsletter Broadcast Operations Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Email Newsletter Broadcast Operations — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Formatting weekly executive newsletters in Mailchimp and Substack..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-25',
+            question: 'What is the key objective of Email Newsletter Broadcast Operations in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in email newsletter broadcast operations", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering email newsletter broadcast operations ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-va-6',
+      weekNumber: 6,
+      title: 'Week 6: SOP Documentation, Client Onboarding & Freelance Launch',
+      titleMl: 'ആഴ്ച 6: എസ്ഒപി ഡോക്യുമെന്റേഷൻ, ക്ലയന്റ് ഓൺബോർഡിംഗ് & കരിയർ ലോഞ്ച്',
+      objective: 'Build standard operating procedure (SOP) playbooks, package your virtual assistant portfolio, and land contracts.',
+      lessons: [
+        {
+          id: 'les-va-26',
+          dayNumber: 26,
+          title: 'Building SOPs with Loom & Tango',
+          titleMl: 'എസ്ഒപി ഡോക്യുമെന്റേഷൻ നിർമ്മാണം',
+          durationMinutes: 50,
+          overview: 'Master professional building sops with loom & tango workflows used in real company environments.',
+          concepts: ["Foundations of Building SOPs with Loom & Tango", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Documenting recurring company tasks into step-by-step visual guides.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'എസ്ഒപി ഡോക്യുമെന്റേഷൻ നിർമ്മാണം: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Building SOPs with Loom & Tango Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Building SOPs with Loom & Tango — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Documenting recurring company tasks into step-by-step visual guides..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-26',
+            question: 'What is the key objective of Building SOPs with Loom & Tango in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in building sops with loom & tango", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering building sops with loom & tango ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-va-27',
+          dayNumber: 27,
+          title: 'Client Onboarding & Password Security',
+          titleMl: 'ക്ലയന്റ് ഓൺബോർഡിംഗ് & സെക്യൂരിറ്റി',
+          durationMinutes: 50,
+          overview: 'Master professional client onboarding & password security workflows used in real company environments.',
+          concepts: ["Foundations of Client Onboarding & Password Security", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Secure credential handoffs via Bitwarden and Slack protocol setup.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്ലയന്റ് ഓൺബോർഡിംഗ് & സെക്യൂരിറ്റി: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Client Onboarding & Password Security Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Client Onboarding & Password Security — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Secure credential handoffs via Bitwarden and Slack protocol setup..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-27',
+            question: 'What is the key objective of Client Onboarding & Password Security in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in client onboarding & password security", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering client onboarding & password security ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-va-28',
+          dayNumber: 28,
+          title: 'Capstone: 1-Week Executive Support',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - 1 ആഴ്ചത്തെ എക്സിക്യൂട്ടീവ് സപ്പോർട്ട്',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: 1-week executive support workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: 1-Week Executive Support", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Executing 7 real-world executive tasks under time constraints.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - 1 ആഴ്ചത്തെ എക്സിക്യൂട്ടീവ് സപ്പോർട്ട്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: 1-Week Executive Support Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: 1-Week Executive Support — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Executing 7 real-world executive tasks under time constraints..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-28',
+            question: 'What is the key objective of Capstone: 1-Week Executive Support in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: 1-week executive support", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: 1-week executive support ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-va-29',
+          dayNumber: 29,
+          title: 'Virtual Assistant Portfolio & Pitch Deck',
+          titleMl: 'വെർച്വൽ അസിസ്റ്റന്റ് പോർട്ട്ഫോളിയോ & പിച്ച് ഡെക്ക്',
+          durationMinutes: 50,
+          overview: 'Master professional virtual assistant portfolio & pitch deck workflows used in real company environments.',
+          concepts: ["Foundations of Virtual Assistant Portfolio & Pitch Deck", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Designing a 5-page PDF portfolio showcasing your VA services.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'വെർച്വൽ അസിസ്റ്റന്റ് പോർട്ട്ഫോളിയോ & പിച്ച് ഡെക്ക്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Virtual Assistant Portfolio & Pitch Deck Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Virtual Assistant Portfolio & Pitch Deck — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Designing a 5-page PDF portfolio showcasing your VA services..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-29',
+            question: 'What is the key objective of Virtual Assistant Portfolio & Pitch Deck in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in virtual assistant portfolio & pitch deck", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering virtual assistant portfolio & pitch deck ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-va-30',
+          dayNumber: 30,
+          title: 'Graduation & Remote VA Job Applications',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & ഉയർന്ന ശമ്പളമുള്ള റിമോട്ട് ജോലികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & remote va job applications workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & Remote VA Job Applications", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Final certification assessment and submitting vetted remote proposals.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & ഉയർന്ന ശമ്പളമുള്ള റിമോട്ട് ജോലികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & Remote VA Job Applications Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & Remote VA Job Applications — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Final certification assessment and submitting vetted remote proposals..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-va-30',
+            question: 'What is the key objective of Graduation & Remote VA Job Applications in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & remote va job applications", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & remote va job applications ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]

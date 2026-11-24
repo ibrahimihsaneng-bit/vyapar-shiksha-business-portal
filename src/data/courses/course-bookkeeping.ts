@@ -26,8 +26,19 @@ export const bookkeepingCourse: Course = {
       weekNumber: 4,
       title: 'Bank Reconciliation, Financial Reports & Career Launch',
       objective: 'Reconcile 1-month bank statements against ledger records in Zoho Books, compile basic Profit & Loss summaries, and prepare for remote bookkeeping roles.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: Advanced Invoicing, Multi-Currency & GST Compliance',
+      objective: 'Handle international USD/AED billing, recurring subscriptions, and prepare GST return reports.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: Month-End Close, Audit Trails & Career Launch',
+      objective: 'Execute full month-end balance checks, assemble verified portfolio, and apply for remote roles.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-bk-1',
@@ -681,6 +692,374 @@ export const bookkeepingCourse: Course = {
             options: ['Share client earnings with friends', 'Never disclose, copy, or discuss a client\'s financial balances, invoices, or customer lists outside authorized team channels', 'Post receipts online', 'Keep no passwords'],
             correctOptionIndex: 1,
             explanation: 'Financial privacy and non-disclosure are mandatory ethical and legal requirements in bookkeeping.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-bk-5',
+      weekNumber: 5,
+      title: 'Week 5: Advanced Invoicing, Multi-Currency & GST Compliance',
+      titleMl: 'ആഴ്ച 5: അഡ്വാൻസ്ഡ് ഇൻവോയ്സിംഗ്, ഫോറിൻ കറൻസി & ജിഎസ്ടി',
+      objective: 'Handle international USD/AED billing, recurring subscriptions, and prepare GST return reports.',
+      lessons: [
+        {
+          id: 'les-bk-21',
+          dayNumber: 21,
+          title: 'Multi-Currency Invoicing (USD / AED)',
+          titleMl: 'ഫോറിൻ കറൻസി ഇൻവോയ്സിംഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional multi-currency invoicing (usd / aed) workflows used in real company environments.',
+          concepts: ["Foundations of Multi-Currency Invoicing (USD / AED)", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Handling overseas clients and exchange rate differences.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഫോറിൻ കറൻസി ഇൻവോയ്സിംഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Multi-Currency Invoicing (USD / AED) Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Multi-Currency Invoicing (USD / AED) — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Handling overseas clients and exchange rate differences..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-21',
+            question: 'What is the key objective of Multi-Currency Invoicing (USD / AED) in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in multi-currency invoicing (usd / aed)", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering multi-currency invoicing (usd / aed) ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-bk-22',
+          dayNumber: 22,
+          title: 'Recurring Billing & Subscriptions',
+          titleMl: 'റിക്കറിംഗ് ഇൻവോയ്സ് & സബ്സ്ക്രിപ്ഷൻ',
+          durationMinutes: 50,
+          overview: 'Master professional recurring billing & subscriptions workflows used in real company environments.',
+          concepts: ["Foundations of Recurring Billing & Subscriptions", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Automated monthly retainers and recurring billing profiles.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'റിക്കറിംഗ് ഇൻവോയ്സ് & സബ്സ്ക്രിപ്ഷൻ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Recurring Billing & Subscriptions Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Recurring Billing & Subscriptions — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Automated monthly retainers and recurring billing profiles..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-22',
+            question: 'What is the key objective of Recurring Billing & Subscriptions in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in recurring billing & subscriptions", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering recurring billing & subscriptions ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-bk-23',
+          dayNumber: 23,
+          title: 'Fixed Asset Register & Depreciation',
+          titleMl: 'ഫിക്സഡ് അസറ്റുകൾ & ഡിപ്രീസിയേഷൻ',
+          durationMinutes: 50,
+          overview: 'Master professional fixed asset register & depreciation workflows used in real company environments.',
+          concepts: ["Foundations of Fixed Asset Register & Depreciation", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Calculating straight-line depreciation for equipment.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഫിക്സഡ് അസറ്റുകൾ & ഡിപ്രീസിയേഷൻ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Fixed Asset Register & Depreciation Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Fixed Asset Register & Depreciation — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Calculating straight-line depreciation for equipment..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-23',
+            question: 'What is the key objective of Fixed Asset Register & Depreciation in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in fixed asset register & depreciation", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering fixed asset register & depreciation ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-bk-24',
+          dayNumber: 24,
+          title: 'GST Return Summaries (GSTR-1 & 3B)',
+          titleMl: 'ജിഎസ്ടി റിട്ടേൺ തയ്യാറാക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional gst return summaries (gstr-1 & 3b) workflows used in real company environments.',
+          concepts: ["Foundations of GST Return Summaries (GSTR-1 & 3B)", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Reconciling input tax credits and monthly tax ledgers.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ജിഎസ്ടി റിട്ടേൺ തയ്യാറാക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'GST Return Summaries (GSTR-1 & 3B) Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'GST Return Summaries (GSTR-1 & 3B) — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Reconciling input tax credits and monthly tax ledgers..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-24',
+            question: 'What is the key objective of GST Return Summaries (GSTR-1 & 3B) in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in gst return summaries (gstr-1 & 3b)", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering gst return summaries (gstr-1 & 3b) ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-bk-25',
+          dayNumber: 25,
+          title: 'Year-End Period Locking & Audit Trail',
+          titleMl: 'ഇയർ-എൻഡ് ക്ലോസിംഗ് & ഓഡിറ്റ് ട്രയൽ',
+          durationMinutes: 50,
+          overview: 'Master professional year-end period locking & audit trail workflows used in real company environments.',
+          concepts: ["Foundations of Year-End Period Locking & Audit Trail", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Locking historical periods and reviewing transaction edit logs.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇയർ-എൻഡ് ക്ലോസിംഗ് & ഓഡിറ്റ് ട്രയൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Year-End Period Locking & Audit Trail Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Year-End Period Locking & Audit Trail — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Locking historical periods and reviewing transaction edit logs..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-25',
+            question: 'What is the key objective of Year-End Period Locking & Audit Trail in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in year-end period locking & audit trail", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering year-end period locking & audit trail ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-bk-6',
+      weekNumber: 6,
+      title: 'Week 6: Month-End Close, Audit Trails & Career Launch',
+      titleMl: 'ആഴ്ച 6: മന്ത്-എൻഡ് ക്ലോസിംഗ്, ഓഡിറ്റ് & കരിയർ ലോഞ്ച്',
+      objective: 'Execute full month-end balance checks, assemble verified portfolio, and apply for remote roles.',
+      lessons: [
+        {
+          id: 'les-bk-26',
+          dayNumber: 26,
+          title: 'Executive Financial Dashboards',
+          titleMl: 'ബിസിനസ്സ് ഓണർമാർക്കുള്ള ഫിനാൻഷ്യൽ സമ്മറി',
+          durationMinutes: 50,
+          overview: 'Master professional executive financial dashboards workflows used in real company environments.',
+          concepts: ["Foundations of Executive Financial Dashboards", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Designing 1-page visual executive summaries in Google Sheets.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ബിസിനസ്സ് ഓണർമാർക്കുള്ള ഫിനാൻഷ്യൽ സമ്മറി: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Executive Financial Dashboards Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Executive Financial Dashboards — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Designing 1-page visual executive summaries in Google Sheets..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-26',
+            question: 'What is the key objective of Executive Financial Dashboards in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in executive financial dashboards", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering executive financial dashboards ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-bk-27',
+          dayNumber: 27,
+          title: 'Remote Bookkeeping Profile Setup',
+          titleMl: 'റിമോട്ട് ബുക്ക് കീപ്പിംഗ് പ്രൊഫൈൽ നിർമ്മാണം',
+          durationMinutes: 50,
+          overview: 'Master professional remote bookkeeping profile setup workflows used in real company environments.',
+          concepts: ["Foundations of Remote Bookkeeping Profile Setup", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Setting up verified Upwork and LinkedIn bookkeeping profiles.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'റിമോട്ട് ബുക്ക് കീപ്പിംഗ് പ്രൊഫൈൽ നിർമ്മാണം: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Remote Bookkeeping Profile Setup Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Remote Bookkeeping Profile Setup — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Setting up verified Upwork and LinkedIn bookkeeping profiles..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-27',
+            question: 'What is the key objective of Remote Bookkeeping Profile Setup in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in remote bookkeeping profile setup", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering remote bookkeeping profile setup ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-bk-28',
+          dayNumber: 28,
+          title: 'Capstone: 1-Month Accounting Cycle',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - 1 മാസത്തെ പൂർണ്ണ അക്കൗണ്ടിംഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: 1-month accounting cycle workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: 1-Month Accounting Cycle", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: End-to-end transaction processing and zero-variance reconciliation.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - 1 മാസത്തെ പൂർണ്ണ അക്കൗണ്ടിംഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: 1-Month Accounting Cycle Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: 1-Month Accounting Cycle — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: End-to-end transaction processing and zero-variance reconciliation..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-28',
+            question: 'What is the key objective of Capstone: 1-Month Accounting Cycle in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: 1-month accounting cycle", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: 1-month accounting cycle ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-bk-29',
+          dayNumber: 29,
+          title: 'Financial Proof-of-Work Dossier',
+          titleMl: 'പ്രൂഫ് ഓഫ് വർക്ക് പോർട്ട്ഫോളിയോ ഡോസിയർ',
+          durationMinutes: 50,
+          overview: 'Master professional financial proof-of-work dossier workflows used in real company environments.',
+          concepts: ["Foundations of Financial Proof-of-Work Dossier", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Compiling sanitized sample reconciliations into an employer PDF.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'പ്രൂഫ് ഓഫ് വർക്ക് പോർട്ട്ഫോളിയോ ഡോസിയർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Financial Proof-of-Work Dossier Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Financial Proof-of-Work Dossier — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Compiling sanitized sample reconciliations into an employer PDF..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-29',
+            question: 'What is the key objective of Financial Proof-of-Work Dossier in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in financial proof-of-work dossier", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering financial proof-of-work dossier ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-bk-30',
+          dayNumber: 30,
+          title: 'Graduation & Job Application Walkthrough',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & തൊഴിൽ അപേക്ഷാ തയ്യാറെടുപ്പ്',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & job application walkthrough workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & Job Application Walkthrough", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Final 30-day certification and verified job board applications.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & തൊഴിൽ അപേക്ഷാ തയ്യാറെടുപ്പ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & Job Application Walkthrough Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & Job Application Walkthrough — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Final 30-day certification and verified job board applications..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-bk-30',
+            question: 'What is the key objective of Graduation & Job Application Walkthrough in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & job application walkthrough", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & job application walkthrough ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]

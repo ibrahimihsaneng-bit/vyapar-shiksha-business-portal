@@ -26,8 +26,19 @@ export const canvaDesignCourse: Course = {
       weekNumber: 4,
       title: 'Export Optimization, Portfolio Curation & Freelance Launch',
       objective: 'Master web vs print export settings (RGB vs CMYK, PNG vs PDF Print), build a Behance portfolio, and launch freelance design services.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: Carousel Decks, YouTube Thumbnails & Print Collateral',
+      objective: 'Master multi-slide LinkedIn/Instagram carousels, high-CTR YouTube thumbnails, and print-ready business cards.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: Motion Graphics, Brand Kit Systems & Graphic Design Launch',
+      objective: 'Animate short social reels in Canva, build full client brand guidelines, and land freelance design clients.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-can-1',
@@ -681,6 +692,374 @@ export const canvaDesignCourse: Course = {
             options: ['MS Paint', 'Figma (for digital UI/UX) and Adobe Illustrator (for advanced custom vector drawing)', 'TextEdit', 'Calculators'],
             correctOptionIndex: 1,
             explanation: 'Figma and Illustrator expand visual design skills into high-paying digital product and vector design.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-canva-5',
+      weekNumber: 5,
+      title: 'Week 5: Carousel Decks, YouTube Thumbnails & Print Collateral',
+      titleMl: 'ആഴ്ച 5: ഇൻസ്റ്റാഗ്രാം കറൗസലുകൾ, യൂട്യൂബ് തംബ്‌നെയിൽ & പ്രിന്റ് ഡിസൈൻ',
+      objective: 'Master multi-slide LinkedIn/Instagram carousels, high-CTR YouTube thumbnails, and print-ready business cards.',
+      lessons: [
+        {
+          id: 'les-canva-21',
+          dayNumber: 21,
+          title: 'Multi-Slide LinkedIn & Instagram Carousels',
+          titleMl: 'ഇൻസ്റ്റാഗ്രാം & ലിങ്ക്ഡ്ഇൻ കറൗസലുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional multi-slide linkedin & instagram carousels workflows used in real company environments.',
+          concepts: ["Foundations of Multi-Slide LinkedIn & Instagram Carousels", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Designing seamless multi-slide carousels that drive swipes and saves.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇൻസ്റ്റാഗ്രാം & ലിങ്ക്ഡ്ഇൻ കറൗസലുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Multi-Slide LinkedIn & Instagram Carousels Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Multi-Slide LinkedIn & Instagram Carousels — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Designing seamless multi-slide carousels that drive swipes and saves..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-21',
+            question: 'What is the key objective of Multi-Slide LinkedIn & Instagram Carousels in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in multi-slide linkedin & instagram carousels", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering multi-slide linkedin & instagram carousels ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-canva-22',
+          dayNumber: 22,
+          title: 'YouTube Thumbnail Psychology & CTR Design',
+          titleMl: 'യൂട്യൂബ് തംബ്‌നെയിൽ ഡിസൈൻ & സിടിആർ',
+          durationMinutes: 50,
+          overview: 'Master professional youtube thumbnail psychology & ctr design workflows used in real company environments.',
+          concepts: ["Foundations of YouTube Thumbnail Psychology & CTR Design", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Creating high-contrast, expressive thumbnails optimized for mobile feeds.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'യൂട്യൂബ് തംബ്‌നെയിൽ ഡിസൈൻ & സിടിആർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'YouTube Thumbnail Psychology & CTR Design Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'YouTube Thumbnail Psychology & CTR Design — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Creating high-contrast, expressive thumbnails optimized for mobile feeds..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-22',
+            question: 'What is the key objective of YouTube Thumbnail Psychology & CTR Design in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in youtube thumbnail psychology & ctr design", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering youtube thumbnail psychology & ctr design ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-canva-23',
+          dayNumber: 23,
+          title: 'Print-Ready Collateral: Business Cards & Flyers',
+          titleMl: 'ബിസിനസ്സ് കാർഡുകൾ & ഫ്ലയറുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional print-ready collateral: business cards & flyers workflows used in real company environments.',
+          concepts: ["Foundations of Print-Ready Collateral: Business Cards & Flyers", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Configuring 300 DPI CMYK PDFs with bleed lines and safe margins.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ബിസിനസ്സ് കാർഡുകൾ & ഫ്ലയറുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Print-Ready Collateral: Business Cards & Flyers Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Print-Ready Collateral: Business Cards & Flyers — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Configuring 300 DPI CMYK PDFs with bleed lines and safe margins..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-23',
+            question: 'What is the key objective of Print-Ready Collateral: Business Cards & Flyers in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in print-ready collateral: business cards & flyers", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering print-ready collateral: business cards & flyers ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-canva-24',
+          dayNumber: 24,
+          title: 'Infographics & Visual Data Cards in Canva',
+          titleMl: 'ഇൻഫോഗ്രാഫിക്സ് & ഡാറ്റാ കാർഡുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional infographics & visual data cards in canva workflows used in real company environments.',
+          concepts: ["Foundations of Infographics & Visual Data Cards in Canva", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Transforming boring statistics into visually engaging charts and metric cards.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇൻഫോഗ്രാഫിക്സ് & ഡാറ്റാ കാർഡുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Infographics & Visual Data Cards in Canva Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Infographics & Visual Data Cards in Canva — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Transforming boring statistics into visually engaging charts and metric cards..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-24',
+            question: 'What is the key objective of Infographics & Visual Data Cards in Canva in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in infographics & visual data cards in canva", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering infographics & visual data cards in canva ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-canva-25',
+          dayNumber: 25,
+          title: 'Short-Form Social Video & Reel Animation',
+          titleMl: 'ഷോർട്ട് സോഷ്യൽ വീഡിയോ & റീൽ ആനിമേഷൻ',
+          durationMinutes: 50,
+          overview: 'Master professional short-form social video & reel animation workflows used in real company environments.',
+          concepts: ["Foundations of Short-Form Social Video & Reel Animation", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Adding subtle text reveals, transitions, and audio sync to video clips.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഷോർട്ട് സോഷ്യൽ വീഡിയോ & റീൽ ആനിമേഷൻ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Short-Form Social Video & Reel Animation Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Short-Form Social Video & Reel Animation — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Adding subtle text reveals, transitions, and audio sync to video clips..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-25',
+            question: 'What is the key objective of Short-Form Social Video & Reel Animation in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in short-form social video & reel animation", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering short-form social video & reel animation ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-canva-6',
+      weekNumber: 6,
+      title: 'Week 6: Motion Graphics, Brand Kit Systems & Graphic Design Launch',
+      titleMl: 'ആഴ്ച 6: മോഷൻ ഗ്രാഫിക്സ്, ബ്രാൻഡ് കിറ്റ് & ഡിസൈൻ കരിയർ ലോഞ്ച്',
+      objective: 'Animate short social reels in Canva, build full client brand guidelines, and land freelance design clients.',
+      lessons: [
+        {
+          id: 'les-canva-26',
+          dayNumber: 26,
+          title: 'Building Complete Client Brand Kits',
+          titleMl: 'കംപ്ലീറ്റ് ബ്രാൻഡ് കിറ്റുകൾ നിർമ്മിക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional building complete client brand kits workflows used in real company environments.',
+          concepts: ["Foundations of Building Complete Client Brand Kits", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Organizing primary fonts, color palettes, and logo usage guidelines for clients.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'കംപ്ലീറ്റ് ബ്രാൻഡ് കിറ്റുകൾ നിർമ്മിക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Building Complete Client Brand Kits Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Building Complete Client Brand Kits — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Organizing primary fonts, color palettes, and logo usage guidelines for clients..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-26',
+            question: 'What is the key objective of Building Complete Client Brand Kits in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in building complete client brand kits", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering building complete client brand kits ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-canva-27',
+          dayNumber: 27,
+          title: 'Presentation Pitch Decks for Startups',
+          titleMl: 'സ്റ്റാർട്ടപ്പുകൾക്കുള്ള പ്രസന്റേഷൻ ഡെക്കുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional presentation pitch decks for startups workflows used in real company environments.',
+          concepts: ["Foundations of Presentation Pitch Decks for Startups", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Designing 10-slide clean investor pitch decks with visual consistency.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സ്റ്റാർട്ടപ്പുകൾക്കുള്ള പ്രസന്റേഷൻ ഡെക്കുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Presentation Pitch Decks for Startups Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Presentation Pitch Decks for Startups — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Designing 10-slide clean investor pitch decks with visual consistency..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-27',
+            question: 'What is the key objective of Presentation Pitch Decks for Startups in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in presentation pitch decks for startups", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering presentation pitch decks for startups ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-canva-28',
+          dayNumber: 28,
+          title: 'Capstone: Complete Brand Visual Overhaul',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - പൂർണ്ണ ബ്രാൻഡ് വിഷ്വൽ റീഡിസൈൻ',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: complete brand visual overhaul workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: Complete Brand Visual Overhaul", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Redesigning social assets, brochures, presentations, and cards for a live business.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - പൂർണ്ണ ബ്രാൻഡ് വിഷ്വൽ റീഡിസൈൻ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: Complete Brand Visual Overhaul Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: Complete Brand Visual Overhaul — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Redesigning social assets, brochures, presentations, and cards for a live business..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-28',
+            question: 'What is the key objective of Capstone: Complete Brand Visual Overhaul in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: complete brand visual overhaul", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: complete brand visual overhaul ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-canva-29',
+          dayNumber: 29,
+          title: 'Publishing Your Design Portfolio on Behance & PDF',
+          titleMl: 'ബിഹാൻസിലും പിഡിഎഫിലും പോർട്ട്ഫോളിയോ',
+          durationMinutes: 50,
+          overview: 'Master professional publishing your design portfolio on behance & pdf workflows used in real company environments.',
+          concepts: ["Foundations of Publishing Your Design Portfolio on Behance & PDF", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Packaging your 5 best design projects into a high-converting portfolio deck.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ബിഹാൻസിലും പിഡിഎഫിലും പോർട്ട്ഫോളിയോ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Publishing Your Design Portfolio on Behance & PDF Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Publishing Your Design Portfolio on Behance & PDF — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Packaging your 5 best design projects into a high-converting portfolio deck..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-29',
+            question: 'What is the key objective of Publishing Your Design Portfolio on Behance & PDF in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in publishing your design portfolio on behance & pdf", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering publishing your design portfolio on behance & pdf ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-canva-30',
+          dayNumber: 30,
+          title: 'Graduation & Landing Freelance Design Clients',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & ഡിസൈൻ ക്ലയന്റുകളെ കണ്ടെത്തൽ',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & landing freelance design clients workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & Landing Freelance Design Clients", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Final assessment, setting freelance pricing, and pitching local and remote clients.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & ഡിസൈൻ ക്ലയന്റുകളെ കണ്ടെത്തൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & Landing Freelance Design Clients Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & Landing Freelance Design Clients — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Final assessment, setting freelance pricing, and pitching local and remote clients..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-canva-30',
+            question: 'What is the key objective of Graduation & Landing Freelance Design Clients in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & landing freelance design clients", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & landing freelance design clients ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]

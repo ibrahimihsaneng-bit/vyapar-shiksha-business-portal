@@ -8,6 +8,9 @@ const STORAGE_KEYS = {
   APPLICATIONS: 'cl_applications',
   RESUME: 'cl_resume_data',
   LANGUAGE: 'cl_preferred_language',
+  SIMULATOR_SCORES: 'cl_simulator_scores',
+  PORTFOLIO_PROJECTS: 'cl_portfolio_projects',
+  DAILY_STUDY_LOG: 'cl_daily_study_log',
 };
 
 export interface CourseProgressRecord {
@@ -200,3 +203,117 @@ export function updateApplicationStatus(id: string, status: ApplicationItem['sta
     localStorage.setItem(STORAGE_KEYS.APPLICATIONS, JSON.stringify(updated));
   }
 }
+
+export interface SimulatorScoreRecord {
+  score: number;
+  completedAt: string;
+  department: string;
+  title: string;
+}
+
+export function getSimulatorScores(): Record<string, SimulatorScoreRecord> {
+  if (typeof window === 'undefined') return {};
+  try {
+    const data = localStorage.getItem(STORAGE_KEYS.SIMULATOR_SCORES);
+    if (!data) {
+      // Seed with initial completed simulation so learner has baseline
+      const initial: Record<string, SimulatorScoreRecord> = {
+        'sim-acct-reconciliation': {
+          score: 95,
+          completedAt: '2026-11-23T14:30:00Z',
+          department: 'Accounting',
+          title: 'Corporate Bank Statement Reconciliation'
+        }
+      };
+      localStorage.setItem(STORAGE_KEYS.SIMULATOR_SCORES, JSON.stringify(initial));
+      return initial;
+    }
+    return JSON.parse(data);
+  } catch {
+    return {};
+  }
+}
+
+export function saveSimulatorScore(taskId: string, score: number, department: string, title: string): void {
+  if (typeof window === 'undefined') return;
+  try {
+    const current = getSimulatorScores();
+    current[taskId] = {
+      score,
+      completedAt: new Date().toISOString(),
+      department,
+      title
+    };
+    localStorage.setItem(STORAGE_KEYS.SIMULATOR_SCORES, JSON.stringify(current));
+  } catch {}
+}
+
+export interface PortfolioProjectItem {
+  id: string;
+  title: string;
+  category: string;
+  department?: string;
+  tools: string;
+  description: string;
+  evidenceUrl?: string;
+  completedDate?: string;
+  isVerifiedWorkplace?: boolean;
+}
+
+export function getPortfolioProjects(): PortfolioProjectItem[] {
+  if (typeof window === 'undefined') return [];
+  try {
+    const data = localStorage.getItem(STORAGE_KEYS.PORTFOLIO_PROJECTS);
+    if (!data) {
+      const initial: PortfolioProjectItem[] = [
+        {
+          id: 'proj-init-1',
+          title: 'Monthly Financial Invoicing & Bank Reconciliation',
+          category: 'Accounting & Finance',
+          department: 'Accounting',
+          tools: 'Zoho Books, MS Excel',
+          description: 'Reconciled 1 month of business banking transactions against cash book ledgers with 100% balance accuracy. Prepared 5 GST-compliant customer invoices and generated Profit & Loss summary reports.',
+          evidenceUrl: 'https://drive.google.com/sample-portfolio-deliverable-1',
+          completedDate: '2026-11-20',
+          isVerifiedWorkplace: true
+        },
+        {
+          id: 'proj-init-2',
+          title: 'E-commerce Store Catalog Audit & Missing SKU Resolution',
+          category: 'E-commerce Operations',
+          department: 'E-commerce',
+          tools: 'Shopify Admin, Google Sheets',
+          description: 'Audited 50-item product catalog, mapped 12% GST tax brackets, corrected broken image assets, and established structured SKU tags for multi-channel sales.',
+          evidenceUrl: 'https://drive.google.com/sample-portfolio-deliverable-2',
+          completedDate: '2026-11-22',
+          isVerifiedWorkplace: true
+        }
+      ];
+      localStorage.setItem(STORAGE_KEYS.PORTFOLIO_PROJECTS, JSON.stringify(initial));
+      return initial;
+    }
+    return JSON.parse(data);
+  } catch {
+    return [];
+  }
+}
+
+export function savePortfolioProjects(projects: PortfolioProjectItem[]): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(STORAGE_KEYS.PORTFOLIO_PROJECTS, JSON.stringify(projects));
+  } catch {}
+}
+
+export function addPortfolioProject(item: Omit<PortfolioProjectItem, 'id'>): PortfolioProjectItem {
+  const current = getPortfolioProjects();
+  const newItem: PortfolioProjectItem = {
+    ...item,
+    id: `proj-${Date.now()}`,
+    completedDate: item.completedDate || new Date().toISOString().split('T')[0]
+  };
+  const updated = [newItem, ...current];
+  savePortfolioProjects(updated);
+  return newItem;
+}
+

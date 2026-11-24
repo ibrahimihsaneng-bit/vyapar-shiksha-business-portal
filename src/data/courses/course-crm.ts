@@ -26,8 +26,19 @@ export const crmDataCourse: Course = {
       weekNumber: 4,
       title: 'Views, Lists, Reports & Career Portfolio',
       objective: 'Build segmented active lists, create executive pipeline dashboards, write an ATS resume, and apply for remote CRM roles.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: Lead Scoring, Automation Triggers & CSV Imports',
+      objective: 'Set up automated lead qualification scoring, configure email triggers, and master error-free CSV bulk imports.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: Sales Pipeline Reporting, Compliance & Career Launch',
+      objective: 'Build deal stage conversion dashboards, enforce privacy regulations (DPDP/GDPR), and land CRM Admin jobs.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-crm-1',
@@ -681,6 +692,374 @@ export const crmDataCourse: Course = {
             options: ['To fill up disk space', 'To maintain an independent offline backup of all business relationships in case of accidental bulk deletion or system lockouts', 'For fun', 'It is not recommended'],
             correctOptionIndex: 1,
             explanation: 'Independent periodic database exports protect the organization from accidental data corruption.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-crm-5',
+      weekNumber: 5,
+      title: 'Week 5: Lead Scoring, Automation Triggers & CSV Imports',
+      titleMl: 'ആഴ്ച 5: ലീഡ് സ്കോറിംഗ്, ഓട്ടോമേഷൻ & സിഎസ്വി ഇംപോർട്ടുകൾ',
+      objective: 'Set up automated lead qualification scoring, configure email triggers, and master error-free CSV bulk imports.',
+      lessons: [
+        {
+          id: 'les-crm-21',
+          dayNumber: 21,
+          title: 'Lead Scoring & Qualification Models (BANT)',
+          titleMl: 'ലീഡ് സ്കോറിംഗ് & ക്വാളിഫിക്കേഷൻ മോഡൽ',
+          durationMinutes: 50,
+          overview: 'Master professional lead scoring & qualification models (bant) workflows used in real company environments.',
+          concepts: ["Foundations of Lead Scoring & Qualification Models (BANT)", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Setting up point-based lead scoring based on company size and engagement.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ലീഡ് സ്കോറിംഗ് & ക്വാളിഫിക്കേഷൻ മോഡൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Lead Scoring & Qualification Models (BANT) Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Lead Scoring & Qualification Models (BANT) — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Setting up point-based lead scoring based on company size and engagement..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-21',
+            question: 'What is the key objective of Lead Scoring & Qualification Models (BANT) in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in lead scoring & qualification models (bant)", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering lead scoring & qualification models (bant) ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-crm-22',
+          dayNumber: 22,
+          title: 'Automated Workflow Triggers in HubSpot',
+          titleMl: 'ഓട്ടോമേറ്റഡ് വർക്ക്ഫ്ലോ ട്രിഗറുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional automated workflow triggers in hubspot workflows used in real company environments.',
+          concepts: ["Foundations of Automated Workflow Triggers in HubSpot", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Triggering follow-up tasks when a deal moves from Prospect to Proposal.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഓട്ടോമേറ്റഡ് വർക്ക്ഫ്ലോ ട്രിഗറുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Automated Workflow Triggers in HubSpot Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Automated Workflow Triggers in HubSpot — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Triggering follow-up tasks when a deal moves from Prospect to Proposal..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-22',
+            question: 'What is the key objective of Automated Workflow Triggers in HubSpot in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in automated workflow triggers in hubspot", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering automated workflow triggers in hubspot ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-crm-23',
+          dayNumber: 23,
+          title: 'Bulk CSV Contact Imports & Error Mapping',
+          titleMl: 'ബൾക്ക് സിഎസ്വി ഇംപോർട്ട് & മാപ്പിംഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional bulk csv contact imports & error mapping workflows used in real company environments.',
+          concepts: ["Foundations of Bulk CSV Contact Imports & Error Mapping", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Mapping 500+ contacts into custom CRM properties without field errors.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ബൾക്ക് സിഎസ്വി ഇംപോർട്ട് & മാപ്പിംഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Bulk CSV Contact Imports & Error Mapping Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Bulk CSV Contact Imports & Error Mapping — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Mapping 500+ contacts into custom CRM properties without field errors..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-23',
+            question: 'What is the key objective of Bulk CSV Contact Imports & Error Mapping in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in bulk csv contact imports & error mapping", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering bulk csv contact imports & error mapping ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-crm-24',
+          dayNumber: 24,
+          title: 'Duplicate Detection & Merge Automation',
+          titleMl: 'ഡ്യൂപ്ലിക്കേറ്റ് കോൺടാക്റ്റുകൾ കണ്ടുപിടിക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional duplicate detection & merge automation workflows used in real company environments.',
+          concepts: ["Foundations of Duplicate Detection & Merge Automation", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Automating weekly deduplication scans across emails and phone numbers.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഡ്യൂപ്ലിക്കേറ്റ് കോൺടാക്റ്റുകൾ കണ്ടുപിടിക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Duplicate Detection & Merge Automation Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Duplicate Detection & Merge Automation — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Automating weekly deduplication scans across emails and phone numbers..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-24',
+            question: 'What is the key objective of Duplicate Detection & Merge Automation in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in duplicate detection & merge automation", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering duplicate detection & merge automation ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-crm-25',
+          dayNumber: 25,
+          title: 'Connecting Website Lead Forms to CRM',
+          titleMl: 'വെബ്സൈറ്റ് ഫോമുകൾ സിആർഎമ്മിലേക്ക് ബന്ധിപ്പിക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional connecting website lead forms to crm workflows used in real company environments.',
+          concepts: ["Foundations of Connecting Website Lead Forms to CRM", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Embedding HubSpot/Zoho forms into WordPress with automated source tags.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'വെബ്സൈറ്റ് ഫോമുകൾ സിആർഎമ്മിലേക്ക് ബന്ധിപ്പിക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Connecting Website Lead Forms to CRM Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Connecting Website Lead Forms to CRM — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Embedding HubSpot/Zoho forms into WordPress with automated source tags..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-25',
+            question: 'What is the key objective of Connecting Website Lead Forms to CRM in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in connecting website lead forms to crm", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering connecting website lead forms to crm ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-crm-6',
+      weekNumber: 6,
+      title: 'Week 6: Sales Pipeline Reporting, Compliance & Career Launch',
+      titleMl: 'ആഴ്ച 6: സെയിൽസ് പൈപ്പ്‌ലൈൻ റിപ്പോർട്ടുകൾ, കംപ്ലയൻസ് & കരിയർ ലോഞ്ച്',
+      objective: 'Build deal stage conversion dashboards, enforce privacy regulations (DPDP/GDPR), and land CRM Admin jobs.',
+      lessons: [
+        {
+          id: 'les-crm-26',
+          dayNumber: 26,
+          title: 'Sales Pipeline Velocity & Conversion Reports',
+          titleMl: 'സെയിൽസ് പൈപ്പ്‌ലൈൻ വെലോസിറ്റി റിപ്പോർട്ടിംഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional sales pipeline velocity & conversion reports workflows used in real company environments.',
+          concepts: ["Foundations of Sales Pipeline Velocity & Conversion Reports", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Measuring how many days deals linger in each pipeline stage.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സെയിൽസ് പൈപ്പ്‌ലൈൻ വെലോസിറ്റി റിപ്പോർട്ടിംഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Sales Pipeline Velocity & Conversion Reports Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Sales Pipeline Velocity & Conversion Reports — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Measuring how many days deals linger in each pipeline stage..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-26',
+            question: 'What is the key objective of Sales Pipeline Velocity & Conversion Reports in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in sales pipeline velocity & conversion reports", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering sales pipeline velocity & conversion reports ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-crm-27',
+          dayNumber: 27,
+          title: 'Data Privacy Compliance (DPDP Act & GDPR)',
+          titleMl: 'ഡാറ്റാ പ്രൈവസി നിയമങ്ങളും കംപ്ലയൻസും',
+          durationMinutes: 50,
+          overview: 'Master professional data privacy compliance (dpdp act & gdpr) workflows used in real company environments.',
+          concepts: ["Foundations of Data Privacy Compliance (DPDP Act & GDPR)", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Managing opt-in consents, unsubscribes, and data erasure requests legally.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഡാറ്റാ പ്രൈവസി നിയമങ്ങളും കംപ്ലയൻസും: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Data Privacy Compliance (DPDP Act & GDPR) Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Data Privacy Compliance (DPDP Act & GDPR) — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Managing opt-in consents, unsubscribes, and data erasure requests legally..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-27',
+            question: 'What is the key objective of Data Privacy Compliance (DPDP Act & GDPR) in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in data privacy compliance (dpdp act & gdpr)", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering data privacy compliance (dpdp act & gdpr) ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-crm-28',
+          dayNumber: 28,
+          title: 'Capstone: Full CRM Architecture Deployment',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - പൂർണ്ണ സിആർഎം ആർക്കിടെക്ചർ',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: full crm architecture deployment workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: Full CRM Architecture Deployment", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Configuring a complete CRM for a B2B firm: properties, pipeline, and automations.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - പൂർണ്ണ സിആർഎം ആർക്കിടെക്ചർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: Full CRM Architecture Deployment Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: Full CRM Architecture Deployment — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Configuring a complete CRM for a B2B firm: properties, pipeline, and automations..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-28',
+            question: 'What is the key objective of Capstone: Full CRM Architecture Deployment in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: full crm architecture deployment", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: full crm architecture deployment ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-crm-29',
+          dayNumber: 29,
+          title: 'CRM Specialist Proof-of-Work Portfolio',
+          titleMl: 'സിആർഎം പോർട്ട്ഫോളിയോ ഡോസിയർ',
+          durationMinutes: 50,
+          overview: 'Master professional crm specialist proof-of-work portfolio workflows used in real company environments.',
+          concepts: ["Foundations of CRM Specialist Proof-of-Work Portfolio", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Documenting pipeline models, workflows, and reports into a PDF case study.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സിആർഎം പോർട്ട്ഫോളിയോ ഡോസിയർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'CRM Specialist Proof-of-Work Portfolio Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'CRM Specialist Proof-of-Work Portfolio — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Documenting pipeline models, workflows, and reports into a PDF case study..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-29',
+            question: 'What is the key objective of CRM Specialist Proof-of-Work Portfolio in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in crm specialist proof-of-work portfolio", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering crm specialist proof-of-work portfolio ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-crm-30',
+          dayNumber: 30,
+          title: 'Graduation & CRM Operations Job Applications',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & സിആർഎം അഡ്മിൻ ജോലികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & crm operations job applications workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & CRM Operations Job Applications", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Completing final certification and applying for remote RevOps and CRM roles.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & സിആർഎം അഡ്മിൻ ജോലികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & CRM Operations Job Applications Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & CRM Operations Job Applications — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Completing final certification and applying for remote RevOps and CRM roles..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-crm-30',
+            question: 'What is the key objective of Graduation & CRM Operations Job Applications in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & crm operations job applications", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & crm operations job applications ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]

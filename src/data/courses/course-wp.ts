@@ -26,8 +26,19 @@ export const wordpressManagerCourse: Course = {
       weekNumber: 4,
       title: 'Site Health, Automated Backups, Speed Audits & Client Retainers',
       objective: 'Configure automated cloud backups with UpdraftPlus, conduct Google PageSpeed audits, repair broken links, package monthly website maintenance retainer proposals, and land entry-level remote client gigs.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: On-Page SEO, Speed Optimization & Lead Capture Forms',
+      objective: 'Configure Yoast/RankMath SEO, optimize site load speeds under 2 seconds, and build lead capture forms.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: Security Hardening, Backup Drills & Web Manager Launch',
+      objective: 'Harden WordPress security, schedule automated offsite backups, troubleshoot site errors, and land web manager roles.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-wp-1',
@@ -627,6 +638,374 @@ export const wordpressManagerCourse: Course = {
             estimatedMinutes: 45,
             deliverable: 'A branded Client Care Plan document with pricing tiers and a sample client health report ready to pitch.'
           }
+        }
+      ]
+    },
+    {
+      id: 'mod-wp-5',
+      weekNumber: 5,
+      title: 'Week 5: On-Page SEO, Speed Optimization & Lead Capture Forms',
+      titleMl: 'ആഴ്ച 5: ഓൺ-പേജ് എസ്ഇഒ, സ്പീഡ് ഒപ്റ്റിമൈസേഷൻ & കോൺടാക്റ്റ് ഫോമുകൾ',
+      objective: 'Configure Yoast/RankMath SEO, optimize site load speeds under 2 seconds, and build lead capture forms.',
+      lessons: [
+        {
+          id: 'les-wp-21',
+          dayNumber: 21,
+          title: 'On-Page SEO with RankMath & Yoast',
+          titleMl: 'ഓൺ-പേജ് എസ്ഇഒ ക്രമീകരണങ്ങൾ',
+          durationMinutes: 50,
+          overview: 'Master professional on-page seo with rankmath & yoast workflows used in real company environments.',
+          concepts: ["Foundations of On-Page SEO with RankMath & Yoast", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Setting meta titles, descriptions, focus keywords, and social open graph tags.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഓൺ-പേജ് എസ്ഇഒ ക്രമീകരണങ്ങൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'On-Page SEO with RankMath & Yoast Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'On-Page SEO with RankMath & Yoast — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Setting meta titles, descriptions, focus keywords, and social open graph tags..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-21',
+            question: 'What is the key objective of On-Page SEO with RankMath & Yoast in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in on-page seo with rankmath & yoast", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering on-page seo with rankmath & yoast ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-wp-22',
+          dayNumber: 22,
+          title: 'Page Speed Optimization (Caching & WebP)',
+          titleMl: 'വെബ്സൈറ്റ് സ്പീഡ് ഒപ്റ്റിമൈസേഷൻ',
+          durationMinutes: 50,
+          overview: 'Master professional page speed optimization (caching & webp) workflows used in real company environments.',
+          concepts: ["Foundations of Page Speed Optimization (Caching & WebP)", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Compressing images to WebP and configuring caching plugins for sub-2s load.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'വെബ്സൈറ്റ് സ്പീഡ് ഒപ്റ്റിമൈസേഷൻ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Page Speed Optimization (Caching & WebP) Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Page Speed Optimization (Caching & WebP) — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Compressing images to WebP and configuring caching plugins for sub-2s load..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-22',
+            question: 'What is the key objective of Page Speed Optimization (Caching & WebP) in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in page speed optimization (caching & webp)", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering page speed optimization (caching & webp) ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-wp-23',
+          dayNumber: 23,
+          title: 'Advanced Contact Forms & Lead Notifications',
+          titleMl: 'കോൺടാക്റ്റ് ഫോമുകളും ലീഡ് അലേർട്ടുകളും',
+          durationMinutes: 50,
+          overview: 'Master professional advanced contact forms & lead notifications workflows used in real company environments.',
+          concepts: ["Foundations of Advanced Contact Forms & Lead Notifications", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Building multi-step forms with WPForms and automated email notifications.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'കോൺടാക്റ്റ് ഫോമുകളും ലീഡ് അലേർട്ടുകളും: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Advanced Contact Forms & Lead Notifications Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Advanced Contact Forms & Lead Notifications — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Building multi-step forms with WPForms and automated email notifications..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-23',
+            question: 'What is the key objective of Advanced Contact Forms & Lead Notifications in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in advanced contact forms & lead notifications", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering advanced contact forms & lead notifications ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-wp-24',
+          dayNumber: 24,
+          title: 'WooCommerce Product Catalog Setup',
+          titleMl: 'വൂ-കൊമേഴ്‌സ് പ്രൊഡക്റ്റ് കാറ്റലോഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional woocommerce product catalog setup workflows used in real company environments.',
+          concepts: ["Foundations of WooCommerce Product Catalog Setup", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Adding products, prices, variations, and basic payment gateways in WooCommerce.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'വൂ-കൊമേഴ്‌സ് പ്രൊഡക്റ്റ് കാറ്റലോഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'WooCommerce Product Catalog Setup Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'WooCommerce Product Catalog Setup — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Adding products, prices, variations, and basic payment gateways in WooCommerce..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-24',
+            question: 'What is the key objective of WooCommerce Product Catalog Setup in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in woocommerce product catalog setup", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering woocommerce product catalog setup ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-wp-25',
+          dayNumber: 25,
+          title: 'WordPress Security Hardening & Malware Defense',
+          titleMl: 'വേർഡ്പ്രസ്സ് സെക്യൂരിറ്റി & സുരക്ഷ',
+          durationMinutes: 50,
+          overview: 'Master professional wordpress security hardening & malware defense workflows used in real company environments.',
+          concepts: ["Foundations of WordPress Security Hardening & Malware Defense", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Changing login URLs, enforcing 2FA, and configuring Wordfence firewall.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'വേർഡ്പ്രസ്സ് സെക്യൂരിറ്റി & സുരക്ഷ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'WordPress Security Hardening & Malware Defense Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'WordPress Security Hardening & Malware Defense — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Changing login URLs, enforcing 2FA, and configuring Wordfence firewall..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-25',
+            question: 'What is the key objective of WordPress Security Hardening & Malware Defense in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in wordpress security hardening & malware defense", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering wordpress security hardening & malware defense ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-wp-6',
+      weekNumber: 6,
+      title: 'Week 6: Security Hardening, Backup Drills & Web Manager Launch',
+      titleMl: 'ആഴ്ച 6: സെക്യൂരിറ്റി, ബാക്കപ്പ് ഡ്രില്ലുകൾ & വെബ് മാനേജർ കരിയർ ലോഞ്ച്',
+      objective: 'Harden WordPress security, schedule automated offsite backups, troubleshoot site errors, and land web manager roles.',
+      lessons: [
+        {
+          id: 'les-wp-26',
+          dayNumber: 26,
+          title: 'Automated Offsite Backup & Restore Drills',
+          titleMl: 'ഓട്ടോമേറ്റഡ് ബാക്കപ്പുകൾ & റീസ്റ്റോർ',
+          durationMinutes: 50,
+          overview: 'Master professional automated offsite backup & restore drills workflows used in real company environments.',
+          concepts: ["Foundations of Automated Offsite Backup & Restore Drills", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Setting up scheduled Google Drive backups with UpdraftPlus and testing restore.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഓട്ടോമേറ്റഡ് ബാക്കപ്പുകൾ & റീസ്റ്റോർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Automated Offsite Backup & Restore Drills Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Automated Offsite Backup & Restore Drills — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Setting up scheduled Google Drive backups with UpdraftPlus and testing restore..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-26',
+            question: 'What is the key objective of Automated Offsite Backup & Restore Drills in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in automated offsite backup & restore drills", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering automated offsite backup & restore drills ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-wp-27',
+          dayNumber: 27,
+          title: 'Troubleshooting 404s, White Screens & Plugin Conflicts',
+          titleMl: 'വെബ്സൈറ്റ് എററുകൾ പരിഹരിക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional troubleshooting 404s, white screens & plugin conflicts workflows used in real company environments.',
+          concepts: ["Foundations of Troubleshooting 404s, White Screens & Plugin Conflicts", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Diagnosing broken themes and plugin crashes using recovery mode and staging.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'വെബ്സൈറ്റ് എററുകൾ പരിഹരിക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Troubleshooting 404s, White Screens & Plugin Conflicts Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Troubleshooting 404s, White Screens & Plugin Conflicts — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Diagnosing broken themes and plugin crashes using recovery mode and staging..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-27',
+            question: 'What is the key objective of Troubleshooting 404s, White Screens & Plugin Conflicts in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in troubleshooting 404s, white screens & plugin conflicts", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering troubleshooting 404s, white screens & plugin conflicts ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-wp-28',
+          dayNumber: 28,
+          title: 'Capstone: Complete 5-Page Corporate Website',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - 5 പേജ് കോർപ്പറേറ്റ് വെബ്സൈറ്റ്',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: complete 5-page corporate website workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: Complete 5-Page Corporate Website", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Building a responsive 5-page business site: Home, About, Services, Blog, Contact.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - 5 പേജ് കോർപ്പറേറ്റ് വെബ്സൈറ്റ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: Complete 5-Page Corporate Website Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: Complete 5-Page Corporate Website — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Building a responsive 5-page business site: Home, About, Services, Blog, Contact..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-28',
+            question: 'What is the key objective of Capstone: Complete 5-Page Corporate Website in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: complete 5-page corporate website", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: complete 5-page corporate website ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-wp-29',
+          dayNumber: 29,
+          title: 'Web Management Client Care Plan Portfolio',
+          titleMl: 'വെബ് മാനേജ്‌മെന്റ് പോർട്ട്ഫോളിയോ',
+          durationMinutes: 50,
+          overview: 'Master professional web management client care plan portfolio workflows used in real company environments.',
+          concepts: ["Foundations of Web Management Client Care Plan Portfolio", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Drafting maintenance retainer proposals and client handover documentation.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'വെബ് മാനേജ്‌മെന്റ് പോർട്ട്ഫോളിയോ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Web Management Client Care Plan Portfolio Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Web Management Client Care Plan Portfolio — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Drafting maintenance retainer proposals and client handover documentation..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-29',
+            question: 'What is the key objective of Web Management Client Care Plan Portfolio in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in web management client care plan portfolio", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering web management client care plan portfolio ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-wp-30',
+          dayNumber: 30,
+          title: 'Graduation & Landing Web Content Manager Roles',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & വെബ് മാനേജർ ജോലികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & landing web content manager roles workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & Landing Web Content Manager Roles", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Final 30-day assessment, portfolio verification, and applying for remote web roles.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & വെബ് മാനേജർ ജോലികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & Landing Web Content Manager Roles Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & Landing Web Content Manager Roles — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Final 30-day assessment, portfolio verification, and applying for remote web roles..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-wp-30',
+            question: 'What is the key objective of Graduation & Landing Web Content Manager Roles in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & landing web content manager roles", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & landing web content manager roles ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
         }
       ]
     }

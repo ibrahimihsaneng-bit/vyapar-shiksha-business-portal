@@ -26,8 +26,19 @@ export const ecommerceOperationsCourse: Course = {
       weekNumber: 4,
       title: 'Returns Management, Store Audits & Employment Readiness',
       objective: 'Audit online storefronts for broken links and errors, manage return merchandise authorizations (RMA), and build an e-commerce portfolio.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: Inventory Control, Fulfillment Logistics & Marketplace Sync',
+      objective: 'Manage safety stock formulas, Shiprocket courier logistics, and multi-channel synchronization across Shopify and Amazon.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: Customer Returns, Store Auditing & Career Launch',
+      objective: 'Handle return authorizations, conduct complete Shopify store usability audits, and apply for remote store manager jobs.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-ecom-1',
@@ -681,6 +692,374 @@ export const ecommerceOperationsCourse: Course = {
             options: ['Inform their friends', 'Export a full backup CSV of current products so any mistakes can be instantly reversed', 'Turn off the internet', 'Delete old orders'],
             correctOptionIndex: 1,
             explanation: 'Exporting a backup CSV ensures you can roll back instantly if an import contains errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-ecom-5',
+      weekNumber: 5,
+      title: 'Week 5: Inventory Control, Fulfillment Logistics & Marketplace Sync',
+      titleMl: 'ആഴ്ച 5: ഇൻവെന്ററി കൺട്രോൾ, ഷിപ്പിംഗ് & മാർക്കറ്റ്പ്ലേസ്',
+      objective: 'Manage safety stock formulas, Shiprocket courier logistics, and multi-channel synchronization across Shopify and Amazon.',
+      lessons: [
+        {
+          id: 'les-ecom-21',
+          dayNumber: 21,
+          title: 'Safety Stock & Reorder Point Formulas',
+          titleMl: 'ഇൻവെന്ററി റീ-ഓർഡറിംഗ് & സേഫ്റ്റി സ്റ്റോക്ക്',
+          durationMinutes: 50,
+          overview: 'Master professional safety stock & reorder point formulas workflows used in real company environments.',
+          concepts: ["Foundations of Safety Stock & Reorder Point Formulas", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Calculating minimum safety stock levels to prevent sales stockouts.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇൻവെന്ററി റീ-ഓർഡറിംഗ് & സേഫ്റ്റി സ്റ്റോക്ക്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Safety Stock & Reorder Point Formulas Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Safety Stock & Reorder Point Formulas — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Calculating minimum safety stock levels to prevent sales stockouts..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-21',
+            question: 'What is the key objective of Safety Stock & Reorder Point Formulas in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in safety stock & reorder point formulas", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering safety stock & reorder point formulas ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ecom-22',
+          dayNumber: 22,
+          title: 'Shipping & Logistics with Shiprocket',
+          titleMl: 'ഷിപ്പ്‌റോക്കറ്റ് & കൊറിയർ ഓപ്പറേഷൻസ്',
+          durationMinutes: 50,
+          overview: 'Master professional shipping & logistics with shiprocket workflows used in real company environments.',
+          concepts: ["Foundations of Shipping & Logistics with Shiprocket", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Generating airway bills (AWBs) and coordinating domestic courier pickups.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഷിപ്പ്‌റോക്കറ്റ് & കൊറിയർ ഓപ്പറേഷൻസ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Shipping & Logistics with Shiprocket Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Shipping & Logistics with Shiprocket — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Generating airway bills (AWBs) and coordinating domestic courier pickups..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-22',
+            question: 'What is the key objective of Shipping & Logistics with Shiprocket in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in shipping & logistics with shiprocket", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering shipping & logistics with shiprocket ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ecom-23',
+          dayNumber: 23,
+          title: 'Managing Customer Returns & RTOs',
+          titleMl: 'റിട്ടേൺസ് & ആർടിഒ മാനേജ്‌മെന്റ്',
+          durationMinutes: 50,
+          overview: 'Master professional managing customer returns & rtos workflows used in real company environments.',
+          concepts: ["Foundations of Managing Customer Returns & RTOs", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Processing refunds and reducing return-to-origin courier losses.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'റിട്ടേൺസ് & ആർടിഒ മാനേജ്‌മെന്റ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Managing Customer Returns & RTOs Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Managing Customer Returns & RTOs — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Processing refunds and reducing return-to-origin courier losses..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-23',
+            question: 'What is the key objective of Managing Customer Returns & RTOs in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in managing customer returns & rtos", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering managing customer returns & rtos ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ecom-24',
+          dayNumber: 24,
+          title: 'Product Reviews & Social Proof',
+          titleMl: 'പ്രൊഡക്റ്റ് റിവ്യൂസ് & സോഷ്യൽ പ്രൂഫ്',
+          durationMinutes: 50,
+          overview: 'Master professional product reviews & social proof workflows used in real company environments.',
+          concepts: ["Foundations of Product Reviews & Social Proof", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Managing Judge.me reviews and customer photo testimonials.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'പ്രൊഡക്റ്റ് റിവ്യൂസ് & സോഷ്യൽ പ്രൂഫ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Product Reviews & Social Proof Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Product Reviews & Social Proof — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Managing Judge.me reviews and customer photo testimonials..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-24',
+            question: 'What is the key objective of Product Reviews & Social Proof in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in product reviews & social proof", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering product reviews & social proof ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ecom-25',
+          dayNumber: 25,
+          title: 'Multi-Channel Sync: Amazon & Flipkart',
+          titleMl: 'ആമസോൺ & ഫ്ലിപ്കാർട്ട് ലിസ്റ്റിംഗ് ബേസിക്സ്',
+          durationMinutes: 50,
+          overview: 'Master professional multi-channel sync: amazon & flipkart workflows used in real company environments.',
+          concepts: ["Foundations of Multi-Channel Sync: Amazon & Flipkart", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Synchronizing Shopify inventory across Amazon India seller portals.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ആമസോൺ & ഫ്ലിപ്കാർട്ട് ലിസ്റ്റിംഗ് ബേസിക്സ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Multi-Channel Sync: Amazon & Flipkart Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Multi-Channel Sync: Amazon & Flipkart — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Synchronizing Shopify inventory across Amazon India seller portals..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-25',
+            question: 'What is the key objective of Multi-Channel Sync: Amazon & Flipkart in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in multi-channel sync: amazon & flipkart", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering multi-channel sync: amazon & flipkart ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-ecom-6',
+      weekNumber: 6,
+      title: 'Week 6: Customer Returns, Store Auditing & Career Launch',
+      titleMl: 'ആഴ്ച 6: റിട്ടേൺസ്, സ്റ്റോർ ഓഡിറ്റ് & ഇ-കൊമേഴ്‌സ് കരിയർ ലോഞ്ച്',
+      objective: 'Handle return authorizations, conduct complete Shopify store usability audits, and apply for remote store manager jobs.',
+      lessons: [
+        {
+          id: 'les-ecom-26',
+          dayNumber: 26,
+          title: '25-Point Shopify Store Usability Audit',
+          titleMl: '25-പോയിന്റ് ഷോപ്പിഫൈ സ്റ്റോർ ഓഡിറ്റ്',
+          durationMinutes: 50,
+          overview: 'Master professional 25-point shopify store usability audit workflows used in real company environments.',
+          concepts: ["Foundations of 25-Point Shopify Store Usability Audit", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Inspecting checkout hurdles, broken links, and mobile responsiveness.. Always verify your final deliverables before sharing.',
+          malayalamNotes: '25-പോയിന്റ് ഷോപ്പിഫൈ സ്റ്റോർ ഓഡിറ്റ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: '25-Point Shopify Store Usability Audit Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: '25-Point Shopify Store Usability Audit — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Inspecting checkout hurdles, broken links, and mobile responsiveness..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-26',
+            question: 'What is the key objective of 25-Point Shopify Store Usability Audit in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in 25-point shopify store usability audit", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering 25-point shopify store usability audit ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ecom-27',
+          dayNumber: 27,
+          title: 'Seasonal Sales & Coupon Campaigns',
+          titleMl: 'സെയിൽസ് പ്രൊമോഷനുകൾ & കൂപ്പണുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional seasonal sales & coupon campaigns workflows used in real company environments.',
+          concepts: ["Foundations of Seasonal Sales & Coupon Campaigns", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Configuring automated percentage discounts and BOGO sales rules.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സെയിൽസ് പ്രൊമോഷനുകൾ & കൂപ്പണുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Seasonal Sales & Coupon Campaigns Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Seasonal Sales & Coupon Campaigns — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Configuring automated percentage discounts and BOGO sales rules..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-27',
+            question: 'What is the key objective of Seasonal Sales & Coupon Campaigns in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in seasonal sales & coupon campaigns", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering seasonal sales & coupon campaigns ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ecom-28',
+          dayNumber: 28,
+          title: 'Capstone: Complete D2C Brand Store',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - പൂർണ്ണ ഡി2സി ഓൺലൈൻ സ്റ്റോർ',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: complete d2c brand store workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: Complete D2C Brand Store", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Launching an end-to-end 15-product Shopify store with test orders.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - പൂർണ്ണ ഡി2സി ഓൺലൈൻ സ്റ്റോർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: Complete D2C Brand Store Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: Complete D2C Brand Store — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Launching an end-to-end 15-product Shopify store with test orders..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-28',
+            question: 'What is the key objective of Capstone: Complete D2C Brand Store in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: complete d2c brand store", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: complete d2c brand store ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ecom-29',
+          dayNumber: 29,
+          title: 'E-commerce Operations Portfolio Dossier',
+          titleMl: 'ഇ-കൊമേഴ്‌സ് പോർട്ട്ഫോളിയോ ഡോസിയർ',
+          durationMinutes: 50,
+          overview: 'Master professional e-commerce operations portfolio dossier workflows used in real company environments.',
+          concepts: ["Foundations of E-commerce Operations Portfolio Dossier", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Documenting catalogs, inventory sheets, and audits into a PDF.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇ-കൊമേഴ്‌സ് പോർട്ട്ഫോളിയോ ഡോസിയർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'E-commerce Operations Portfolio Dossier Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'E-commerce Operations Portfolio Dossier — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Documenting catalogs, inventory sheets, and audits into a PDF..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-29',
+            question: 'What is the key objective of E-commerce Operations Portfolio Dossier in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in e-commerce operations portfolio dossier", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering e-commerce operations portfolio dossier ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ecom-30',
+          dayNumber: 30,
+          title: 'Graduation & Store Manager Job Hunt',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & തൊഴിൽ അപേക്ഷാ തയ്യാറെടുപ്പ്',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & store manager job hunt workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & Store Manager Job Hunt", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Final 30-day exam and applying for remote e-commerce operations jobs.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & തൊഴിൽ അപേക്ഷാ തയ്യാറെടുപ്പ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & Store Manager Job Hunt Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & Store Manager Job Hunt — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Final 30-day exam and applying for remote e-commerce operations jobs..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ecom-30',
+            question: 'What is the key objective of Graduation & Store Manager Job Hunt in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & store manager job hunt", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & store manager job hunt ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]

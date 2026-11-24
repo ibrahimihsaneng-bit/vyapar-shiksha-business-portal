@@ -26,8 +26,19 @@ export const webResearchCourse: Course = {
       weekNumber: 4,
       title: 'Dossier Assembly, Executive Briefings & Career Launch',
       objective: 'Compile professional research dossiers with primary source citations, build an ATS resume, and apply for remote research roles.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: B2B Lead Generation, Registry Lookups & Competitor Analysis',
+      objective: 'Master LinkedIn Boolean search, Ministry of Corporate Affairs (MCA) verification, and pricing benchmarking.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: Data Synthesis, Executive Briefs & Market Research Launch',
+      objective: 'Synthesize industry whitepapers into 2-page executive briefs, assemble research dossiers, and land research roles.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-res-1',
@@ -681,6 +692,374 @@ export const webResearchCourse: Course = {
             options: ['Hardware soldering', 'Market Intelligence Analyst / Competitive Strategy Consultant', 'Graphic illustration only', 'Customer billing clerk'],
             correctOptionIndex: 1,
             explanation: 'Market intelligence and strategic consulting expand directly from disciplined primary market research.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-res-5',
+      weekNumber: 5,
+      title: 'Week 5: B2B Lead Generation, Registry Lookups & Competitor Analysis',
+      titleMl: 'ആഴ്ച 5: ബി2ബി ലീഡ് ജനറേഷൻ, കമ്പനി രജിസ്ട്രി & കോമ്പറ്റീറ്റർ അനാലിസിസ്',
+      objective: 'Master LinkedIn Boolean search, Ministry of Corporate Affairs (MCA) verification, and pricing benchmarking.',
+      lessons: [
+        {
+          id: 'les-res-21',
+          dayNumber: 21,
+          title: 'Advanced LinkedIn Boolean Operator Mastery',
+          titleMl: 'ലിങ്ക്ഡ്ഇൻ ബൂളിയൻ സെർച്ച് മാസ്റ്ററി',
+          durationMinutes: 50,
+          overview: 'Master professional advanced linkedin boolean operator mastery workflows used in real company environments.',
+          concepts: ["Foundations of Advanced LinkedIn Boolean Operator Mastery", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Targeting exact decision-makers using AND, OR, NOT, and title quotation syntax.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ലിങ്ക്ഡ്ഇൻ ബൂളിയൻ സെർച്ച് മാസ്റ്ററി: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Advanced LinkedIn Boolean Operator Mastery Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Advanced LinkedIn Boolean Operator Mastery — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Targeting exact decision-makers using AND, OR, NOT, and title quotation syntax..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-21',
+            question: 'What is the key objective of Advanced LinkedIn Boolean Operator Mastery in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in advanced linkedin boolean operator mastery", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering advanced linkedin boolean operator mastery ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-res-22',
+          dayNumber: 22,
+          title: 'Verifying Official Corporate Registries (MCA / SEC)',
+          titleMl: 'കമ്പനി രജിസ്ട്രേഷൻ വിവരങ്ങൾ പരിശോധിക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional verifying official corporate registries (mca / sec) workflows used in real company environments.',
+          concepts: ["Foundations of Verifying Official Corporate Registries (MCA / SEC)", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Confirming paid-up capital, directors, and registered office addresses officially.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'കമ്പനി രജിസ്ട്രേഷൻ വിവരങ്ങൾ പരിശോധിക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Verifying Official Corporate Registries (MCA / SEC) Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Verifying Official Corporate Registries (MCA / SEC) — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Confirming paid-up capital, directors, and registered office addresses officially..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-22',
+            question: 'What is the key objective of Verifying Official Corporate Registries (MCA / SEC) in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in verifying official corporate registries (mca / sec)", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering verifying official corporate registries (mca / sec) ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-res-23',
+          dayNumber: 23,
+          title: 'Competitor Pricing & Product Benchmarking',
+          titleMl: 'കോമ്പറ്റീറ്റർ പ്രൈസിംഗ് & ബെഞ്ച്മാർക്കിംഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional competitor pricing & product benchmarking workflows used in real company environments.',
+          concepts: ["Foundations of Competitor Pricing & Product Benchmarking", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Structuring 10-competitor feature and pricing comparison matrices in Sheets.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'കോമ്പറ്റീറ്റർ പ്രൈസിംഗ് & ബെഞ്ച്മാർക്കിംഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Competitor Pricing & Product Benchmarking Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Competitor Pricing & Product Benchmarking — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Structuring 10-competitor feature and pricing comparison matrices in Sheets..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-23',
+            question: 'What is the key objective of Competitor Pricing & Product Benchmarking in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in competitor pricing & product benchmarking", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering competitor pricing & product benchmarking ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-res-24',
+          dayNumber: 24,
+          title: 'Academic & Industry Report Synthesizing',
+          titleMl: 'ഇൻഡസ്ട്രി റിപ്പോർട്ടുകൾ സംഗ്രഹിക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional academic & industry report synthesizing workflows used in real company environments.',
+          concepts: ["Foundations of Academic & Industry Report Synthesizing", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Extracting core statistics and growth projections from 50-page PDF reports.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇൻഡസ്ട്രി റിപ്പോർട്ടുകൾ സംഗ്രഹിക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Academic & Industry Report Synthesizing Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Academic & Industry Report Synthesizing — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Extracting core statistics and growth projections from 50-page PDF reports..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-24',
+            question: 'What is the key objective of Academic & Industry Report Synthesizing in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in academic & industry report synthesizing", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering academic & industry report synthesizing ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-res-25',
+          dayNumber: 25,
+          title: 'Data Verification & Anti-Hallucination Checks',
+          titleMl: 'ഡാറ്റാ കൃത്യത പരിശോധിക്കൽ',
+          durationMinutes: 50,
+          overview: 'Master professional data verification & anti-hallucination checks workflows used in real company environments.',
+          concepts: ["Foundations of Data Verification & Anti-Hallucination Checks", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Triangulating facts across 3 independent reputable sources before reporting.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഡാറ്റാ കൃത്യത പരിശോധിക്കൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Data Verification & Anti-Hallucination Checks Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Data Verification & Anti-Hallucination Checks — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Triangulating facts across 3 independent reputable sources before reporting..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-25',
+            question: 'What is the key objective of Data Verification & Anti-Hallucination Checks in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in data verification & anti-hallucination checks", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering data verification & anti-hallucination checks ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-res-6',
+      weekNumber: 6,
+      title: 'Week 6: Data Synthesis, Executive Briefs & Market Research Launch',
+      titleMl: 'ആഴ്ച 6: ഡാറ്റാ സിന്തസിസ്, എക്സിക്യൂട്ടീവ് ബ്രീഫ് & കരിയർ ലോഞ്ച്',
+      objective: 'Synthesize industry whitepapers into 2-page executive briefs, assemble research dossiers, and land research roles.',
+      lessons: [
+        {
+          id: 'les-res-26',
+          dayNumber: 26,
+          title: 'Drafting 2-Page Executive Intelligence Briefs',
+          titleMl: '2 പേജ് എക്സിക്യൂട്ടീവ് ഇന്റലിജൻസ് ബ്രീഫ്',
+          durationMinutes: 50,
+          overview: 'Master professional drafting 2-page executive intelligence briefs workflows used in real company environments.',
+          concepts: ["Foundations of Drafting 2-Page Executive Intelligence Briefs", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Formatting dense market research into scannable executive takeaways.. Always verify your final deliverables before sharing.',
+          malayalamNotes: '2 പേജ് എക്സിക്യൂട്ടീവ് ഇന്റലിജൻസ് ബ്രീഫ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Drafting 2-Page Executive Intelligence Briefs Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Drafting 2-Page Executive Intelligence Briefs — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Formatting dense market research into scannable executive takeaways..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-26',
+            question: 'What is the key objective of Drafting 2-Page Executive Intelligence Briefs in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in drafting 2-page executive intelligence briefs", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering drafting 2-page executive intelligence briefs ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-res-27',
+          dayNumber: 27,
+          title: 'Data Scraping Ethics & Legal Compliance',
+          titleMl: 'ഡാറ്റാ കളക്ഷൻ എത്തിക്സും നിയമങ്ങളും',
+          durationMinutes: 50,
+          overview: 'Master professional data scraping ethics & legal compliance workflows used in real company environments.',
+          concepts: ["Foundations of Data Scraping Ethics & Legal Compliance", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Adhering to website terms of service and avoiding copyrighted personal datasets.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഡാറ്റാ കളക്ഷൻ എത്തിക്സും നിയമങ്ങളും: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Data Scraping Ethics & Legal Compliance Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Data Scraping Ethics & Legal Compliance — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Adhering to website terms of service and avoiding copyrighted personal datasets..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-27',
+            question: 'What is the key objective of Data Scraping Ethics & Legal Compliance in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in data scraping ethics & legal compliance", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering data scraping ethics & legal compliance ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-res-28',
+          dayNumber: 28,
+          title: 'Capstone: Market Entry Feasibility Study',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - മാർക്കറ്റ് എൻട്രി റിസർച്ച് സ്റ്റഡി',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: market entry feasibility study workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: Market Entry Feasibility Study", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Researching market size, competitors, and regulatory requirements for a new venture.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - മാർക്കറ്റ് എൻട്രി റിസർച്ച് സ്റ്റഡി: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: Market Entry Feasibility Study Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: Market Entry Feasibility Study — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Researching market size, competitors, and regulatory requirements for a new venture..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-28',
+            question: 'What is the key objective of Capstone: Market Entry Feasibility Study in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: market entry feasibility study", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: market entry feasibility study ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-res-29',
+          dayNumber: 29,
+          title: 'Research Analyst Proof-of-Work Portfolio',
+          titleMl: 'റിസർച്ച് പോർട്ട്ഫോളിയോ ഡോസിയർ',
+          durationMinutes: 50,
+          overview: 'Master professional research analyst proof-of-work portfolio workflows used in real company environments.',
+          concepts: ["Foundations of Research Analyst Proof-of-Work Portfolio", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Presenting structured market matrices and executive briefs in a PDF showcase.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'റിസർച്ച് പോർട്ട്ഫോളിയോ ഡോസിയർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Research Analyst Proof-of-Work Portfolio Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Research Analyst Proof-of-Work Portfolio — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Presenting structured market matrices and executive briefs in a PDF showcase..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-29',
+            question: 'What is the key objective of Research Analyst Proof-of-Work Portfolio in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in research analyst proof-of-work portfolio", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering research analyst proof-of-work portfolio ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-res-30',
+          dayNumber: 30,
+          title: 'Graduation & Research Associate Job Hunt',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & റിസർച്ച് അസോസിയേറ്റ് ജോലികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & research associate job hunt workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & Research Associate Job Hunt", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Completing final certification and applying for remote market intelligence roles.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & റിസർച്ച് അസോസിയേറ്റ് ജോലികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & Research Associate Job Hunt Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & Research Associate Job Hunt — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Completing final certification and applying for remote market intelligence roles..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-res-30',
+            question: 'What is the key objective of Graduation & Research Associate Job Hunt in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & research associate job hunt", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & research associate job hunt ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]

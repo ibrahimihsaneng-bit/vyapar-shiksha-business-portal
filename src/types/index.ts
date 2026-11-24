@@ -265,7 +265,7 @@ export interface JobListing {
 
 export interface WorkplaceSimulatorTask {
   id: string;
-  department: 'Accounting' | 'E-commerce' | 'Customer Support' | 'Virtual Assistance' | 'Design' | 'Technology';
+  department: 'Accounting' | 'E-commerce' | 'Customer Support' | 'Virtual Assistance' | 'Virtual Office' | 'Design' | 'Design Studio' | 'Technology';
   title: string;
   companyName: string;
   estimatedMinutes: number;

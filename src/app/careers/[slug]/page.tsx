@@ -19,6 +19,8 @@ import {
 import { allCareers, getCareerBySlug } from '@/data/careers';
 import { getCourseBySlug } from '@/data/courses';
 import { verifiedJobListings } from '@/data/jobs';
+import { getCareerRoadmap } from '@/data/career-roadmaps';
+import { getCareerIntelligenceBySlug } from '@/data/career-intelligence';
 
 export function generateStaticParams() {
   return allCareers.map((c) => ({ slug: c.slug }));
@@ -38,6 +40,8 @@ export default async function CareerDetailPage({
 
   const course = getCourseBySlug(slug);
   const matchingJobs = verifiedJobListings.filter(j => j.careerSlug === slug);
+  const roadmap = getCareerRoadmap(slug);
+  const intel = getCareerIntelligenceBySlug(slug);
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
@@ -165,6 +169,147 @@ export default async function CareerDetailPage({
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Column (Details) */}
         <div className="lg:col-span-2 space-y-8">
+          {/* Zero-Knowledge Orientation */}
+          {roadmap?.zeroKnowledgeOrientation && (
+            <div className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 space-y-5 shadow-sm">
+              <div className="flex items-center gap-2 text-teal-800 font-bold text-base">
+                <Sparkles className="w-5 h-5 text-teal-600" />
+                <span>Zero-Knowledge Beginner Orientation</span>
+              </div>
+
+              <div className="space-y-4 text-xs sm:text-sm">
+                <div className="p-4 rounded-2xl bg-teal-50/60 border border-teal-100 space-y-1">
+                  <span className="font-bold text-teal-950 block">What This Profession Actually Means:</span>
+                  <p className="text-slate-700 leading-relaxed">{roadmap.zeroKnowledgeOrientation.meaning}</p>
+                  <p className="text-teal-900 font-medium text-xs pt-1">{roadmap.zeroKnowledgeOrientation.meaningMl}</p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
+                    <span className="font-bold text-slate-900 block text-xs">Why Businesses Hire This Role:</span>
+                    <p className="text-slate-600 text-xs leading-normal">{roadmap.zeroKnowledgeOrientation.whyBusinessesHire}</p>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
+                    <span className="font-bold text-slate-900 block text-xs">First Software Access Step:</span>
+                    <p className="text-slate-600 text-xs leading-normal">{roadmap.zeroKnowledgeOrientation.firstSoftwareStep}</p>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-xl bg-emerald-50/70 border border-emerald-100 space-y-1">
+                  <span className="font-bold text-emerald-950 block text-xs">Your First Beginner Milestone Task:</span>
+                  <p className="text-slate-700 text-xs leading-normal">{roadmap.zeroKnowledgeOrientation.firstPracticalTask}</p>
+                </div>
+
+                <div className="space-y-2 pt-1">
+                  <span className="font-bold text-slate-800 block text-xs">Common Beginner Mistakes to Avoid:</span>
+                  <ul className="space-y-1 text-xs text-slate-600">
+                    {roadmap.zeroKnowledgeOrientation.commonBeginnerMistakes.map((m, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-amber-600 font-bold">&bull;</span>
+                        <span>{m}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="p-3 rounded-xl bg-slate-100 text-slate-700 text-xs flex items-center gap-2">
+                  <span className="font-bold text-slate-900 shrink-0">Workplace Communication Rule:</span>
+                  <span>{roadmap.zeroKnowledgeOrientation.workplaceCommunicationTip}</span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Structured Learning Roadmap (#roadmap) */}
+          <div id="roadmap" className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 space-y-6 shadow-sm">
+            <div className="flex items-center justify-between">
+              <div className="space-y-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-teal-800 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">
+                  Preparation Roadmap
+                </span>
+                <h2 className="text-xl font-black text-slate-900 tracking-tight">
+                  Step-by-Step Learning Milestones
+                </h2>
+              </div>
+              <span className="text-xs font-semibold text-slate-500">
+                {career.durationTrack.replace('-', ' ')}
+              </span>
+            </div>
+
+            {roadmap?.phases ? (
+              <div className="space-y-4">
+                {roadmap.phases.map((phase) => (
+                  <div
+                    key={phase.phaseNumber}
+                    className="p-5 rounded-2xl border border-slate-200/90 bg-slate-50/40 space-y-3"
+                  >
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-7 h-7 rounded-lg bg-teal-700 text-white font-bold text-xs flex items-center justify-center">
+                          {phase.phaseNumber}
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-sm text-slate-900">{phase.title}</h4>
+                          <span className="text-[11px] text-teal-800 font-medium">{phase.titleMl}</span>
+                        </div>
+                      </div>
+                      <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-white border border-slate-200 text-slate-700">
+                        {phase.durationLabel}
+                      </span>
+                    </div>
+
+                    <div className="space-y-1 pt-1">
+                      <span className="text-xs font-bold text-slate-700">Key Focus Topics:</span>
+                      <div className="flex flex-wrap gap-1.5 pt-0.5">
+                        {phase.keyTopics.map((topic, i) => (
+                          <span key={i} className="text-[11px] bg-white border border-slate-200/80 text-slate-700 px-2 py-0.5 rounded-md">
+                            {topic}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="p-3 rounded-xl bg-white border border-teal-100 flex items-start gap-2 text-xs">
+                      <CheckCircle2 className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
+                      <div>
+                        <span className="font-bold text-teal-950">Milestone Deliverable: </span>
+                        <span className="text-slate-700">{phase.handsOnDeliverable}</span>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap items-center justify-between gap-2 pt-1 text-xs">
+                      <div className="flex items-center gap-1.5 text-slate-500 text-[11px]">
+                        <span>Tools:</span>
+                        <strong className="text-slate-700">{phase.recommendedTools.join(', ')}</strong>
+                      </div>
+                      <a
+                        href={phase.freeLearningLink.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[11px] font-bold text-teal-700 hover:text-teal-900 hover:underline"
+                      >
+                        <span>{phase.freeLearningLink.title}</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="space-y-3">
+                {career.progressionRoadmap.map((step, idx) => (
+                  <div key={idx} className="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-center justify-between">
+                    <div>
+                      <div className="font-bold text-xs sm:text-sm text-slate-900">{step.role}</div>
+                      <div className="text-[11px] text-slate-500">{step.timeline}</div>
+                    </div>
+                    <div className="font-bold text-xs text-teal-800">{step.expectedSalary}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
           {/* Day in the Life */}
           <div className="bg-white rounded-2xl border border-slate-200 p-6 space-y-4 shadow-sm">
             <h2 className="text-lg font-bold text-slate-900">Typical Daily Responsibilities</h2>
@@ -226,6 +371,54 @@ export default async function CareerDetailPage({
 
         {/* Right Sidebar (Hardware, Jobs & Tools) */}
         <div className="space-y-6">
+          {/* Priority Intelligence Card */}
+          {intel && (
+            <div className="bg-white rounded-3xl border border-teal-200/90 p-6 space-y-4 shadow-sm text-xs">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-100">
+                <span className="font-bold text-slate-900 text-sm">Career Priority Intelligence</span>
+                <span className="px-2.5 py-0.5 rounded-full bg-teal-100 text-teal-900 font-black text-xs">
+                  Rank #{intel.rank}
+                </span>
+              </div>
+
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-500">Zero-Knowledge Score:</span>
+                  <span className="font-extrabold text-emerald-700">{intel.accessibilityScore} / 10</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-500">Hiring Demand:</span>
+                  <span className="font-bold text-slate-800">{intel.entryDemandRating}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-500">Software Monthly Cost:</span>
+                  <span className="font-bold text-emerald-700">{intel.softwareCostMonthly}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-500">English Level:</span>
+                  <span className="font-bold text-slate-800">{intel.englishRequirement}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-500">Min Education:</span>
+                  <span className="font-bold text-slate-800 text-right">{intel.minEducationRequirement}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-500">Scam Risk:</span>
+                  <span className="font-bold text-emerald-800">{intel.scamRiskScore}</span>
+                </div>
+              </div>
+
+              <div className="pt-2 border-t border-slate-100">
+                <Link
+                  href="/careers/priority-rankings"
+                  className="block text-center py-2 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-800 font-bold text-[11px] transition-colors"
+                >
+                  View All Priority Rankings &rarr;
+                </Link>
+              </div>
+            </div>
+          )}
+
           {/* Hardware Card */}
           <div className="bg-white rounded-2xl border border-slate-200 p-6 space-y-3 shadow-sm text-xs">
             <div className="flex items-center gap-2 font-bold text-slate-900 text-sm">

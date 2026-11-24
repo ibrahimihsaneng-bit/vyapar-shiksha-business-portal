@@ -26,8 +26,19 @@ export const documentFormattingCourse: Course = {
       weekNumber: 4,
       title: 'Interactive Accessible PDFs, Portfolio & Client Proposals',
       objective: 'Export tagged, accessible PDF documents with active bookmarks, assemble a before-and-after portfolio, and apply for formatting roles.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: Advanced Hierarchy, Master Templates & Interactive Forms',
+      objective: 'Master multi-level numbering, branded style palettes, and interactive fillable PDF forms.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: Ebooks, Scanned Document Repair & Publishing Launch',
+      objective: 'Format professional whitepapers and digital ebooks, repair messy OCR scans, and land document specialist roles.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-doc-1',
@@ -681,6 +692,374 @@ export const documentFormattingCourse: Course = {
             options: ['It makes the file download faster', 'It ensures custom fonts display properly on the client\'s computer even if they do not have those specific fonts installed', 'It translates the file', 'It deletes headers'],
             correctOptionIndex: 1,
             explanation: 'Embedding fonts guarantees visual fidelity by packing font glyphs directly inside the document package.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-doc-5',
+      weekNumber: 5,
+      title: 'Week 5: Advanced Hierarchy, Master Templates & Interactive Forms',
+      titleMl: 'ആഴ്ച 5: അഡ്വാൻസ്ഡ് ഹൈറാർക്കി, മാസ്റ്റർ ടെംപ്ലേറ്റുകൾ & ഫോമുകൾ',
+      objective: 'Master multi-level numbering, branded style palettes, and interactive fillable PDF forms.',
+      lessons: [
+        {
+          id: 'les-doc-21',
+          dayNumber: 21,
+          title: 'Multi-Level Heading Numbering & Style Kits',
+          titleMl: 'മൾട്ടി-ലെവൽ നമ്പറിംഗ് & സ്റ്റൈൽ കിറ്റുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional multi-level heading numbering & style kits workflows used in real company environments.',
+          concepts: ["Foundations of Multi-Level Heading Numbering & Style Kits", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Setting up legal-grade 1.1, 1.1.1 nested numbering linked to styles.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'മൾട്ടി-ലെവൽ നമ്പറിംഗ് & സ്റ്റൈൽ കിറ്റുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Multi-Level Heading Numbering & Style Kits Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Multi-Level Heading Numbering & Style Kits — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Setting up legal-grade 1.1, 1.1.1 nested numbering linked to styles..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-21',
+            question: 'What is the key objective of Multi-Level Heading Numbering & Style Kits in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in multi-level heading numbering & style kits", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering multi-level heading numbering & style kits ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-doc-22',
+          dayNumber: 22,
+          title: 'Designing Interactive Fillable PDF Forms',
+          titleMl: 'ഇന്ററാക്ടീവ് ഫില്ലബിൾ പിഡിഎഫ് ഫോമുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional designing interactive fillable pdf forms workflows used in real company environments.',
+          concepts: ["Foundations of Designing Interactive Fillable PDF Forms", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Adding text inputs, checkboxes, and signature fields in Adobe / LibreOffice.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇന്ററാക്ടീവ് ഫില്ലബിൾ പിഡിഎഫ് ഫോമുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Designing Interactive Fillable PDF Forms Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Designing Interactive Fillable PDF Forms — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Adding text inputs, checkboxes, and signature fields in Adobe / LibreOffice..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-22',
+            question: 'What is the key objective of Designing Interactive Fillable PDF Forms in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in designing interactive fillable pdf forms", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering designing interactive fillable pdf forms ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-doc-23',
+          dayNumber: 23,
+          title: 'Ebook & Digital Whitepaper Formatting',
+          titleMl: 'ഇ-ബുക്ക് & വൈറ്റ്‌പേപ്പർ ഫോർമാറ്റിംഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional ebook & digital whitepaper formatting workflows used in real company environments.',
+          concepts: ["Foundations of Ebook & Digital Whitepaper Formatting", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Structuring 20-page longform publications with clean margins and callouts.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇ-ബുക്ക് & വൈറ്റ്‌പേപ്പർ ഫോർമാറ്റിംഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Ebook & Digital Whitepaper Formatting Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Ebook & Digital Whitepaper Formatting — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Structuring 20-page longform publications with clean margins and callouts..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-23',
+            question: 'What is the key objective of Ebook & Digital Whitepaper Formatting in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in ebook & digital whitepaper formatting", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering ebook & digital whitepaper formatting ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-doc-24',
+          dayNumber: 24,
+          title: 'Complex Tables & Data Comparison Layouts',
+          titleMl: 'കോംപ്ലക്സ് ടേബിളുകൾ & കമ്പാരിസൺ ലേഔട്ടുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional complex tables & data comparison layouts workflows used in real company environments.',
+          concepts: ["Foundations of Complex Tables & Data Comparison Layouts", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Styling pricing matrices, feature checklists, and multi-row tables.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'കോംപ്ലക്സ് ടേബിളുകൾ & കമ്പാരിസൺ ലേഔട്ടുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Complex Tables & Data Comparison Layouts Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Complex Tables & Data Comparison Layouts — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Styling pricing matrices, feature checklists, and multi-row tables..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-24',
+            question: 'What is the key objective of Complex Tables & Data Comparison Layouts in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in complex tables & data comparison layouts", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering complex tables & data comparison layouts ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-doc-25',
+          dayNumber: 25,
+          title: 'Repairing Messy Scans & OCR Text Extracts',
+          titleMl: 'തകരാറിലായ സ്കാനുകൾ ക്ലീൻ ചെയ്യൽ',
+          durationMinutes: 50,
+          overview: 'Master professional repairing messy scans & ocr text extracts workflows used in real company environments.',
+          concepts: ["Foundations of Repairing Messy Scans & OCR Text Extracts", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Reformatting distorted OCR documents into pixel-perfect editable files.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'തകരാറിലായ സ്കാനുകൾ ക്ലീൻ ചെയ്യൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Repairing Messy Scans & OCR Text Extracts Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Repairing Messy Scans & OCR Text Extracts — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Reformatting distorted OCR documents into pixel-perfect editable files..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-25',
+            question: 'What is the key objective of Repairing Messy Scans & OCR Text Extracts in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in repairing messy scans & ocr text extracts", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering repairing messy scans & ocr text extracts ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-doc-6',
+      weekNumber: 6,
+      title: 'Week 6: Ebooks, Scanned Document Repair & Publishing Launch',
+      titleMl: 'ആഴ്ച 6: ഇ-ബുക്ക് ഫോർമാറ്റിംഗ്, ഡോക്യുമെന്റ് റിപ്പയർ & കരിയർ ലോഞ്ച്',
+      objective: 'Format professional whitepapers and digital ebooks, repair messy OCR scans, and land document specialist roles.',
+      lessons: [
+        {
+          id: 'les-doc-26',
+          dayNumber: 26,
+          title: 'Document Collaboration & Version History',
+          titleMl: 'കൊളാബറേഷൻ & വേർഷൻ ഹിസ്റ്ററി',
+          durationMinutes: 50,
+          overview: 'Master professional document collaboration & version history workflows used in real company environments.',
+          concepts: ["Foundations of Document Collaboration & Version History", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Managing multi-reviewer comments, track changes, and final clean approvals.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'കൊളാബറേഷൻ & വേർഷൻ ഹിസ്റ്ററി: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Document Collaboration & Version History Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Document Collaboration & Version History — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Managing multi-reviewer comments, track changes, and final clean approvals..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-26',
+            question: 'What is the key objective of Document Collaboration & Version History in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in document collaboration & version history", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering document collaboration & version history ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-doc-27',
+          dayNumber: 27,
+          title: 'Pre-Print Inspection: Bleed, Trim & CMYK',
+          titleMl: 'പ്രീ-പ്രിന്റ് പരിശോധന: ബ്ലീഡ് & കട്ട് മാർക്കുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional pre-print inspection: bleed, trim & cmyk workflows used in real company environments.',
+          concepts: ["Foundations of Pre-Print Inspection: Bleed, Trim & CMYK", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Ensuring commercial print deliverables have proper 3mm bleed margins.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'പ്രീ-പ്രിന്റ് പരിശോധന: ബ്ലീഡ് & കട്ട് മാർക്കുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Pre-Print Inspection: Bleed, Trim & CMYK Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Pre-Print Inspection: Bleed, Trim & CMYK — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Ensuring commercial print deliverables have proper 3mm bleed margins..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-27',
+            question: 'What is the key objective of Pre-Print Inspection: Bleed, Trim & CMYK in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in pre-print inspection: bleed, trim & cmyk", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering pre-print inspection: bleed, trim & cmyk ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-doc-28',
+          dayNumber: 28,
+          title: 'Capstone: 30-Page Corporate Policy Manual',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - 30 പേജ് കോർപ്പറേറ്റ് മാനുവൽ',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: 30-page corporate policy manual workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: 30-Page Corporate Policy Manual", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Formatting a comprehensive company handbook with cover, TOC, tables, and index.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - 30 പേജ് കോർപ്പറേറ്റ് മാനുവൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: 30-Page Corporate Policy Manual Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: 30-Page Corporate Policy Manual — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Formatting a comprehensive company handbook with cover, TOC, tables, and index..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-28',
+            question: 'What is the key objective of Capstone: 30-Page Corporate Policy Manual in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: 30-page corporate policy manual", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: 30-page corporate policy manual ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-doc-29',
+          dayNumber: 29,
+          title: 'Document Publishing Portfolio Dossier',
+          titleMl: 'ഡോക്യുമെന്റ് പബ്ലിഷിംഗ് പോർട്ട്ഫോളിയോ',
+          durationMinutes: 50,
+          overview: 'Master professional document publishing portfolio dossier workflows used in real company environments.',
+          concepts: ["Foundations of Document Publishing Portfolio Dossier", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Packaging before-and-after document transformations into an employer PDF.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഡോക്യുമെന്റ് പബ്ലിഷിംഗ് പോർട്ട്ഫോളിയോ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Document Publishing Portfolio Dossier Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Document Publishing Portfolio Dossier — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Packaging before-and-after document transformations into an employer PDF..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-29',
+            question: 'What is the key objective of Document Publishing Portfolio Dossier in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in document publishing portfolio dossier", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering document publishing portfolio dossier ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-doc-30',
+          dayNumber: 30,
+          title: 'Graduation & Document Specialist Job Hunt',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & പബ്ലിഷിംഗ് ജോലികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & document specialist job hunt workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & Document Specialist Job Hunt", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Passing the final assessment and applying for remote document formatting jobs.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & പബ്ലിഷിംഗ് ജോലികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & Document Specialist Job Hunt Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & Document Specialist Job Hunt — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Passing the final assessment and applying for remote document formatting jobs..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-doc-30',
+            question: 'What is the key objective of Graduation & Document Specialist Job Hunt in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & document specialist job hunt", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & document specialist job hunt ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]

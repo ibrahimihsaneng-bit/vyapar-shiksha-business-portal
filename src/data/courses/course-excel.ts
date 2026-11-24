@@ -26,8 +26,19 @@ export const excelDataCourse: Course = {
       weekNumber: 4,
       title: 'Portfolio Projects, Error Auditing & Employment Readiness',
       objective: 'Complete 3 business data projects, audit models for formula errors (#N/A, #REF!), write an ATS resume, and apply for data management jobs.'
+    },
+    {
+      weekNumber: 5,
+      title: 'Week 5: Advanced Logic Formulas, Dynamic Arrays & Data Validation',
+      objective: 'Master nested IF/AND/OR logic, dynamic arrays (UNIQUE, FILTER), and dropdown data validation rules.'
+    },
+    {
+      weekNumber: 6,
+      title: 'Week 6: Interactive Dashboards, Automation & Career Launch',
+      objective: 'Build executive slicer dashboards, audit messy client CSV exports, and apply for MIS Reporting roles.'
     }
-  ],
+    ],
+
   modules: [
     {
       id: 'mod-xl-1',
@@ -681,6 +692,374 @@ export const excelDataCourse: Course = {
             options: ['Learning graphic drawing', 'Relational database querying with SQL and Power BI data modeling', 'Typing speed only', 'Computer hardware assembly'],
             correctOptionIndex: 1,
             explanation: 'SQL and Power BI build directly on spreadsheet logic, leading to higher-paying data analyst roles.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-ex-5',
+      weekNumber: 5,
+      title: 'Week 5: Advanced Logic Formulas, Dynamic Arrays & Data Validation',
+      titleMl: 'ആഴ്ച 5: അഡ്വാൻസ്ഡ് ഫോർമുലകൾ, ഡൈനാമിക് അറേ & ഡാറ്റാ വാലിഡേഷൻ',
+      objective: 'Master nested IF/AND/OR logic, dynamic arrays (UNIQUE, FILTER), and dropdown data validation rules.',
+      lessons: [
+        {
+          id: 'les-ex-21',
+          dayNumber: 21,
+          title: 'Nested Logic: IF, AND, OR, IFS',
+          titleMl: 'നെസ്റ്റഡ് കണ്ടീഷണൽ ഫോർമുലകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional nested logic: if, and, or, ifs workflows used in real company environments.',
+          concepts: ["Foundations of Nested Logic: IF, AND, OR, IFS", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Multi-tier conditional calculations for commissions and tax slabs.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'നെസ്റ്റഡ് കണ്ടീഷണൽ ഫോർമുലകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Nested Logic: IF, AND, OR, IFS Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Nested Logic: IF, AND, OR, IFS — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 21: Multi-tier conditional calculations for commissions and tax slabs..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-21',
+            question: 'What is the key objective of Nested Logic: IF, AND, OR, IFS in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in nested logic: if, and, or, ifs", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering nested logic: if, and, or, ifs ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ex-22',
+          dayNumber: 22,
+          title: 'Dynamic Array Formulas: UNIQUE & FILTER',
+          titleMl: 'ഡൈനാമിക് അറേ: UNIQUE & FILTER',
+          durationMinutes: 50,
+          overview: 'Master professional dynamic array formulas: unique & filter workflows used in real company environments.',
+          concepts: ["Foundations of Dynamic Array Formulas: UNIQUE & FILTER", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Extracting distinct customer lists and filtered departmental datasets.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഡൈനാമിക് അറേ: UNIQUE & FILTER: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Dynamic Array Formulas: UNIQUE & FILTER Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Dynamic Array Formulas: UNIQUE & FILTER — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 22: Extracting distinct customer lists and filtered departmental datasets..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-22',
+            question: 'What is the key objective of Dynamic Array Formulas: UNIQUE & FILTER in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in dynamic array formulas: unique & filter", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering dynamic array formulas: unique & filter ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ex-23',
+          dayNumber: 23,
+          title: 'Data Validation & Dropdown Menus',
+          titleMl: 'ഡാറ്റാ വാലിഡേഷൻ & ഡ്രോപ്പ്ഡൗൺ ലിസ്റ്റുകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional data validation & dropdown menus workflows used in real company environments.',
+          concepts: ["Foundations of Data Validation & Dropdown Menus", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Preventing data entry typos using strict in-cell validation rules.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഡാറ്റാ വാലിഡേഷൻ & ഡ്രോപ്പ്ഡൗൺ ലിസ്റ്റുകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Data Validation & Dropdown Menus Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Data Validation & Dropdown Menus — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 23: Preventing data entry typos using strict in-cell validation rules..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-23',
+            question: 'What is the key objective of Data Validation & Dropdown Menus in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in data validation & dropdown menus", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering data validation & dropdown menus ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ex-24',
+          dayNumber: 24,
+          title: 'INDEX/MATCH vs Modern XLOOKUP',
+          titleMl: 'ഇൻഡക്സ് & മാച്ച് ഫോർമുലകൾ',
+          durationMinutes: 50,
+          overview: 'Master professional index/match vs modern xlookup workflows used in real company environments.',
+          concepts: ["Foundations of INDEX/MATCH vs Modern XLOOKUP", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Mastering robust two-way lookup formulas across large tables.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ഇൻഡക്സ് & മാച്ച് ഫോർമുലകൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'INDEX/MATCH vs Modern XLOOKUP Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'INDEX/MATCH vs Modern XLOOKUP — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 24: Mastering robust two-way lookup formulas across large tables..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-24',
+            question: 'What is the key objective of INDEX/MATCH vs Modern XLOOKUP in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in index/match vs modern xlookup", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering index/match vs modern xlookup ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ex-25',
+          dayNumber: 25,
+          title: 'Conditional Formatting Heatmaps',
+          titleMl: 'കണ്ടീഷണൽ ഫോർമാറ്റിംഗ് & ഹീറ്റ്മാപ്പ്',
+          durationMinutes: 50,
+          overview: 'Master professional conditional formatting heatmaps workflows used in real company environments.',
+          concepts: ["Foundations of Conditional Formatting Heatmaps", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Visually highlighting top performers and overdue payment deadlines.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'കണ്ടീഷണൽ ഫോർമാറ്റിംഗ് & ഹീറ്റ്മാപ്പ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Conditional Formatting Heatmaps Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Conditional Formatting Heatmaps — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 25: Visually highlighting top performers and overdue payment deadlines..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-25',
+            question: 'What is the key objective of Conditional Formatting Heatmaps in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in conditional formatting heatmaps", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering conditional formatting heatmaps ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        }
+      ]
+    },
+    {
+      id: 'mod-ex-6',
+      weekNumber: 6,
+      title: 'Week 6: Interactive Dashboards, Automation & Career Launch',
+      titleMl: 'ആഴ്ച 6: ഇന്ററാക്ടീവ് ഡാഷ്‌ബോർഡുകൾ, ഓട്ടോമേഷൻ & കരിയർ ലോഞ്ച്',
+      objective: 'Build executive slicer dashboards, audit messy client CSV exports, and apply for MIS Reporting roles.',
+      lessons: [
+        {
+          id: 'les-ex-26',
+          dayNumber: 26,
+          title: 'Interactive Executive Slicer Dashboard',
+          titleMl: 'സ്ലൈസറുകൾ ഉള്ള ഇന്ററാക്ടീവ് ഡാഷ്‌ബോർഡ്',
+          durationMinutes: 50,
+          overview: 'Master professional interactive executive slicer dashboard workflows used in real company environments.',
+          concepts: ["Foundations of Interactive Executive Slicer Dashboard", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Connecting Pivot Tables to dynamic visual slicers for instant filtering.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സ്ലൈസറുകൾ ഉള്ള ഇന്ററാക്ടീവ് ഡാഷ്‌ബോർഡ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Interactive Executive Slicer Dashboard Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Interactive Executive Slicer Dashboard — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 26: Connecting Pivot Tables to dynamic visual slicers for instant filtering..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-26',
+            question: 'What is the key objective of Interactive Executive Slicer Dashboard in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in interactive executive slicer dashboard", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering interactive executive slicer dashboard ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ex-27',
+          dayNumber: 27,
+          title: 'Cleaning Corrupted & Messy CSV Exports',
+          titleMl: 'തകരാറിലായ സിഎസ്വി ഫയലുകൾ ക്ലീൻ ചെയ്യൽ',
+          durationMinutes: 50,
+          overview: 'Master professional cleaning corrupted & messy csv exports workflows used in real company environments.',
+          concepts: ["Foundations of Cleaning Corrupted & Messy CSV Exports", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Splitting combined text columns and removing unprintable characters.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'തകരാറിലായ സിഎസ്വി ഫയലുകൾ ക്ലീൻ ചെയ്യൽ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Cleaning Corrupted & Messy CSV Exports Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Cleaning Corrupted & Messy CSV Exports — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 27: Splitting combined text columns and removing unprintable characters..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-27',
+            question: 'What is the key objective of Cleaning Corrupted & Messy CSV Exports in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in cleaning corrupted & messy csv exports", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering cleaning corrupted & messy csv exports ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ex-28',
+          dayNumber: 28,
+          title: 'Capstone: Complete Sales Reporting Suite',
+          titleMl: 'ക്യാപ്സ്റ്റോൺ - കംപ്ലീറ്റ് സെയിൽസ് റിപ്പോർട്ടിംഗ്',
+          durationMinutes: 50,
+          overview: 'Master professional capstone: complete sales reporting suite workflows used in real company environments.',
+          concepts: ["Foundations of Capstone: Complete Sales Reporting Suite", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Building an end-to-end automated monthly reporting workbook.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'ക്യാപ്സ്റ്റോൺ - കംപ്ലീറ്റ് സെയിൽസ് റിപ്പോർട്ടിംഗ്: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Capstone: Complete Sales Reporting Suite Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Capstone: Complete Sales Reporting Suite — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 28: Building an end-to-end automated monthly reporting workbook..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-28',
+            question: 'What is the key objective of Capstone: Complete Sales Reporting Suite in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in capstone: complete sales reporting suite", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering capstone: complete sales reporting suite ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ex-29',
+          dayNumber: 29,
+          title: 'Excel & Data Management Portfolio Deck',
+          titleMl: 'എക്സൽ പോർട്ട്ഫോളിയോ ഡോസിയർ',
+          durationMinutes: 50,
+          overview: 'Master professional excel & data management portfolio deck workflows used in real company environments.',
+          concepts: ["Foundations of Excel & Data Management Portfolio Deck", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Showcasing sample dashboards and formula models in a PDF portfolio.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'എക്സൽ പോർട്ട്ഫോളിയോ ഡോസിയർ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Excel & Data Management Portfolio Deck Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Excel & Data Management Portfolio Deck — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 29: Showcasing sample dashboards and formula models in a PDF portfolio..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-29',
+            question: 'What is the key objective of Excel & Data Management Portfolio Deck in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in excel & data management portfolio deck", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering excel & data management portfolio deck ensures tasks are delivered with professional accuracy and zero preventable errors.'
+          }]
+        },
+        {
+          id: 'les-ex-30',
+          dayNumber: 30,
+          title: 'Graduation & MIS Reporting Job Applications',
+          titleMl: 'സർട്ടിഫിക്കേഷൻ & എംഐഎസ് ജോലികൾ',
+          durationMinutes: 50,
+          overview: 'Master professional graduation & mis reporting job applications workflows used in real company environments.',
+          concepts: ["Foundations of Graduation & MIS Reporting Job Applications", "Industry standard best practices", "Quality verification standards"],
+          simpleEnglishGuide: 'Practical zero-knowledge step-by-step guidance: Final 30-day certification assessment and applying for data roles.. Always verify your final deliverables before sharing.',
+          malayalamNotes: 'സർട്ടിഫിക്കേഷൻ & എംഐഎസ് ജോലികൾ: ജോലിസ്ഥലത്ത് ഈ വൈദഗ്ധ്യം ഉപയോഗിക്കുന്ന യഥാർത്ഥ രീതി ലളിതമായി പഠിക്കുന്നു.',
+          officialDocLinks: [{ title: 'Graduation & MIS Reporting Job Applications Documentation & Guides', url: 'https://www.google.com' }],
+          videoResources: [{
+            title: 'Graduation & MIS Reporting Job Applications — Complete Step-by-Step Tutorial',
+            provider: 'Career Launchpad Curated',
+            url: 'https://www.google.com',
+            language: 'English',
+            duration: '25 mins',
+            isFree: true
+          }],
+          practicalExercise: {
+            instructions: 'Complete the practical workplace task for Day 30: Final 30-day certification assessment and applying for data roles..',
+            tasks: [
+              'Review the provided instructions and download the exercise worksheet.',
+              'Apply the required software operations and double-check outputs.',
+              'Save your completed deliverable into your weekly portfolio folder.'
+            ]
+          },
+          quiz: [{
+            id: 'q-ex-30',
+            question: 'What is the key objective of Graduation & MIS Reporting Job Applications in this role?',
+            options: ["To bypass regular office standards", "To ensure high accuracy, efficiency and adherence to professional standards in graduation & mis reporting job applications", "To increase unnecessary overhead", "To work without any client documentation"],
+            correctOptionIndex: 1,
+            explanation: 'Mastering graduation & mis reporting job applications ensures tasks are delivered with professional accuracy and zero preventable errors.'
           }]
         }
       ]
