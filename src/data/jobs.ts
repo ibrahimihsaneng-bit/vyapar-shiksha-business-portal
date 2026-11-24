@@ -13,7 +13,19 @@ export const verifiedJobListings: JobListing[] = [
     category: 'Finance & Administration',
     experienceRequired: '0-1 years (Freshers with basic Tally/Zoho knowledge welcome)',
     skillsRequired: ['Zoho Books', 'GST Invoicing', 'Bank Reconciliation', 'MS Excel'],
-    description: 'Assist the senior accountant in recording day-to-day purchase/sales bills, preparing GST invoices, vendor follow-ups, and bank reconciliations.',
+    description: 'Assist the finance controller in recording day-to-day purchase/sales bills, preparing GST tax invoices, reconciling monthly bank statements, and following up on vendor payment dues.',
+    responsibilities: [
+      'Enter supplier purchase invoices into Zoho Books with proper HSN codes and GST splits (CGST/SGST).',
+      'Generate professional sales invoices for logistics dispatches and share with clients.',
+      'Perform monthly reconciliation between bank statements and general ledger entries.',
+      'Maintain digital records of vendor bills and proof of payments for annual statutory audit.'
+    ],
+    requirements: [
+      'Basic knowledge of double-entry debit/credit accounting principles.',
+      'Familiarity with cloud accounting tools like Zoho Books or Tally Prime.',
+      'Proficiency in Microsoft Excel (SUM, VLOOKUP, basic formatting).',
+      'Strong numerical accuracy and attention to invoice detail.'
+    ],
     directApplyUrl: 'https://www.linkedin.com/jobs/view/sample-accounts-assistant-kochi',
     source: 'LinkedIn Jobs / Employer Direct',
     lastVerifiedDate: '2026-11-20',
@@ -21,7 +33,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Verified compliant trading logistics firm. No usurious interest or deceptive practices involved.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'ML',
+    courseMatchScore: 96
   },
   {
     id: 'job-2',
@@ -35,7 +49,19 @@ export const verifiedJobListings: JobListing[] = [
     category: 'Finance & Administration',
     experienceRequired: 'No prior corporate experience required. Strong written English and organizational skills.',
     skillsRequired: ['Email Management', 'Google Calendar', 'Notion', 'Slack', 'Travel Scheduling'],
-    description: 'Coordinate calendar bookings, screen incoming executive emails, manage weekly meeting agendas, and prepare brief summary reports for UK/US consulting clients.',
+    description: 'Coordinate calendar bookings, screen incoming executive emails, manage weekly meeting agendas, and prepare brief summary reports for UK/US consulting executives.',
+    responsibilities: [
+      'Triage inbox messages, categorizing high-priority client requests and drafting polite replies.',
+      'Coordinate multi-timezone meetings using Google Calendar and Zoom integrations.',
+      'Organize digital assets, research briefs, and meeting minutes inside Notion workspaces.',
+      'Book travel arrangements, hotel reservations, and create detailed day-by-day itineraries.'
+    ],
+    requirements: [
+      'Clear, polite written English communication skills.',
+      'Comfortable with Google Workspace (Gmail, Calendar, Drive, Docs).',
+      'High reliability, confidentiality, and respect for client executive schedules.',
+      'Active broadband connection and desktop/laptop with web camera.'
+    ],
     directApplyUrl: 'https://weworkremotely.com/sample-virtual-assistant',
     source: 'We Work Remotely',
     lastVerifiedDate: '2026-11-22',
@@ -43,7 +69,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Legitimate management consultancy. No recruitment fees or upfront payments requested.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'ND',
+    courseMatchScore: 94
   },
   {
     id: 'job-3',
@@ -58,6 +86,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: 'Freshers with e-commerce operations training.',
     skillsRequired: ['Shopify Admin', 'Product Catalog CSV', 'Inventory Auditing', 'Shiprocket Fulfillment'],
     description: 'Upload new product collections with high-res photos and meta tags, audit stock levels, process customer orders via Shiprocket courier, and handle exchange requests.',
+    responsibilities: [
+      'Create and update Shopify product listings with SEO descriptions, image alt tags, and variants.',
+      'Monitor daily inventory thresholds and flag low-stock SKUs to the procurement team.',
+      'Generate courier shipping manifests and track dispatches using Shiprocket.',
+      'Answer customer inquiries regarding package tracking and returns politely via WhatsApp.'
+    ],
+    requirements: [
+      'Hands-on practice with Shopify admin dashboard.',
+      'Ability to edit and resize product images cleanly using basic web tools or Canva.',
+      'Basic spreadsheet skills for bulk inventory CSV uploads.',
+      'Conscientious customer care attitude.'
+    ],
     directApplyUrl: 'https://in.indeed.com/sample-shopify-store-assistant',
     source: 'Indeed India',
     lastVerifiedDate: '2026-11-23',
@@ -65,7 +105,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Halal organic cosmetics and herbal products retailer. Verified physical GST registration.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'ZO',
+    courseMatchScore: 98
   },
   {
     id: 'job-4',
@@ -80,6 +122,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: '0-1 years. Proficient in formulas, VLOOKUP/XLOOKUP, and Pivot Tables.',
     skillsRequired: ['MS Excel', 'Google Sheets', 'XLOOKUP', 'Pivot Tables', 'Data Cleaning'],
     description: 'Consolidate clinical feedback spreadsheets, clean messy data columns, remove duplicates, and build weekly KPI pivot charts for project managers.',
+    responsibilities: [
+      'Cleanse messy clinic intake survey exports (standardize telephone formats, dates, remove whitespace).',
+      'Use XLOOKUP and INDEX/MATCH formulas to cross-reference patient ID records across tables.',
+      'Build dynamic summary Pivot Tables and KPI charts for management presentations.',
+      'Run deduplication and data integrity checks prior to database uploads.'
+    ],
+    requirements: [
+      'Demonstrated skill in MS Excel / Google Sheets advanced formulas.',
+      'Understanding of data validation rules and conditional formatting.',
+      'Methodical attention to detail and data privacy compliance.',
+      'Degree or diploma in any discipline with analytical aptitude.'
+    ],
     directApplyUrl: 'https://naukri.com/sample-data-operations-excel-technopark',
     source: 'Naukri.com',
     lastVerifiedDate: '2026-11-21',
@@ -87,7 +141,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Healthcare data operations. Clean non-invasive audit workflow.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'AH',
+    courseMatchScore: 92
   },
   {
     id: 'job-5',
@@ -102,6 +158,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: 'Freshers welcome. Empathetic communicator with typing speed > 35 WPM.',
     skillsRequired: ['Zendesk / Freshdesk', 'WhatsApp Business', 'De-escalation', 'Typing 35+ WPM'],
     description: 'Respond promptly to inbound patient queries, schedule medical consultation appointments, and resolve prescription delivery status queries via live chat.',
+    responsibilities: [
+      'Handle 40-60 inbound live chat conversations daily with empathy and speed.',
+      'Guide patients through telemedicine portal login and doctor appointment booking.',
+      'De-escalate frustrated users and coordinate with dispatch teams for delayed medicine deliveries.',
+      'Tag conversation topics accurately inside Freshdesk to help improve knowledge base articles.'
+    ],
+    requirements: [
+      'Typing speed of 35+ words per minute with 95%+ accuracy.',
+      'Polite, patient, and calm demeanor during customer interactions.',
+      'Fluency in written English and Malayalam (additional Hindi is a bonus).',
+      'Quiet workspace and reliable home broadband.'
+    ],
     directApplyUrl: 'https://freshdesk.com/careers/sample-chat-rep',
     source: 'Company Careers Portal',
     lastVerifiedDate: '2026-11-23',
@@ -109,7 +177,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Patient telehealth support. No cold calling or misleading medical claims.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'CF',
+    courseMatchScore: 95
   },
   {
     id: 'job-6',
@@ -124,6 +194,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: '0-1 years. Familiarity with HubSpot or Zoho CRM interfaces.',
     skillsRequired: ['HubSpot CRM', 'Zoho CRM', 'Data Normalization', 'Pipeline Updates'],
     description: 'Import B2B event attendee lists into HubSpot CRM, verify contact emails, map company domains, and assign sales leads to field representatives.',
+    responsibilities: [
+      'Review and standardize incoming business inquiry leads before creating CRM contacts.',
+      'Update deal pipeline stages based on notes provided by account managers.',
+      'Verify corporate email formats and remove inactive or duplicate prospect accounts.',
+      'Generate weekly pipeline velocity reports for the sales operations director.'
+    ],
+    requirements: [
+      'Familiarity with CRM concepts (Leads, Contacts, Companies, Deals).',
+      'Experience using HubSpot CRM Free or Zoho CRM.',
+      'Keen eye for spotting typing typos and mismatched contact details.',
+      'Strong organizational skills.'
+    ],
     directApplyUrl: 'https://angel.co/company/sample-cloudsphere-crm',
     source: 'Wellfound (AngelList)',
     lastVerifiedDate: '2026-11-19',
@@ -131,7 +213,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Legitimate B2B enterprise SaaS cloud consultant.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'CS',
+    courseMatchScore: 91
   },
   {
     id: 'job-7',
@@ -146,6 +230,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: 'Freshers with WordPress Gutenberg, Yoast/Rank Math, and basic media editing skills.',
     skillsRequired: ['WordPress Gutenberg', 'Rank Math SEO', 'WebP Image Optimization', 'UpdraftPlus'],
     description: 'Format blog submissions, update static client service pages, test weekly plugin updates on staging, and generate monthly maintenance backup reports.',
+    responsibilities: [
+      'Format draft articles into Gutenberg blocks with clean H2/H3 hierarchy and blockquotes.',
+      'Compress and convert featured images to modern WebP formats before uploading to media library.',
+      'Configure SEO metadata, meta descriptions, and OpenGraph social preview tags with Rank Math.',
+      'Perform scheduled weekly site backups and update security plugins on staging test sites.'
+    ],
+    requirements: [
+      'Hands-on experience building or editing sites with WordPress.org.',
+      'Understanding of basic on-page SEO principles.',
+      'Basic knowledge of HTML tags (headings, links, lists, images).',
+      'Careful and meticulous proofreading habits.'
+    ],
     directApplyUrl: 'https://linkedin.com/jobs/view/sample-wp-manager',
     source: 'LinkedIn Jobs',
     lastVerifiedDate: '2026-11-24',
@@ -153,7 +249,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Digital agency serving educational and technology clients.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'HW',
+    courseMatchScore: 93
   },
   {
     id: 'job-8',
@@ -168,6 +266,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: 'Beginner with strong visual design portfolio of Instagram carousels and flyers.',
     skillsRequired: ['Canva Pro', 'Typography', 'Visual Hierarchy', 'Brand Kits', 'Social Media Carousels'],
     description: 'Design 12 monthly carousel decks, promotional flyers, and LinkedIn banners following client color palettes and brand style guides.',
+    responsibilities: [
+      'Create 8-10 slide educational carousels with engaging cover slides and readable body copy.',
+      'Assemble promotional flyers, coupon graphics, and webinar banners using client Brand Kits.',
+      'Export production-ready PNG/PDF assets formatted precisely for Instagram, Facebook, and LinkedIn.',
+      'Incorporate client feedback and adjust typography alignment swiftly.'
+    ],
+    requirements: [
+      'Portfolio of 4-6 completed Canva design projects (carousels, flyers, presentations).',
+      'Solid grasp of contrast, alignment, spacing, and font pairing.',
+      'Self-driven and able to adhere to weekly publication deadlines.',
+      'Reliable laptop and high-speed internet.'
+    ],
     directApplyUrl: 'https://internshala.com/sample-canva-designer',
     source: 'Internshala',
     lastVerifiedDate: '2026-11-23',
@@ -175,7 +285,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Creative agency specializing in education and eco-friendly consumer goods.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'SB',
+    courseMatchScore: 97
   },
   {
     id: 'job-9',
@@ -190,6 +302,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: 'Freshers with strong research curiosity and Boolean search knowledge.',
     skillsRequired: ['Google Advanced Search', 'LinkedIn Prospecting', 'Email Hunter', 'Excel Organization'],
     description: 'Perform industry market research across renewable energy sectors, compile executive contact directories into structured spreadsheets, and draft competitive summaries.',
+    responsibilities: [
+      'Use Google Boolean operators (site:, inurl:, filetype:pdf) to find niche business directories.',
+      'Locate corporate executives on LinkedIn and verify their verified business emails using tools.',
+      'Enter research findings cleanly into spreadsheets with validated domain links.',
+      'Write concise 1-page summaries highlighting key findings from industry market reports.'
+    ],
+    requirements: [
+      'Resourceful and curious web researcher.',
+      'High persistence and ability to verify information from multiple primary sources.',
+      'Proficiency in Google Sheets / Excel for structured list compilation.',
+      'Good written English comprehension.'
+    ],
     directApplyUrl: 'https://naukri.com/sample-market-research-trainee',
     source: 'Naukri.com',
     lastVerifiedDate: '2026-11-22',
@@ -197,7 +321,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Ethical B2B market intelligence. Verified compliance with data privacy regulations.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'VG',
+    courseMatchScore: 90
   },
   {
     id: 'job-10',
@@ -212,6 +338,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: '0-1 years. Understanding of test cases, bug reports, and web inspection tools.',
     skillsRequired: ['TestRail / Jira', 'Manual Testing', 'Bug Life Cycle', 'Chrome DevTools', 'API Testing (Postman Basics)'],
     description: 'Execute end-to-end regression test scripts across web and mobile applications, log reproducible defect reports with video recordings, and verify bug fixes.',
+    responsibilities: [
+      'Author detailed test cases with clear preconditions, steps to reproduce, and expected outcomes.',
+      'Perform functional, usability, and cross-browser testing across Chrome, Safari, and Firefox.',
+      'Log reproducible bug tickets in Jira including browser console logs and screenshot evidence.',
+      'Retest resolved tickets and sign off on staging release builds.'
+    ],
+    requirements: [
+      'Understanding of software testing lifecycle (STLC) and bug lifecycle.',
+      'Ability to inspect network requests and console errors in Chrome DevTools.',
+      'Systematic analytical mindset and passion for breaking things gracefully.',
+      'Diploma, BCA, B.Sc or engineering graduate.'
+    ],
     directApplyUrl: 'https://linkedin.com/jobs/view/sample-qa-tester-infopark',
     source: 'Infopark Kerala Careers',
     lastVerifiedDate: '2026-11-24',
@@ -219,7 +357,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'B2B enterprise enterprise software engineering firm.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'IT',
+    courseMatchScore: 89
   },
   {
     id: 'job-11',
@@ -234,6 +374,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: 'Freshers with mastery of Word styles, pagination, and PDF form design.',
     skillsRequired: ['Microsoft Word', 'Google Docs', 'Automated TOC', 'Adobe Acrobat Forms'],
     description: 'Format multi-chapter compliance reports, apply corporate document templates, structure automated tables of contents, and convert documents into accessible interactive PDFs.',
+    responsibilities: [
+      'Apply corporate branding typography, heading styles, and page layouts across long technical documents.',
+      'Construct automated multi-level tables of contents and hyperlinked appendices.',
+      'Standardize data tables, chart captions, and document headers/footers.',
+      'Generate fillable interactive PDF forms and optimize document file sizes.'
+    ],
+    requirements: [
+      'Advanced knowledge of Microsoft Word and Google Docs style hierarchies.',
+      'Obsessive attention to paragraph margins, page breaks, and typographic consistency.',
+      'Strong command of English grammar, punctuation, and proofreading.',
+      'Ability to deliver formatted deliverables under tight corporate deadlines.'
+    ],
     directApplyUrl: 'https://weworkremotely.com/sample-document-formatting',
     source: 'We Work Remotely',
     lastVerifiedDate: '2026-11-20',
@@ -241,7 +393,9 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Corporate knowledge management. Verified professional documentation service.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'FE',
+    courseMatchScore: 92
   },
   {
     id: 'job-12',
@@ -256,6 +410,18 @@ export const verifiedJobListings: JobListing[] = [
     experienceRequired: 'Portfolio of 3+ responsive web projects built with React or Tailwind CSS.',
     skillsRequired: ['HTML5 / CSS3', 'JavaScript (ES6+)', 'React / Next.js', 'Tailwind CSS', 'Git & GitHub'],
     description: 'Convert Figma user interface mockups into pixel-perfect responsive React web components, integrate REST APIs, and optimize web asset loading speeds.',
+    responsibilities: [
+      'Build responsive UI components from Figma designs using React and Tailwind CSS.',
+      'Integrate frontend state with backend REST APIs and handle loading/error states cleanly.',
+      'Ensure cross-device mobile responsiveness down to 360px screen widths.',
+      'Collaborate via GitHub pull requests with clear commit messages and peer reviews.'
+    ],
+    requirements: [
+      'Working knowledge of modern JavaScript (arrow functions, promises, array methods).',
+      'Experience building interactive apps with React and component state.',
+      'Solid grasp of semantic HTML, flexbox, and grid styling with Tailwind.',
+      'Public GitHub repository showcasing original personal projects.'
+    ],
     directApplyUrl: 'https://angel.co/company/sample-pixelcraft-frontend',
     source: 'Wellfound (AngelList)',
     lastVerifiedDate: '2026-11-23',
@@ -263,6 +429,152 @@ export const verifiedJobListings: JobListing[] = [
     isExpired: false,
     ethicalStatus: 'Meets Criteria',
     ethicalReviewNotes: 'Modern web development studio focusing on e-commerce and ed-tech.',
-    antiScamVerified: true
+    antiScamVerified: true,
+    companyInitial: 'PC',
+    courseMatchScore: 88
+  },
+  {
+    id: 'job-13',
+    title: 'Cloud Bookkeeper & Xero Assistant',
+    company: 'Oasis Commerce Consultancy',
+    location: 'Dubai / Remote India',
+    workMode: 'Remote',
+    jobType: 'Entry-Level',
+    salaryText: '₹28,000 - ₹38,000 / month',
+    careerSlug: 'basic-bookkeeping',
+    category: 'Finance & Administration',
+    experienceRequired: 'Freshers who have completed simulated bank reconciliation and invoicing modules.',
+    skillsRequired: ['Xero Accounting', 'QuickBooks Online', 'Bank Reconciliation', 'Receipt Bank / Dext'],
+    description: 'Manage day-to-day transaction matching, invoice matching, expense categorization, and monthly profit & loss reconciliations for international SME clients.',
+    responsibilities: [
+      'Reconcile live bank feeds inside Xero, matching payments against open invoices and bills.',
+      'Extract receipt data via Dext/Hubdoc and categorize tax deductions under correct chart of accounts.',
+      'Investigate unexplained variances or duplicate payment debits with client account managers.',
+      'Prepare monthly aged receivables and payable summary reports.'
+    ],
+    requirements: [
+      'Clear understanding of debits, credits, and accrual accounting.',
+      'Hands-on practice with Xero or QuickBooks Online trial account.',
+      'High integrity, discretion, and confidential handling of client financial records.',
+      'Comfortable communicating via email and Slack in professional English.'
+    ],
+    directApplyUrl: 'https://www.linkedin.com/jobs/view/sample-cloud-bookkeeper-dubai-remote',
+    source: 'LinkedIn Jobs / Global Remote',
+    lastVerifiedDate: '2026-11-24',
+    isVerifiedVacancy: true,
+    isExpired: false,
+    ethicalStatus: 'Meets Criteria',
+    ethicalReviewNotes: 'UAE-registered trade consultancy. Pure commercial bookkeeping, no interest or usurious instruments.',
+    antiScamVerified: true,
+    companyInitial: 'OC',
+    courseMatchScore: 96
+  },
+  {
+    id: 'job-14',
+    title: 'No-Code Webflow & Landing Page Specialist',
+    company: 'Starlight Creative Agency',
+    location: 'Mumbai / Remote',
+    workMode: 'Remote',
+    jobType: 'Freelance',
+    salaryText: '₹20,000 - ₹35,000 / month (Project Basis)',
+    careerSlug: 'no-code-designer',
+    category: 'Design & Creative',
+    experienceRequired: 'Portfolio of at least 2 functional Webflow or Framer landing pages.',
+    skillsRequired: ['Webflow', 'Framer', 'Responsive Breakpoints', 'Form Integrations', 'Client-First CSS'],
+    description: 'Design and build high-converting marketing landing pages for clean consumer brands and B2B software startups without writing code.',
+    responsibilities: [
+      'Translate visual mockups into responsive Webflow landing pages with clean class naming.',
+      'Configure interactive scroll animations, dropdown navigation menus, and modal popups.',
+      'Integrate lead generation contact forms with Airtable, Zapier, and email marketing tools.',
+      'Optimize asset compression, font loading, and on-page metadata for fast Core Web Vitals.'
+    ],
+    requirements: [
+      'Demonstrated portfolio of responsive sites built on Webflow or Framer.',
+      'Understanding of the CSS box model, flexbox, and standard responsive typography.',
+      'Strong aesthetic appreciation for modern clean web layouts.',
+      'Ability to self-manage freelance project deadlines.'
+    ],
+    directApplyUrl: 'https://wellfound.com/jobs/sample-webflow-designer',
+    source: 'Wellfound',
+    lastVerifiedDate: '2026-11-23',
+    isVerifiedVacancy: true,
+    isExpired: false,
+    ethicalStatus: 'Meets Criteria',
+    ethicalReviewNotes: 'Ethical creative branding agency. Verified commercial contracts.',
+    antiScamVerified: true,
+    companyInitial: 'SC',
+    courseMatchScore: 92
+  },
+  {
+    id: 'job-15',
+    title: 'E-Commerce Customer Service Trainee',
+    company: 'Pristine Spices & Exports',
+    location: 'Kozhikode, Kerala',
+    workMode: 'Onsite',
+    jobType: 'Trainee',
+    salaryText: '₹16,000 - ₹22,000 / month',
+    careerSlug: 'ecommerce-operations',
+    category: 'Digital Operations & Commerce',
+    experienceRequired: 'Freshers welcome. Training provided in packaging and customer coordination.',
+    skillsRequired: ['Order Processing', 'WhatsApp Communication', 'Packing Slips', 'Malayalam & English'],
+    description: 'Coordinate physical order packaging, print courier airway bills, manage return requests, and assist customer inquiries over telephone and WhatsApp.',
+    responsibilities: [
+      'Verify incoming e-commerce orders against stock on shelves and print packing slips.',
+      'Inspect product seals and ensure safe protective packaging for domestic parcel transit.',
+      'Generate courier tracking links via Indian Post Speed Post and private courier dashboards.',
+      'Assist local customers with order status updates via phone and WhatsApp.'
+    ],
+    requirements: [
+      'Punctual, organized, and active team player.',
+      'Basic computer literacy to operate order dispatch portals.',
+      'Fluent Malayalam speaking skills with basic written English comprehension.',
+      'Living in or near Kozhikode with ability to work onsite.'
+    ],
+    directApplyUrl: 'https://naukri.com/sample-ecommerce-trainee-calicut',
+    source: 'Naukri.com / Direct Walk-In',
+    lastVerifiedDate: '2026-11-22',
+    isVerifiedVacancy: true,
+    isExpired: false,
+    ethicalStatus: 'Meets Criteria',
+    ethicalReviewNotes: 'Traditional spices export firm with clean physical facilities and fair wages.',
+    antiScamVerified: true,
+    companyInitial: 'PS',
+    courseMatchScore: 94
+  },
+  {
+    id: 'job-16',
+    title: 'Email Marketing Campaign Operator',
+    company: 'GrowthSprout Digital',
+    location: 'Bengaluru (Indiranagar / Hybrid)',
+    workMode: 'Hybrid',
+    jobType: 'Entry-Level',
+    salaryText: '₹22,000 - ₹30,000 / month',
+    careerSlug: 'virtual-assistant',
+    category: 'Customer Support & Sales',
+    experienceRequired: '0-1 years. Familiarity with Mailchimp, Klaviyo, or Brevo interfaces.',
+    skillsRequired: ['Mailchimp', 'Klaviyo', 'Email Template Design', 'List Segmentation', 'UTM Tracking'],
+    description: 'Build weekly email newsletters, assemble product announcement templates, segment subscriber lists, and audit bounce rates for consumer lifestyle brands.',
+    responsibilities: [
+      'Assemble responsive email layouts using drag-and-drop builders in Klaviyo or Mailchimp.',
+      'Set up UTM campaign parameters to accurately track link clicks in Google Analytics.',
+      'Segment contact lists based on customer purchase history to avoid sending spam.',
+      'Conduct test sends across desktop and mobile inboxes prior to final scheduling.'
+    ],
+    requirements: [
+      'Familiarity with email marketing tools (Mailchimp, Klaviyo, or similar).',
+      'Solid eye for clean email layout, readable typography, and clear call-to-action buttons.',
+      'Strict adherence to anti-spam regulations (zero bought email lists).',
+      'Good written English proofreading skills.'
+    ],
+    directApplyUrl: 'https://linkedin.com/jobs/view/sample-email-operator-bengaluru',
+    source: 'LinkedIn Jobs',
+    lastVerifiedDate: '2026-11-24',
+    isVerifiedVacancy: true,
+    isExpired: false,
+    ethicalStatus: 'Meets Criteria',
+    ethicalReviewNotes: 'Strict permission-based marketing agency. Zero cold scraping or deceptive spam.',
+    antiScamVerified: true,
+    companyInitial: 'GS',
+    courseMatchScore: 91
   }
 ];

@@ -161,6 +161,9 @@ export function getApplications(): ApplicationItem[] {
           company: 'Malabar Logistics Pvt Ltd',
           appliedDate: '2026-11-20',
           status: 'Interview Scheduled',
+          location: 'Kochi, Kerala (Hybrid)',
+          salary: '₹18,000 - ₹25,000 / mo',
+          link: 'https://www.linkedin.com/jobs/view/sample-accounts-assistant-kochi',
           notes: 'Completed technical simulation test. Interview with Lead Accountant on Thursday 3 PM.'
         },
         {
@@ -170,6 +173,9 @@ export function getApplications(): ApplicationItem[] {
           company: 'Nexus Digital Operations',
           appliedDate: '2026-11-22',
           status: 'Applied',
+          location: 'Remote (Pan-India)',
+          salary: '₹22,000 - ₹32,000 / mo',
+          link: 'https://weworkremotely.com/sample-virtual-assistant',
           notes: 'Submitted portfolio of sample executive calendars and travel itineraries.'
         }
       ];
@@ -199,6 +205,14 @@ export function addApplication(app: Omit<ApplicationItem, 'id' | 'appliedDate'>)
 export function updateApplicationStatus(id: string, status: ApplicationItem['status']): void {
   const current = getApplications();
   const updated = current.map(item => item.id === id ? { ...item, status } : item);
+  if (typeof window !== 'undefined') {
+    localStorage.setItem(STORAGE_KEYS.APPLICATIONS, JSON.stringify(updated));
+  }
+}
+
+export function deleteApplication(id: string): void {
+  const current = getApplications();
+  const updated = current.filter(item => item.id !== id);
   if (typeof window !== 'undefined') {
     localStorage.setItem(STORAGE_KEYS.APPLICATIONS, JSON.stringify(updated));
   }

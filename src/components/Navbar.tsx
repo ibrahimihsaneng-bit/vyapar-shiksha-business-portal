@@ -25,16 +25,19 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Careers', href: '/careers', icon: Compass },
-    { name: 'AI Finder', href: '/career-finder', icon: Sparkles, badge: 'Match' },
-    { name: 'Tracks', href: '/tracks/30-days', icon: Layers },
+    { name: 'Finder', href: '/career-finder', icon: Sparkles, badge: 'Match' },
     { name: 'Simulator', href: '/simulator', icon: Laptop, badge: 'Hands-on' },
     { name: 'Jobs', href: '/jobs', icon: Briefcase },
+    { name: 'My Board', href: '/applications', icon: Layers },
+    { name: 'Interview', href: '/interview-prep', icon: FileText },
   ];
 
   const allLinks = [
     ...navLinks,
-    { name: 'Resources', href: '/resources', icon: BookOpen },
-    { name: 'Standards', href: '/ethical-policy', icon: ShieldCheck },
+    { name: 'Resume Builder', href: '/resume-builder', icon: FileText },
+    { name: 'For Recruiters', href: '/recruiter', icon: Briefcase },
+    { name: 'Anti-Scam Guide', href: '/anti-scam', icon: ShieldCheck },
+    { name: 'Ethical Standards', href: '/ethical-policy', icon: ShieldCheck },
   ];
 
   return (
@@ -62,7 +65,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => {
               const Icon = link.icon;
               const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
@@ -70,7 +73,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap ${
+                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap ${
                     isActive
                       ? 'bg-teal-50 text-teal-800'
                       : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
@@ -89,7 +92,7 @@ export default function Navbar() {
           </nav>
 
           {/* Right Action Bar */}
-          <div className="hidden md:flex items-center gap-2.5 shrink-0">
+          <div className="hidden md:flex items-center gap-2 shrink-0">
             {/* Quick Search Button */}
             <Link
               href="/careers"
@@ -97,12 +100,12 @@ export default function Navbar() {
               title="Search careers"
               aria-label="Search careers"
             >
-              <Search className="w-4 h-4" />
+              <Search className="w-3.5 h-3.5" />
             </Link>
 
             {/* Bilingual Indicator */}
             <div
-              className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200/60 text-xs font-bold text-emerald-800"
+              className="hidden xl:flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200/60 text-xs font-bold text-emerald-800"
               title="English and Malayalam support"
             >
               <Globe className="w-3.5 h-3.5 text-emerald-600" />
@@ -112,7 +115,7 @@ export default function Navbar() {
             {/* My Dashboard CTA */}
             <Link
               href="/dashboard"
-              className="px-4 py-2 rounded-xl bg-teal-700 hover:bg-teal-800 text-white text-xs font-bold shadow-xs transition-all whitespace-nowrap"
+              className="px-3.5 py-2 rounded-xl bg-teal-700 hover:bg-teal-800 text-white text-xs font-bold shadow-xs transition-all whitespace-nowrap"
             >
               My Dashboard
             </Link>

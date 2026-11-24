@@ -261,6 +261,10 @@ export interface JobListing {
   ethicalStatus: 'Meets Criteria' | 'Under Review' | 'Flagged';
   ethicalReviewNotes: string;
   antiScamVerified: boolean;
+  responsibilities?: string[];
+  requirements?: string[];
+  companyInitial?: string;
+  courseMatchScore?: number;
 }
 
 export interface WorkplaceSimulatorTask {
@@ -291,12 +295,18 @@ export interface CareerFinderCriteria {
   learningTime: DurationTrack;
   dailyHours: number;
   educationLevel: 'School / 10th' | 'Plus Two / 12th' | 'Graduate' | 'Any';
+  existingKnowledge: 'Zero / Beginner' | 'Basic PC & Web' | 'Office & Spreadsheets' | 'Some Technical / Coding';
   englishLevel: 'Basic' | 'Intermediate' | 'Fluent';
   preferredLanguage: 'Malayalam' | 'English' | 'Both';
+  computerAvailability: 'Basic Laptop / PC' | 'Smartphone Only' | 'Dedicated High-End PC';
+  learningBudget: 'Zero Cost Free Only' | 'Low Budget / Affordable' | 'Flexible';
+  technicalInterests: 'Spreadsheets & Data' | 'Web & Automation' | 'IT Support & QA' | 'No Technical';
+  creativeInterests: 'Graphic Design & Branding' | 'Video Editing & Motion' | 'Content & Copywriting' | 'None / Business Operations';
+  workPreference: 'Remote' | 'Flexible' | 'Offline';
+  partTimeAvailability: 'Full-Time Job' | 'Part-Time / Freelance' | 'Internship / Trainee';
+  incomeExpectation: 'Entry ₹15k-₹25k' | 'Mid ₹25k-₹45k' | 'High ₹50k+';
   codingPreference: 'No Coding' | 'Curious / Basic' | 'Wants to Code';
   creativePreference: 'High' | 'Medium' | 'Low / Business Focused';
-  computerAvailability: 'Basic Laptop / PC' | 'Smartphone Only' | 'High-End PC';
-  workPreference: 'Remote' | 'Flexible' | 'Offline';
   employmentType: 'Freelance' | 'Full-Time Job' | 'Part-Time' | 'Internship';
   ethicalRequirement: boolean;
 }
@@ -306,6 +316,7 @@ export interface CareerRecommendation {
   matchScore: number; // 0 to 100
   matchReasons: string[];
   unmetPrerequisites: string[];
+  suggestedFoundationLessons: string[];
 }
 
 export interface UserResumeData {
@@ -340,6 +351,9 @@ export interface ApplicationItem {
   jobTitle: string;
   company: string;
   appliedDate: string;
-  status: 'Applied' | 'Reviewing' | 'Interview Scheduled' | 'Offer' | 'Rejected';
+  status: 'Saved' | 'Applied' | 'HR Screen' | 'Technical' | 'Offer' | 'Closed' | 'Reviewing' | 'Interview Scheduled' | 'Rejected';
+  location?: string;
+  salary?: string;
+  link?: string;
   notes?: string;
 }

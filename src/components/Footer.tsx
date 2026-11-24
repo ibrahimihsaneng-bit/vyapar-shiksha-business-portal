@@ -90,8 +90,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/interview-prep" className="hover:text-emerald-400 transition-colors">
+                  Interview Prep (STAR)
+                </Link>
+              </li>
+              <li>
                 <Link href="/applications" className="hover:text-emerald-400 transition-colors">
-                  Application Tracker
+                  My Board Tracker
+                </Link>
+              </li>
+              <li>
+                <Link href="/recruiter" className="hover:text-emerald-400 transition-colors">
+                  Employer & Recruiter Portal
                 </Link>
               </li>
               <li>
