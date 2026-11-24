@@ -4,6 +4,7 @@ import './globals.css';
 import React, { Suspense } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import JsonLd from '@/components/JsonLd';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -41,10 +42,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 font-sans">
+        <JsonLd />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-xl focus:shadow-lg focus:font-bold focus:outline-none"
+        >
+          Skip to main content
+        </a>
         <Suspense fallback={<div className="h-16 bg-white border-b border-slate-200" />}>
           <Navbar />
         </Suspense>
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1 focus:outline-none" tabIndex={-1}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
