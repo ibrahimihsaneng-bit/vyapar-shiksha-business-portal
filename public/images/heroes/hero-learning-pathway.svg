@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#091E2A"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="200" cy="150" r="180" fill="#3B82F6" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="1000" cy="450" r="220" fill="#06B6D4" opacity="0.12" filter="url(#glow)"/>
+  <!-- Geometric Grid Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <!-- Main Illustration Elements -->
+  <g transform="translate(600, 315)">
+    <!-- Central Platform Hub -->
+    <rect x="-420" y="-180" width="840" height="360" rx="24" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.1" stroke-width="2"/>
+    <!-- Floating Cards -->
+    <rect x="-380" y="-140" width="230" height="130" rx="16" fill="#0F172A" stroke="#3B82F6" stroke-width="1.5"/>
+    <circle cx="-340" cy="-90" r="20" fill="#3B82F6" fill-opacity="0.2"/>
+    <path d="M-348 -90 L-342 -84 L-332 -96" fill="none" stroke="#06B6D4" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-305" y="-105" width="120" height="12" rx="6" fill="#ffffff" fill-opacity="0.8"/>
+    <rect x="-305" y="-85" width="80" height="8" rx="4" fill="#3B82F6"/>
+    <rect x="-305" y="-70" width="95" height="6" rx="3" fill="#ffffff" fill-opacity="0.3"/>
+
+    <rect x="-115" y="-140" width="230" height="130" rx="16" fill="#0F172A" stroke="#06B6D4" stroke-width="1.5"/>
+    <rect x="-85" y="-105" width="140" height="14" rx="7" fill="url(#accent)"/>
+    <rect x="-85" y="-80" width="100" height="8" rx="4" fill="#ffffff" fill-opacity="0.5"/>
+    <rect x="-85" y="-65" width="120" height="8" rx="4" fill="#ffffff" fill-opacity="0.3"/>
+    <circle cx="70" cy="-90" r="16" fill="#06B6D4" fill-opacity="0.2"/>
+    <text x="70" y="-84" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#06B6D4" text-anchor="middle">30d</text>
+
+    <rect x="150" y="-140" width="230" height="130" rx="16" fill="#0F172A" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1.5"/>
+    <text x="175" y="-100" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#10B981">VERIFIED SALARY</text>
+    <text x="175" y="-70" font-family="system-ui, sans-serif" font-size="20" font-weight="extrabold" fill="#ffffff">₹25,000/mo</text>
+    <text x="175" y="-50" font-family="system-ui, sans-serif" font-size="11" fill="#94A3B8">AmbitionBox Verified</text>
+
+    <!-- Bottom Showcase Row -->
+    <rect x="-380" y="20" width="760" height="120" rx="16" fill="#0B132B" stroke="#ffffff" stroke-opacity="0.08"/>
+    <circle cx="-330" cy="80" r="24" fill="#3B82F6" fill-opacity="0.15"/>
+    <text x="-330" y="86" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#06B6D4" text-anchor="middle">01</text>
+    <text x="-285" y="72" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#ffffff">From Zero Knowledge to Employment Readiness Roadmap</text>
+    <text x="-285" y="94" font-family="system-ui, sans-serif" font-size="12" fill="#94A3B8">Zero Experience Required • Practical Simulations • Portfolio Projects</text>
+    <rect x="250" y="60" width="105" height="40" rx="10" fill="url(#accent)"/>
+    <text x="302" y="85" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0B132B" text-anchor="middle">Explore</text>
+  </g>
+</svg>

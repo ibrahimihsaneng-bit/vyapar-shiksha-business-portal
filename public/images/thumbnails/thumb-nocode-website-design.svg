@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_course-thumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="acc_course-thumb" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="16" fill="url(#bg_course-thumb)"/>
+  <circle cx="700" cy="100" r="160" fill="#059669" opacity="0.18"/>
+  <circle cx="100" cy="380" r="120" fill="#34D399" opacity="0.1"/>
+  
+  <!-- Subtle Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+  </g>
+  
+  <g transform="translate(60, 50)">
+    <!-- Badges Row -->
+    <rect x="0" y="0" width="95" height="28" rx="8" fill="#059669" fill-opacity="0.18" stroke="#059669" stroke-opacity="0.4"/>
+    <text x="47" y="19" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#34D399" text-anchor="middle">30 Days</text>
+    
+    <rect x="110" y="0" width="85" height="28" rx="8" fill="#1E293B" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="152" y="19" font-family="system-ui, sans-serif" font-size="12" font-weight="medium" fill="#94A3B8" text-anchor="middle">Tech</text>
+    
+    <rect x="210" y="0" width="115" height="28" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.3"/>
+    <text x="267" y="19" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#34D399" text-anchor="middle">100% FREE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="95" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" letter-spacing="-0.02em">WordPress Content Manager &amp; Maintenance</text>
+    <text x="0" y="130" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8">WordPress Gutenberg, Yoast/Rank Math &amp; UpdraftPlus</text>
+    
+    <!-- UI Component Mockup Box -->
+    <rect x="0" y="170" width="680" height="170" rx="14" fill="#030712" fill-opacity="0.7" stroke="#ffffff" stroke-opacity="0.08"/>
+    <!-- Mock Window Controls -->
+    <circle cx="25" cy="195" r="5" fill="#EF4444"/>
+    <circle cx="42" cy="195" r="5" fill="#F59E0B"/>
+    <circle cx="59" cy="195" r="5" fill="#10B981"/>
+    <rect x="90" y="188" width="220" height="14" rx="4" fill="#1E293B"/>
+    <rect x="520" y="188" width="130" height="14" rx="4" fill="url(#acc_course-thumb)" fill-opacity="0.4"/>
+    
+    <!-- Mockup Content Lines -->
+    <rect x="25" y="230" width="180" height="24" rx="6" fill="#1E293B"/>
+    <rect x="25" y="270" width="320" height="12" rx="4" fill="#334155"/>
+    <rect x="25" y="295" width="250" height="12" rx="4" fill="#334155"/>
+    
+    <!-- Right stats box -->
+    <rect x="480" y="225" width="170" height="85" rx="10" fill="#0F172A" stroke="#059669" stroke-opacity="0.3"/>
+    <text x="500" y="255" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#94A3B8">ENTRY SALARY</text>
+    <text x="500" y="285" font-family="system-ui, sans-serif" font-size="20" font-weight="extrabold" fill="#34D399">₹20k-32k</text>
+    <text x="500" y="302" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">/ month (AmbitionBox)</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sc_bg_scenario" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#sc_bg_scenario)" stroke="#ffffff" stroke-opacity="0.08"/>
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="140" height="28" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.3"/>
+    <text x="70" y="19" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#34D399" text-anchor="middle">WORKPLACE TASK</text>
+    
+    <text x="0" y="85" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Messy Clinical Data Consolidate &amp; XLOOKUP</text>
+    <text x="0" y="115" font-family="system-ui, sans-serif" font-size="12" fill="#94A3B8">Data task removing duplicates, normalizing phone formats, and pivot tables.</text>
+    
+    <rect x="0" y="150" width="520" height="150" rx="12" fill="#030712" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="25" y="180" width="220" height="18" rx="4" fill="#1E293B"/>
+    <rect x="25" y="215" width="300" height="10" rx="4" fill="#334155"/>
+    <rect x="25" y="235" width="240" height="10" rx="4" fill="#334155"/>
+    <rect x="25" y="255" width="180" height="10" rx="4" fill="#334155"/>
+    
+    <rect x="360" y="175" width="130" height="100" rx="10" fill="#0F172A" stroke="#10B981" stroke-opacity="0.3"/>
+    <circle cx="425" cy="210" r="16" fill="#10B981" fill-opacity="0.2"/>
+    <path d="M419 210 L423 214 L431 206" stroke="#34D399" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <text x="425" y="245" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">READY TO TEST</text>
+  </g>
+</svg>
