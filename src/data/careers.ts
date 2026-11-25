@@ -1,6 +1,7 @@
 import { Career } from '@/types';
+import { expandedCareers } from './expanded-careers';
 
-export const rawCareers: any[] = [
+const baseCareers: any[] = [
   // ==========================================
   // 30-DAY TRACK (10 PUBLISHED FOUNDATION CAREERS)
   // ==========================================
@@ -1662,6 +1663,8 @@ export const rawCareers: any[] = [
     sourceUrls: ['https://docs.n8n.io/']
   }
 ];
+
+export const rawCareers: any[] = [...baseCareers, ...expandedCareers];
 
 export const allCareers: Career[] = rawCareers.map((c: any) => {
   const normTrack = c.durationTrack.endsWith('s') ? c.durationTrack : (`${c.durationTrack}s` as any);

@@ -1,6 +1,6 @@
 // src/data/simulated-projects.ts
-// Generated Library of 30 Comprehensive Workplace Practice Projects for Career Launchpad
-// Covers all 6 Departments: Accounting, E-commerce, Virtual Office, Customer Support, Design Studio, Technology
+// Comprehensive Library of 120+ Workplace Practice Projects across 12 Corporate Departments
+import { expandedSimulatedProjects } from './expanded-projects';
 
 export interface ProjectSampleDataFile {
   name: string;
@@ -14,7 +14,7 @@ export interface WorkplaceProjectDossier {
   id: string;
   slug: string;
   title: string;
-  department: 'Accounting' | 'E-commerce' | 'Virtual Office' | 'Customer Support' | 'Design Studio' | 'Technology';
+  department: string;
   careerSlug: string;
   careerTitle: string;
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
@@ -51,7 +51,7 @@ export interface WorkplaceProjectDossier {
   };
 }
 
-export const simulatedWorkplaceProjects: WorkplaceProjectDossier[] = [
+const baseSimulatedProjects: WorkplaceProjectDossier[] = [
   {
     "id": "proj-acct-01",
     "slug": "monthly-bank-reconciliation-apex-trading",
@@ -2552,6 +2552,11 @@ export const simulatedWorkplaceProjects: WorkplaceProjectDossier[] = [
       "portfolioInclusionTip": "Document and SOP creation is a foundational skill for corporate administrative and tech support roles."
     }
   }
+];
+
+export const simulatedWorkplaceProjects: WorkplaceProjectDossier[] = [
+  ...baseSimulatedProjects,
+  ...expandedSimulatedProjects
 ];
 
 export function getProjectBySlug(slug: string): WorkplaceProjectDossier | undefined {

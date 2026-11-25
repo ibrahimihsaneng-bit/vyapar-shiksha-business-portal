@@ -17,12 +17,21 @@ import {
   Award,
   Send,
   Lightbulb,
-  FileText
+  FileText,
+  Play,
+  Volume2,
+  Users,
+  TrendingUp,
+  Plus,
+  ShieldCheck,
+  Brain,
+  Video,
+  BarChart3
 } from 'lucide-react';
 
 interface QuestionBankItem {
   id: string;
-  category: 'General HR & Fresher' | 'Accounting & Finance' | 'Customer Support & Ops' | 'E-Commerce & Tech';
+  category: 'Tech' | 'Behavioral' | 'Case Study' | 'Leadership' | 'Marketing';
   role: string;
   question: string;
   type: 'Behavioral' | 'Technical' | 'Scenario' | 'Situational';
@@ -39,11 +48,11 @@ interface QuestionBankItem {
 const interviewQuestions: QuestionBankItem[] = [
   {
     id: 'q-1',
-    category: 'General HR & Fresher',
-    role: 'All Entry-Level Roles',
+    category: 'Behavioral',
+    role: 'All Entry-Level Careers',
     question: 'Tell me about yourself and why you are switching careers into this domain.',
     type: 'Behavioral',
-    simpleAnswer: 'I am a dedicated professional who recently completed an intensive 30-day practical curriculum in operational bookkeeping and cloud software. Although I am transitioning from a non-accounting background, I have already completed hands-on simulation projects reconciling real bank feeds and preparing GST invoices in Zoho Books. I am eager to apply my strong attention to detail to help your team manage day-to-day accounts accurately.',
+    simpleAnswer: 'I am a dedicated professional who recently completed an intensive practical curriculum in operational bookkeeping and cloud software. Although I am transitioning from a non-accounting background, I have already completed hands-on simulation projects reconciling real bank feeds and preparing GST invoices in Zoho Books. I am eager to apply my strong attention to detail to help your team manage day-to-day accounts accurately.',
     starBreakdown: {
       situation: 'Transitioning careers without previous corporate experience.',
       task: 'Present transferable skills and practical project experience confidently.',
@@ -54,7 +63,7 @@ const interviewQuestions: QuestionBankItem[] = [
   },
   {
     id: 'q-2',
-    category: 'Accounting & Finance',
+    category: 'Tech',
     role: 'Junior Bookkeeper / Accounts Assistant',
     question: 'How do you handle a situation where bank balance and general ledger balance do not match during reconciliation?',
     type: 'Technical',
@@ -69,8 +78,8 @@ const interviewQuestions: QuestionBankItem[] = [
   },
   {
     id: 'q-3',
-    category: 'Customer Support & Ops',
-    role: 'Customer Chat / Support Specialist',
+    category: 'Case Study',
+    role: 'Customer Support / Operations Specialist',
     question: 'How would you handle an irate customer whose package was delayed and is demanding an immediate refund?',
     type: 'Scenario',
     simpleAnswer: 'I first acknowledge their frustration with empathy: "I completely understand how disappointing this delay is, especially when you were expecting the item on Tuesday." I avoid defensive arguments. Next, I check the live tracking status on Shiprocket to understand where the package currently is. If delayed by courier, I explain the situation transparently and offer a clear resolution—either an immediate courier escalation with guaranteed delivery within 24 hours, or initiating a refund if the delivery window has been breached. I follow up until the issue is fully closed.',
@@ -84,7 +93,7 @@ const interviewQuestions: QuestionBankItem[] = [
   },
   {
     id: 'q-4',
-    category: 'E-Commerce & Tech',
+    category: 'Marketing',
     role: 'Shopify / E-Commerce Operations Assistant',
     question: 'If you notice that a product was listed at ₹199 instead of ₹1,999 on Shopify and 15 orders were placed, what do you do?',
     type: 'Situational',
@@ -99,7 +108,7 @@ const interviewQuestions: QuestionBankItem[] = [
   },
   {
     id: 'q-5',
-    category: 'E-Commerce & Tech',
+    category: 'Tech',
     role: 'Junior QA Manual Software Tester',
     question: 'What do you do if a developer rejects your bug report claiming "it works on my machine"?',
     type: 'Technical',
@@ -111,11 +120,26 @@ const interviewQuestions: QuestionBankItem[] = [
       result: 'Developer realized an unhandled cookie error was occurring in Incognito mode and deployed a fix within an hour.'
     },
     keyAdvice: 'Focus on facts and evidence, not personal conflict. The goal is product quality, not winning an argument.'
+  },
+  {
+    id: 'q-6',
+    category: 'Leadership',
+    role: 'Project Coordinator & Admin Lead',
+    question: 'Describe a time when you had to manage conflicting deadlines from two different team leads.',
+    type: 'Behavioral',
+    simpleAnswer: 'When two leads assigned high-priority deliverables simultaneously, I first evaluated the business impact and deadline of each task. Then, I drafted a quick impact summary and spoke directly with both managers in a 5-minute sync, explaining the overlap and proposing an objective schedule: delivering the client invoice report first by 2 PM, followed by the inventory re-order sheet by 5 PM. Both approved, and both deliverables were submitted on time without quality compromises.',
+    starBreakdown: {
+      situation: 'Two managers requested urgent deliverables due by 3 PM.',
+      task: 'Prioritize workloads without letting either stakeholder feel ignored.',
+      action: 'Quantified time needed, facilitated a brief alignment conversation, and proposed a structured timeline.',
+      result: 'Delivered both projects accurately and established a shared priority tracker.'
+    },
+    keyAdvice: 'Never silently choose one and let the other fail. Transparent communication upfront always wins trust.'
   }
 ];
 
 export default function InterviewPrepPage() {
-  const [selectedRole, setSelectedRole] = useState('Junior Bookkeeper / Accounts Assistant');
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [openQuestionId, setOpenQuestionId] = useState<string>('q-1');
   const [activeTab, setActiveTab] = useState<'bank' | 'simulator'>('bank');
 
@@ -130,6 +154,26 @@ export default function InterviewPrepPage() {
     strengths: string[];
     grade: string;
   } | null>(null);
+
+  // Audio Speech state
+  const [isSpeaking, setIsSpeaking] = useState<string | null>(null);
+
+  const speakText = (text: string, id: string) => {
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      if (isSpeaking === id) {
+        window.speechSynthesis.cancel();
+        setIsSpeaking(null);
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.95;
+      utterance.onend = () => setIsSpeaking(null);
+      utterance.onerror = () => setIsSpeaking(null);
+      setIsSpeaking(id);
+      window.speechSynthesis.speak(utterance);
+    }
+  };
 
   const handleEvaluateSimulation = () => {
     const feedback: string[] = [];
@@ -185,76 +229,345 @@ export default function InterviewPrepPage() {
     setSimEvaluation(null);
   };
 
-  return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-      {/* Header */}
-      <div className="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 shadow-sm space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-100">
-          <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
-          <span>Interactive Interview Preparation Centre</span>
-        </div>
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Master Entry-Level Interviews with the STAR Method
-        </h1>
-        <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
-          Learn how to turn your 30-day simulation deliverables into compelling, confident interview stories. Practice structured responses and inspect verified model answers in clear, professional English.
-        </p>
+  const filteredQuestions = selectedCategory === 'All'
+    ? interviewQuestions
+    : interviewQuestions.filter(q => q.category === selectedCategory);
 
-        {/* Navigation Tabs */}
-        <div className="flex items-center gap-3 pt-2">
-          <button
-            onClick={() => setActiveTab('bank')}
-            className={`px-5 py-2.5 rounded-xl font-bold text-xs transition-all ${
-              activeTab === 'bank'
-                ? 'bg-emerald-600 text-white shadow-sm'
-                : 'border border-slate-200 text-slate-700 hover:bg-slate-50'
-            }`}
-          >
-            Question Bank & Model Answers
-          </button>
-          <button
-            onClick={() => setActiveTab('simulator')}
-            className={`px-5 py-2.5 rounded-xl font-bold text-xs transition-all flex items-center gap-1.5 ${
-              activeTab === 'simulator'
-                ? 'bg-emerald-600 text-white shadow-sm'
-                : 'border border-slate-200 text-slate-700 hover:bg-slate-50'
-            }`}
-          >
-            <Sparkles className="w-3.5 h-3.5 text-emerald-300" />
-            <span>Interactive STAR Response Practice</span>
-          </button>
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+      {/* ========================================================================= */}
+      {/* 1. TOP HERO HEADER (ElevateAI Style with Readiness Badge) */}
+      {/* ========================================================================= */}
+      <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-100">
+          <div className="space-y-2">
+            <span className="text-[11px] font-mono uppercase tracking-wider font-bold text-slate-400">
+              CAREER READINESS &bull; AI INTERVIEW STUDIO
+            </span>
+            <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+              Good Morning, Candidate
+            </h1>
+            <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
+              Conduct live AI-guided practice, master the STAR framework, and inspect verified model answers to pass entry-level fresher interviews.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-4 shrink-0">
+            <button
+              onClick={() => setActiveTab('simulator')}
+              className="px-4 py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-all inline-flex items-center gap-2 border border-slate-200"
+            >
+              <span className="w-5 h-5 rounded-full bg-rose-500 text-white flex items-center justify-center text-[10px]">
+                ▶
+              </span>
+              <span>Watch Walkthrough</span>
+            </button>
+
+            {/* Average Readiness Ring / Badge */}
+            <div className="flex items-center gap-3 p-3 px-5 rounded-2xl bg-indigo-50 border border-indigo-100 shadow-2xs">
+              <div className="text-right">
+                <span className="text-[10px] uppercase font-bold tracking-wider text-indigo-600 block">
+                  AVERAGE READINESS
+                </span>
+                <div className="text-2xl font-black text-slate-900 leading-none">
+                  82 <span className="text-slate-400 text-xs font-semibold">/ 100</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        {/* Category Filter Pills (Exact Match to ElevateAI) */}
+        <div className="flex items-center gap-2 pt-5 overflow-x-auto scrollbar-none">
+          {['All', 'Tech', 'Behavioral', 'Case Study', 'Leadership', 'Marketing'].map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all shrink-0 ${
+                selectedCategory === cat
+                  ? 'bg-slate-900 text-white shadow-xs'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* ========================================================================= */}
+      {/* 2. RECENT SIMULATIONS ROW & STATS (Matching ElevateAI Cards) */}
+      {/* ========================================================================= */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+        {/* Recent Simulation Cards (9 cols) */}
+        <div className="lg:col-span-9 space-y-3">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+              Recent Simulations
+            </span>
+            <button
+              onClick={() => setActiveTab('simulator')}
+              className="text-xs font-bold text-emerald-700 hover:text-emerald-800"
+            >
+              Start New Simulation
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+            {/* Practice Card (Dashed border) */}
+            <button
+              onClick={() => setActiveTab('simulator')}
+              className="p-5 rounded-3xl border-2 border-dashed border-slate-300 hover:border-emerald-500 bg-slate-50/50 hover:bg-emerald-50/30 transition-all flex flex-col items-center justify-center text-center space-y-2 group min-h-[160px]"
+            >
+              <div className="w-10 h-10 rounded-2xl bg-white shadow-2xs border border-slate-200 group-hover:border-emerald-300 flex items-center justify-center text-slate-400 group-hover:text-emerald-600 transition-colors">
+                <Plus className="w-5 h-5" />
+              </div>
+              <h4 className="text-xs font-extrabold text-slate-900">Practice</h4>
+              <p className="text-[10px] text-slate-500 max-w-[130px] leading-tight">
+                Conduct live AI sessions & improve your skills.
+              </p>
+            </button>
+
+            {/* Coach 1: Alex */}
+            <div className="p-5 rounded-3xl bg-white border border-slate-200 shadow-2xs flex flex-col justify-between space-y-3">
+              <div className="flex items-center justify-between">
+                <div className="w-10 h-10 rounded-2xl bg-indigo-100 flex items-center justify-center text-lg">
+                  👩‍🏫
+                </div>
+                <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 text-[10px] font-black border border-emerald-200">
+                  09/10
+                </span>
+              </div>
+              <div>
+                <h4 className="text-xs font-extrabold text-slate-900 leading-tight">
+                  Junior Accounts Assistant
+                </h4>
+                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">TODAY</span>
+              </div>
+              <div>
+                <div className="flex items-center gap-1.5 text-[10px] text-slate-500 font-medium mb-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-600" />
+                  <span>Coach Alex</span>
+                </div>
+                <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
+                  <div className="h-full bg-indigo-600 rounded-full w-[90%]" />
+                </div>
+              </div>
+            </div>
+
+            {/* Coach 2: Sam */}
+            <div className="p-5 rounded-3xl bg-white border border-slate-200 shadow-2xs flex flex-col justify-between space-y-3">
+              <div className="flex items-center justify-between">
+                <div className="w-10 h-10 rounded-2xl bg-purple-100 flex items-center justify-center text-lg">
+                  👨‍💼
+                </div>
+                <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 text-[10px] font-black border border-emerald-200">
+                  08/10
+                </span>
+              </div>
+              <div>
+                <h4 className="text-xs font-extrabold text-slate-900 leading-tight">
+                  E-Commerce Store Lead
+                </h4>
+                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">YESTERDAY</span>
+              </div>
+              <div>
+                <div className="flex items-center gap-1.5 text-[10px] text-slate-500 font-medium mb-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-purple-600" />
+                  <span>Coach Sam</span>
+                </div>
+                <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
+                  <div className="h-full bg-purple-600 rounded-full w-[80%]" />
+                </div>
+              </div>
+            </div>
+
+            {/* Coach 3: Jordan */}
+            <div className="p-5 rounded-3xl bg-white border border-slate-200 shadow-2xs flex flex-col justify-between space-y-3">
+              <div className="flex items-center justify-between">
+                <div className="w-10 h-10 rounded-2xl bg-amber-100 flex items-center justify-center text-lg">
+                  👩‍💻
+                </div>
+                <span className="px-2 py-0.5 rounded-full bg-amber-50 text-amber-800 text-[10px] font-black border border-amber-200">
+                  07/10
+                </span>
+              </div>
+              <div>
+                <h4 className="text-xs font-extrabold text-slate-900 leading-tight">
+                  Customer Support Specialist
+                </h4>
+                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">12TH NOV</span>
+              </div>
+              <div>
+                <div className="flex items-center gap-1.5 text-[10px] text-slate-500 font-medium mb-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                  <span>Coach Jordan</span>
+                </div>
+                <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
+                  <div className="h-full bg-amber-500 rounded-full w-[70%]" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Stats Sidebar (3 cols: 742 Employers + Goal Setting) */}
+        <div className="lg:col-span-3 space-y-4">
+          <div className="p-5 rounded-3xl bg-white border border-slate-200 shadow-2xs space-y-1 text-center">
+            <span className="text-3xl font-black text-indigo-900">742</span>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+              PARTNER EMPLOYERS & REMOTE HUBS
+            </span>
+            <p className="text-[11px] text-slate-500 leading-snug pt-1">
+              Hiring freshers directly from verified workplace portfolios.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-3xl bg-gradient-to-br from-amber-500 to-rose-500 text-white shadow-sm space-y-2">
+            <div className="flex items-center justify-between text-xs font-bold">
+              <span>Goal Setting</span>
+              <span>85% Target</span>
+            </div>
+            <p className="text-[11px] text-white/90 leading-tight">
+              Complete 2 more STAR response simulations to achieve Hire-Ready status.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ========================================================================= */}
+      {/* 3. INTERVIEW DOMAINS ANALYTIC REPORTS (Matching ElevateAI Table) */}
+      {/* ========================================================================= */}
+      <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm space-y-4">
+        <div className="flex items-center justify-between pb-2 border-b border-slate-100">
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+            Interview Domains Competency Benchmarks
+          </span>
+          <span className="text-xs text-slate-400 font-medium">Real-time candidate telemetry</span>
+        </div>
+
+        <div className="space-y-3">
+          {[
+            {
+              domain: 'Technical Workflow & Reconciliations',
+              status: 'Last session completed',
+              engagement: '85%',
+              score: '92%',
+              icon: '📊'
+            },
+            {
+              domain: 'Communication & STAR Storytelling',
+              status: 'Consistently high clarity',
+              engagement: '92%',
+              score: '88%',
+              icon: '🗣️'
+            },
+            {
+              domain: 'Problem Solving & Scenario Handling',
+              status: 'Improved +14% this week',
+              engagement: '78%',
+              score: '84%',
+              icon: '💡'
+            }
+          ].map((row, idx) => (
+            <div
+              key={idx}
+              className="p-4 rounded-2xl bg-slate-50 hover:bg-slate-100/70 transition-colors border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-white shadow-2xs border border-slate-200 flex items-center justify-center text-lg">
+                  {row.icon}
+                </div>
+                <div>
+                  <h4 className="text-xs sm:text-sm font-extrabold text-slate-900">{row.domain}</h4>
+                  <span className="text-[11px] text-slate-500 font-medium">{row.status}</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6 sm:gap-10">
+                <div className="text-center">
+                  <span className="text-[10px] text-slate-400 block font-bold uppercase">Engagement</span>
+                  <span className="text-xs font-bold text-slate-700">{row.engagement}</span>
+                </div>
+
+                <div className="text-center">
+                  <span className="text-[10px] text-slate-400 block font-bold uppercase">Score</span>
+                  <span className="text-xs font-bold text-emerald-600">{row.score}</span>
+                </div>
+
+                <button
+                  onClick={() => setActiveTab('simulator')}
+                  className="px-4 py-1.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-[11px] font-bold transition-all shadow-xs shrink-0"
+                >
+                  ANALYTIC REPORT
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ========================================================================= */}
+      {/* 4. MODE TOGGLE: QUESTION BANK VS INTERACTIVE SIMULATOR */}
+      {/* ========================================================================= */}
+      <div className="flex items-center gap-3 pt-2">
+        <button
+          onClick={() => setActiveTab('bank')}
+          className={`px-5 py-2.5 rounded-xl font-bold text-xs transition-all ${
+            activeTab === 'bank'
+              ? 'bg-emerald-600 text-white shadow-sm'
+              : 'border border-slate-200 text-slate-700 hover:bg-slate-50'
+          }`}
+        >
+          Question Bank & Model Answers ({filteredQuestions.length})
+        </button>
+        <button
+          onClick={() => setActiveTab('simulator')}
+          className={`px-5 py-2.5 rounded-xl font-bold text-xs transition-all flex items-center gap-1.5 ${
+            activeTab === 'simulator'
+              ? 'bg-emerald-600 text-white shadow-sm'
+              : 'border border-slate-200 text-slate-700 hover:bg-slate-50'
+          }`}
+        >
+          <Sparkles className="w-3.5 h-3.5 text-emerald-300" />
+          <span>Live STAR Practice Simulator</span>
+        </button>
       </div>
 
       {/* Mode 1: Question Bank */}
       {activeTab === 'bank' && (
         <div className="space-y-6">
           {/* STAR Framework Guide Banner */}
-          <div className="bg-gradient-to-r from-emerald-900 to-teal-900 rounded-3xl p-6 sm:p-8 text-white space-y-4 shadow-sm">
-            <h2 className="text-xl font-extrabold">The STAR Formula for Fresher Interviews</h2>
+          <div className="bg-gradient-to-r from-emerald-950 via-slate-900 to-indigo-950 rounded-3xl p-6 sm:p-8 text-white space-y-4 shadow-sm border border-slate-800">
+            <div className="flex items-center justify-between">
+              <h2 className="text-lg sm:text-xl font-extrabold">The STAR Formula for Entry-Level Candidates</h2>
+              <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold border border-emerald-500/30">
+                Recommended by HR Managers
+              </span>
+            </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-              <div className="p-3 rounded-2xl bg-white/10 border border-white/10 space-y-1">
-                <span className="font-extrabold text-emerald-300 block text-sm">S - Situation</span>
-                <p className="text-emerald-100 text-[11px] leading-relaxed">Set the scene. Describe the specific challenge or simulation project.</p>
+              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+                <span className="font-extrabold text-emerald-400 block text-sm">S - Situation</span>
+                <p className="text-slate-300 text-[11px] leading-relaxed">Set the scene. Describe the specific challenge or simulation project.</p>
               </div>
-              <div className="p-3 rounded-2xl bg-white/10 border border-white/10 space-y-1">
-                <span className="font-extrabold text-emerald-300 block text-sm">T - Task</span>
-                <p className="text-emerald-100 text-[11px] leading-relaxed">State your personal responsibility. What needed to be done?</p>
+              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+                <span className="font-extrabold text-indigo-400 block text-sm">T - Task</span>
+                <p className="text-slate-300 text-[11px] leading-relaxed">State your personal responsibility. What needed to be fixed?</p>
               </div>
-              <div className="p-3 rounded-2xl bg-white/10 border border-white/10 space-y-1">
-                <span className="font-extrabold text-emerald-300 block text-sm">A - Action</span>
-                <p className="text-emerald-100 text-[11px] leading-relaxed">Explain the exact tools, software, and methods YOU executed.</p>
+              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+                <span className="font-extrabold text-amber-400 block text-sm">A - Action</span>
+                <p className="text-slate-300 text-[11px] leading-relaxed">Explain the exact tools, software, and methods YOU executed.</p>
               </div>
-              <div className="p-3 rounded-2xl bg-white/10 border border-white/10 space-y-1">
-                <span className="font-extrabold text-emerald-300 block text-sm">R - Result</span>
-                <p className="text-emerald-100 text-[11px] leading-relaxed">Share the positive outcome or learning lesson with numbers.</p>
+              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+                <span className="font-extrabold text-rose-400 block text-sm">R - Result</span>
+                <p className="text-slate-300 text-[11px] leading-relaxed">Share the positive outcome or learning lesson with numbers.</p>
               </div>
             </div>
           </div>
 
           {/* Questions Accordion */}
           <div className="space-y-4">
-            {interviewQuestions.map((q) => {
+            {filteredQuestions.map((q) => {
               const isOpen = openQuestionId === q.id;
               return (
                 <div
@@ -287,11 +600,20 @@ export default function InterviewPrepPage() {
 
                   {isOpen && (
                     <div className="p-6 pt-0 border-t border-slate-100 space-y-5 text-xs sm:text-sm">
-                      {/* Simple English Model Answer */}
+                      {/* Simple English Model Answer with Read Aloud Button */}
                       <div className="space-y-2 pt-4">
-                        <span className="font-bold text-xs uppercase tracking-wider text-slate-900 block">
-                          Simple English Model Answer:
-                        </span>
+                        <div className="flex items-center justify-between">
+                          <span className="font-bold text-xs uppercase tracking-wider text-slate-900 block">
+                            Simple English Model Answer:
+                          </span>
+                          <button
+                            onClick={() => speakText(q.simpleAnswer, q.id)}
+                            className="px-3 py-1 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-[11px] font-bold transition-colors inline-flex items-center gap-1.5 border border-emerald-200"
+                          >
+                            <Volume2 className="w-3.5 h-3.5" />
+                            <span>{isSpeaking === q.id ? 'Stop Audio' : 'Listen with Speech'}</span>
+                          </button>
+                        </div>
                         <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-slate-800 leading-relaxed font-medium italic">
                           "{q.simpleAnswer}"
                         </div>
@@ -307,17 +629,17 @@ export default function InterviewPrepPage() {
                             <strong className="text-emerald-900 block">Situation:</strong>
                             <p className="text-emerald-800">{q.starBreakdown.situation}</p>
                           </div>
-                          <div className="p-3 rounded-xl bg-blue-50/50 border border-blue-100 space-y-0.5">
-                            <strong className="text-blue-900 block">Task:</strong>
-                            <p className="text-blue-800">{q.starBreakdown.task}</p>
-                          </div>
-                          <div className="p-3 rounded-xl bg-purple-50/50 border border-purple-100 space-y-0.5">
-                            <strong className="text-purple-900 block">Action:</strong>
-                            <p className="text-purple-800">{q.starBreakdown.action}</p>
+                          <div className="p-3 rounded-xl bg-indigo-50/50 border border-indigo-100 space-y-0.5">
+                            <strong className="text-indigo-900 block">Task:</strong>
+                            <p className="text-indigo-800">{q.starBreakdown.task}</p>
                           </div>
                           <div className="p-3 rounded-xl bg-amber-50/50 border border-amber-100 space-y-0.5">
-                            <strong className="text-amber-900 block">Result:</strong>
-                            <p className="text-amber-800">{q.starBreakdown.result}</p>
+                            <strong className="text-amber-900 block">Action:</strong>
+                            <p className="text-amber-800">{q.starBreakdown.action}</p>
+                          </div>
+                          <div className="p-3 rounded-xl bg-rose-50/50 border border-rose-100 space-y-0.5">
+                            <strong className="text-rose-900 block">Result:</strong>
+                            <p className="text-rose-800">{q.starBreakdown.result}</p>
                           </div>
                         </div>
                       </div>

@@ -112,6 +112,20 @@ export default function Navbar() {
               <span>EN | മലയാളം</span>
             </div>
 
+            {/* AI Mentor Assistant Trigger (Inspired by Alvance) */}
+            <button
+              onClick={() => {
+                const btn = document.querySelector('button[aria-label="Open AI Career Mentor"]') as HTMLElement;
+                if (btn) btn.click();
+              }}
+              className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold border border-slate-700 shadow-xs transition-all group"
+              title="Launch AI Career Mentor"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-emerald-400 group-hover:rotate-12 transition-transform" />
+              <span>AI Mentor</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+            </button>
+
             {/* My Dashboard CTA */}
             <Link
               href="/dashboard"

@@ -179,7 +179,21 @@ export default function SimulatorPage() {
     setAddedProjectIds([...addedProjectIds, project.id]);
   };
 
-  const departments = ['All', 'Accounting', 'E-commerce', 'Virtual Office', 'Customer Support', 'Design Studio', 'Technology'];
+  const departments = [
+    'All',
+    'Accounting',
+    'E-commerce',
+    'Virtual Office',
+    'Customer Support',
+    'Human Resources',
+    'Digital Marketing',
+    'Design Studio',
+    'Web Development',
+    'Software Testing',
+    'Data Analytics',
+    '3D Engineering',
+    'Business Automation'
+  ];
 
   const filteredProjects = simulatedWorkplaceProjects.filter(p => {
     const matchesDept = selectedDept === 'All' || p.department.toLowerCase() === selectedDept.toLowerCase();
@@ -206,7 +220,7 @@ export default function SimulatorPage() {
             Virtual Workplace & Practical Simulator
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            Practice realistic employee responsibilities across 6 corporate departments. Audit financial reconciliations, triage urgent support tickets, manage e-commerce inventories, and author professional deliverables with instant objective evaluation.
+            Practice realistic employee responsibilities across 12 corporate departments. Audit financial reconciliations, triage urgent support tickets, manage e-commerce inventories, and author professional deliverables with instant objective evaluation.
           </p>
 
           {/* Quick Metrics */}
@@ -221,7 +235,7 @@ export default function SimulatorPage() {
             </div>
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700">
               <FileCheck className="w-4 h-4 text-blue-400" />
-              <span><strong>30</strong> Downloadable Project Dossiers</span>
+              <span><strong>{simulatedWorkplaceProjects.length}</strong> Downloadable Project Dossiers</span>
             </div>
           </div>
         </div>
@@ -259,14 +273,14 @@ export default function SimulatorPage() {
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              Project Dossiers (30)
+              Project Dossiers ({simulatedWorkplaceProjects.length})
             </button>
           </div>
 
           <div className="text-xs text-slate-500 font-medium">
             {activeTab === 'simulations' && <span>Filter by department:</span>}
             {activeTab === 'tools' && <span>8 Interactive educational training consoles</span>}
-            {activeTab === 'projects' && <span>Filter by department:</span>}
+            {activeTab === 'projects' && <span>Filter across 12 departments ({simulatedWorkplaceProjects.length} dossiers):</span>}
           </div>
         </div>
 

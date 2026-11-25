@@ -20,7 +20,8 @@ import {
   ExternalLink,
   Layers,
   SlidersHorizontal,
-  ChevronRight
+  ChevronRight,
+  Compass
 } from 'lucide-react';
 import { calculateCareerMatches } from '@/lib/career-finder';
 import { CareerFinderCriteria, CareerRecommendation, DurationTrack, Career } from '@/types';
@@ -95,6 +96,18 @@ export default function CareerFinderPage() {
         <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
           Answer a few transparent questions about your schedule, computer setup, language skills, and salary expectations. We match you with realistic, verified careers with zero unrealistic promises.
         </p>
+
+        {/* Visual Graph Discovery CTA */}
+        <div className="flex items-center justify-center gap-3 pt-1">
+          <Link
+            href="/careers/graph"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition-all shadow-xs"
+          >
+            <Compass className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Explore Interactive Career Graph & AI Roadmap</span>
+            <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
+          </Link>
+        </div>
       </div>
 
       {/* Wizard Container */}

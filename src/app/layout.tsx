@@ -5,6 +5,7 @@ import React, { Suspense } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import JsonLd from '@/components/JsonLd';
+import AiMentorModal from '@/components/AiMentorModal';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -56,6 +57,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <AiMentorModal />
       </body>
     </html>
   );
