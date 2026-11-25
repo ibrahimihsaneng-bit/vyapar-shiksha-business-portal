@@ -50,164 +50,49 @@ export default function CareerGraphPage() {
     setExpandedSection(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
-  // Node graph definitions
-  const graphNodes = [
-    {
-      id: 'bookkeeping',
-      title: 'Basic Bookkeeping & Invoicing',
-      category: 'Finance',
-      color: '#0284c7',
-      track: '30-days',
-      skills: [
-        { name: 'Double-Entry Ledger', score: 95 },
-        { name: 'Bank Reconciliation', score: 92 },
-        { name: 'Google Sheets / Excel', score: 88 }
-      ],
-      gaps: [
-        { name: 'Cloud Tax Adjustments', percent: 45 },
-        { name: 'Corporate Financial Modeling', percent: 35 }
-      ],
-      connections: ['cloud-bookkeeping', 'fin-modeling']
-    },
-    {
-      id: 'cloud-bookkeeping',
-      title: 'Cloud Bookkeeping & Tax Assistant',
-      category: 'Finance',
-      color: '#0284c7',
-      track: '60-days',
-      skills: [
-        { name: 'Zoho Books / QuickBooks', score: 88 },
-        { name: 'GST & VAT Compliance', score: 82 },
-        { name: 'Audit Trail Preparation', score: 79 }
-      ],
-      gaps: [
-        { name: 'Multi-Currency Settlement', percent: 50 },
-        { name: 'FP&A Forecasting', percent: 40 }
-      ],
-      connections: ['fin-modeling']
-    },
-    {
-      id: 'fin-modeling',
-      title: 'Financial Modeling & Valuation',
-      category: 'Finance',
-      color: '#0284c7',
-      track: '90-days',
-      skills: [
-        { name: '3-Statement Modeling', score: 85 },
-        { name: 'DCF Valuation', score: 80 },
-        { name: 'Scenario Data Tables', score: 90 }
-      ],
-      gaps: [
-        { name: 'M&A Deal Structuring', percent: 30 },
-        { name: 'Treasury Cash Sweeps', percent: 45 }
-      ],
-      connections: []
-    },
-    {
-      id: 'virtual-assistant',
-      title: 'Virtual Assistant',
-      category: 'Administration',
-      color: '#6366f1',
-      track: '30-days',
-      skills: [
-        { name: 'Executive Calendar Mgmt', score: 98 },
-        { name: 'Email Triage & Drafts', score: 94 },
-        { name: 'Google Workspace Cloud', score: 90 }
-      ],
-      gaps: [
-        { name: 'Notion Workspace Wiki', percent: 55 },
-        { name: 'No-Code Webhook Sync', percent: 30 }
-      ],
-      connections: ['notion-arch', 'lead-gen']
-    },
-    {
-      id: 'notion-arch',
-      title: 'Notion Workspace Architect',
-      category: 'Administration',
-      color: '#6366f1',
-      track: '30-days',
-      skills: [
-        { name: 'Relational Databases', score: 92 },
-        { name: 'SOP Documentation', score: 95 },
-        { name: 'Database Rollups & Views', score: 88 }
-      ],
-      gaps: [
-        { name: 'Zapier / n8n Webhooks', percent: 45 },
-        { name: 'Agile Sprint Ceremonies', percent: 50 }
-      ],
-      connections: ['automation-spec']
-    },
-    {
-      id: 'web-dev',
-      title: 'Front-End Web Developer',
-      category: 'Technology',
-      color: '#10b981',
-      track: '90-days',
-      skills: [
-        { name: 'HTML5 & Semantic Markup', score: 95 },
-        { name: 'CSS3 / Tailwind Design', score: 90 },
-        { name: 'JavaScript ES6+ & DOM', score: 84 }
-      ],
-      gaps: [
-        { name: 'React State Management', percent: 55 },
-        { name: 'TypeScript Strict Types', percent: 40 }
-      ],
-      connections: ['fullstack-dev', 'framer-dev']
-    },
-    {
-      id: 'framer-dev',
-      title: 'Framer No-Code Developer',
-      category: 'Technology',
-      color: '#10b981',
-      track: '90-days',
-      skills: [
-        { name: 'Canvas Auto-Layout', score: 96 },
-        { name: 'Scroll Driven Animations', score: 92 },
-        { name: 'Framer CMS Collections', score: 88 }
-      ],
-      gaps: [
-        { name: 'Custom React Code Overrides', percent: 45 },
-        { name: 'Lighthouse Web Vitals 99+', percent: 60 }
-      ],
-      connections: []
-    },
-    {
-      id: 'prompt-eng',
-      title: 'Prompt Engineering & AI Ops',
-      category: 'AI & Automation',
-      color: '#a855f7',
-      track: '90-days',
-      skills: [
-        { name: 'Structured JSON Extraction', score: 96 },
-        { name: 'Few-Shot / CoT Prompts', score: 92 },
-        { name: 'Automated Eval Harness', score: 89 }
-      ],
-      gaps: [
-        { name: 'Vector Embeddings / RAG', percent: 45 },
-        { name: 'LangChain / n8n Routing', percent: 50 }
-      ],
-      connections: ['automation-spec']
-    },
-    {
-      id: 'automation-spec',
-      title: 'Workflow Automation (n8n/Make)',
-      category: 'AI & Automation',
-      color: '#a855f7',
-      track: '90-days',
-      skills: [
-        { name: 'Webhook Listeners', score: 94 },
-        { name: 'JSON Data Transformation', score: 90 },
-        { name: 'Error Handlers & Retries', score: 85 }
-      ],
-      gaps: [
-        { name: 'Self-Hosted Docker Deploy', percent: 40 },
-        { name: 'Custom REST API Auth Flow', percent: 50 }
-      ],
-      connections: []
-    }
-  ];
+  const [selectedTrackFilter, setSelectedTrackFilter] = useState<string>('all');
+
+  // Dynamically map all 60 careers into synaptic graph nodes
+  const graphNodes = allCareers.map((c) => {
+    const rawTrack = c.durationTrack.replace('-days', '').replace('-day', '');
+    const trackNorm = `${rawTrack}-day`;
+    const color = trackNorm === '30-day' ? '#14b8a6' :
+                  trackNorm === '60-day' ? '#3b82f6' :
+                  trackNorm === '90-day' ? '#a855f7' : '#f59e0b';
+
+    const rawSkills = c.toolsRequired || (c.requiredSoftware ? c.requiredSoftware.map((s: any) => s.name) : []);
+    const skills = rawSkills.length > 0
+      ? rawSkills.slice(0, 3).map((t: string, idx: number) => ({ name: t, score: 96 - idx * 4 }))
+      : [
+          { name: 'Core Process Execution', score: 94 },
+          { name: 'Industry Software Tools', score: 88 },
+          { name: 'Quality & Deliverable Audit', score: 85 }
+        ];
+
+    const gaps = [
+      { name: 'Cross-functional Workflows', percent: 45 },
+      { name: 'Enterprise Best Practices', percent: 35 }
+    ];
+
+    return {
+      id: c.slug,
+      title: c.title,
+      category: c.categoryName || 'General',
+      color,
+      track: trackNorm,
+      skills,
+      gaps,
+      salary: c.entrySalaryRange ? `₹${(c.entrySalaryRange.min).toLocaleString('en-IN')} - ₹${(c.entrySalaryRange.max).toLocaleString('en-IN')}/mo` : '₹20,000 - ₹35,000/mo'
+    };
+  });
 
   const activeNode = graphNodes.find(n => n.id === selectedNodeId) || graphNodes[0];
+
+  const filteredNodes = graphNodes.filter((n) => {
+    const matchesTrack = selectedTrackFilter === 'all' || n.track === selectedTrackFilter;
+    const matchesQuery = !searchQuery || n.title.toLowerCase().includes(searchQuery.toLowerCase()) || n.category.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesTrack && matchesQuery;
+  });
 
   return (
     <div className="space-y-8 pb-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -290,120 +175,228 @@ export default function CareerGraphPage() {
 
               <div className="flex items-center gap-2">
                 <span className="text-xs font-mono text-emerald-400 font-bold bg-emerald-950/80 border border-emerald-800 px-3 py-1 rounded-full">
-                  60 Nodes Indexed &bull; Live Telemetry
+                  {graphNodes.length} Nodes Indexed &bull; Live Telemetry
                 </span>
               </div>
             </div>
 
-            {/* Node Visual Grid Canvas */}
-            <div className="relative z-10 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Column 1: Foundational 30-Day Cluster */}
-              <div className="space-y-4">
-                <div className="text-xs font-mono uppercase tracking-wider text-teal-400 font-bold flex items-center gap-1.5 pb-2 border-b border-slate-800">
-                  <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
-                  <span>30-Day Foundation Cluster</span>
-                </div>
-                {graphNodes.filter(n => n.track === '30-days').map(node => {
-                  const isSelected = selectedNodeId === node.id;
-                  return (
-                    <div
-                      key={node.id}
-                      onClick={() => setSelectedNodeId(node.id)}
-                      className={`p-4 rounded-2xl border transition-all cursor-pointer backdrop-blur-md relative ${
-                        isSelected
-                          ? 'bg-slate-900 border-teal-400 ring-2 ring-teal-500/30 shadow-[0_0_25px_rgba(20,184,166,0.25)]'
-                          : 'bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-bold">
-                          {node.category}
-                        </span>
-                        <span className="text-[11px] font-bold text-teal-400 font-mono">
-                          {node.track}
-                        </span>
-                      </div>
-                      <h4 className="font-extrabold text-sm text-white">{node.title}</h4>
-                      <div className="mt-3 flex items-center justify-between text-[11px] text-slate-400 font-mono">
-                        <span>Core Mastery:</span>
-                        <span className="text-emerald-400 font-bold">{node.skills[0].score}%</span>
-                      </div>
-                    </div>
-                  );
-                })}
+            {/* Live Filter & Search Controls */}
+            <div className="relative z-10 pt-4 pb-2 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 border-b border-slate-800/60">
+              <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none w-full md:w-auto">
+                {[
+                  { id: 'all', label: `All Pathways (${graphNodes.length})` },
+                  { id: '30-day', label: `30-Day (${graphNodes.filter(n => n.track === '30-day').length})` },
+                  { id: '60-day', label: `60-Day (${graphNodes.filter(n => n.track === '60-day').length})` },
+                  { id: '90-day', label: `90-Day (${graphNodes.filter(n => n.track === '90-day').length})` },
+                  { id: '120-day', label: `120-Day (${graphNodes.filter(n => n.track === '120-day').length})` }
+                ].map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setSelectedTrackFilter(tab.id)}
+                    className={`px-3 py-1 rounded-full text-[11px] font-mono font-bold transition-all whitespace-nowrap ${
+                      selectedTrackFilter === tab.id
+                        ? 'bg-emerald-500 text-slate-950 shadow-xs'
+                        : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
+                    }`}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
               </div>
 
-              {/* Column 2: Practical 60-Day Cluster */}
-              <div className="space-y-4">
-                <div className="text-xs font-mono uppercase tracking-wider text-blue-400 font-bold flex items-center gap-1.5 pb-2 border-b border-slate-800">
-                  <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-                  <span>60-Day Mid-Tier Transition</span>
-                </div>
-                {graphNodes.filter(n => n.track === '60-days').map(node => {
-                  const isSelected = selectedNodeId === node.id;
-                  return (
-                    <div
-                      key={node.id}
-                      onClick={() => setSelectedNodeId(node.id)}
-                      className={`p-4 rounded-2xl border transition-all cursor-pointer backdrop-blur-md relative ${
-                        isSelected
-                          ? 'bg-slate-900 border-blue-400 ring-2 ring-blue-500/30 shadow-[0_0_25px_rgba(59,130,246,0.25)]'
-                          : 'bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-bold">
-                          {node.category}
-                        </span>
-                        <span className="text-[11px] font-bold text-blue-400 font-mono">
-                          {node.track}
-                        </span>
-                      </div>
-                      <h4 className="font-extrabold text-sm text-white">{node.title}</h4>
-                      <div className="mt-3 flex items-center justify-between text-[11px] text-slate-400 font-mono">
-                        <span>Core Mastery:</span>
-                        <span className="text-blue-400 font-bold">{node.skills[0].score}%</span>
-                      </div>
-                    </div>
-                  );
-                })}
+              <div className="relative w-full md:w-64">
+                <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Filter by title or skill..."
+                  className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                />
               </div>
+            </div>
 
-              {/* Column 3: Advanced 90/120-Day Specialization */}
-              <div className="space-y-4">
-                <div className="text-xs font-mono uppercase tracking-wider text-purple-400 font-bold flex items-center gap-1.5 pb-2 border-b border-slate-800">
-                  <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
-                  <span>90-Day Advanced Specialization</span>
+            {/* Node Visual Grid Canvas (4 Dynamic Clusters) */}
+            <div className="relative z-10 py-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+              {/* Cluster 1: 30-Day Foundation */}
+              {(selectedTrackFilter === 'all' || selectedTrackFilter === '30-day') && (
+                <div className="space-y-3">
+                  <div className="text-xs font-mono uppercase tracking-wider text-teal-400 font-bold flex items-center justify-between pb-2 border-b border-slate-800">
+                    <span className="flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
+                      <span>30-Day Foundation</span>
+                    </span>
+                    <span className="text-[10px] text-slate-400">
+                      {filteredNodes.filter(n => n.track === '30-day').length} Nodes
+                    </span>
+                  </div>
+                  <div className="max-h-[460px] overflow-y-auto pr-1 space-y-2.5 scrollbar-thin scrollbar-thumb-slate-800">
+                    {filteredNodes.filter(n => n.track === '30-day').map(node => {
+                      const isSelected = selectedNodeId === node.id;
+                      return (
+                        <div
+                          key={node.id}
+                          onClick={() => setSelectedNodeId(node.id)}
+                          className={`p-3.5 rounded-2xl border transition-all cursor-pointer backdrop-blur-md relative ${
+                            isSelected
+                              ? 'bg-slate-900 border-teal-400 ring-2 ring-teal-500/30 shadow-[0_0_20px_rgba(20,184,166,0.3)]'
+                              : 'bg-slate-900/60 border-slate-800/90 hover:border-slate-700 hover:bg-slate-900/90'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className="text-[9px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-bold truncate max-w-[120px]">
+                              {node.category}
+                            </span>
+                            <span className="text-[10px] font-bold text-teal-400 font-mono">
+                              30-Day
+                            </span>
+                          </div>
+                          <h4 className="font-bold text-xs sm:text-sm text-white leading-tight">{node.title}</h4>
+                          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-400 font-mono">
+                            <span>Core Skill:</span>
+                            <span className="text-teal-400 font-bold">{node.skills[0]?.name || 'Workflow'}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-                {graphNodes.filter(n => n.track === '90-days').map(node => {
-                  const isSelected = selectedNodeId === node.id;
-                  return (
-                    <div
-                      key={node.id}
-                      onClick={() => setSelectedNodeId(node.id)}
-                      className={`p-4 rounded-2xl border transition-all cursor-pointer backdrop-blur-md relative ${
-                        isSelected
-                          ? 'bg-slate-900 border-purple-400 ring-2 ring-purple-500/30 shadow-[0_0_25px_rgba(168,85,247,0.25)]'
-                          : 'bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-bold">
-                          {node.category}
-                        </span>
-                        <span className="text-[11px] font-bold text-purple-400 font-mono">
-                          {node.track}
-                        </span>
-                      </div>
-                      <h4 className="font-extrabold text-sm text-white">{node.title}</h4>
-                      <div className="mt-3 flex items-center justify-between text-[11px] text-slate-400 font-mono">
-                        <span>Core Mastery:</span>
-                        <span className="text-purple-400 font-bold">{node.skills[0].score}%</span>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+              )}
+
+              {/* Cluster 2: 60-Day Mid-Tier Transition */}
+              {(selectedTrackFilter === 'all' || selectedTrackFilter === '60-day') && (
+                <div className="space-y-3">
+                  <div className="text-xs font-mono uppercase tracking-wider text-blue-400 font-bold flex items-center justify-between pb-2 border-b border-slate-800">
+                    <span className="flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+                      <span>60-Day Mid-Tier</span>
+                    </span>
+                    <span className="text-[10px] text-slate-400">
+                      {filteredNodes.filter(n => n.track === '60-day').length} Nodes
+                    </span>
+                  </div>
+                  <div className="max-h-[460px] overflow-y-auto pr-1 space-y-2.5 scrollbar-thin scrollbar-thumb-slate-800">
+                    {filteredNodes.filter(n => n.track === '60-day').map(node => {
+                      const isSelected = selectedNodeId === node.id;
+                      return (
+                        <div
+                          key={node.id}
+                          onClick={() => setSelectedNodeId(node.id)}
+                          className={`p-3.5 rounded-2xl border transition-all cursor-pointer backdrop-blur-md relative ${
+                            isSelected
+                              ? 'bg-slate-900 border-blue-400 ring-2 ring-blue-500/30 shadow-[0_0_20px_rgba(59,130,246,0.3)]'
+                              : 'bg-slate-900/60 border-slate-800/90 hover:border-slate-700 hover:bg-slate-900/90'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className="text-[9px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-bold truncate max-w-[120px]">
+                              {node.category}
+                            </span>
+                            <span className="text-[10px] font-bold text-blue-400 font-mono">
+                              60-Day
+                            </span>
+                          </div>
+                          <h4 className="font-bold text-xs sm:text-sm text-white leading-tight">{node.title}</h4>
+                          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-400 font-mono">
+                            <span>Core Skill:</span>
+                            <span className="text-blue-400 font-bold">{node.skills[0]?.name || 'Workflow'}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Cluster 3: 90-Day Advanced Specialization */}
+              {(selectedTrackFilter === 'all' || selectedTrackFilter === '90-day') && (
+                <div className="space-y-3">
+                  <div className="text-xs font-mono uppercase tracking-wider text-purple-400 font-bold flex items-center justify-between pb-2 border-b border-slate-800">
+                    <span className="flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
+                      <span>90-Day Specialization</span>
+                    </span>
+                    <span className="text-[10px] text-slate-400">
+                      {filteredNodes.filter(n => n.track === '90-day').length} Nodes
+                    </span>
+                  </div>
+                  <div className="max-h-[460px] overflow-y-auto pr-1 space-y-2.5 scrollbar-thin scrollbar-thumb-slate-800">
+                    {filteredNodes.filter(n => n.track === '90-day').map(node => {
+                      const isSelected = selectedNodeId === node.id;
+                      return (
+                        <div
+                          key={node.id}
+                          onClick={() => setSelectedNodeId(node.id)}
+                          className={`p-3.5 rounded-2xl border transition-all cursor-pointer backdrop-blur-md relative ${
+                            isSelected
+                              ? 'bg-slate-900 border-purple-400 ring-2 ring-purple-500/30 shadow-[0_0_20px_rgba(168,85,247,0.3)]'
+                              : 'bg-slate-900/60 border-slate-800/90 hover:border-slate-700 hover:bg-slate-900/90'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className="text-[9px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-bold truncate max-w-[120px]">
+                              {node.category}
+                            </span>
+                            <span className="text-[10px] font-bold text-purple-400 font-mono">
+                              90-Day
+                            </span>
+                          </div>
+                          <h4 className="font-bold text-xs sm:text-sm text-white leading-tight">{node.title}</h4>
+                          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-400 font-mono">
+                            <span>Core Skill:</span>
+                            <span className="text-purple-400 font-bold">{node.skills[0]?.name || 'Workflow'}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Cluster 4: 120-Day Mastery & Leadership */}
+              {(selectedTrackFilter === 'all' || selectedTrackFilter === '120-day') && (
+                <div className="space-y-3">
+                  <div className="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold flex items-center justify-between pb-2 border-b border-slate-800">
+                    <span className="flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                      <span>120-Day Mastery</span>
+                    </span>
+                    <span className="text-[10px] text-slate-400">
+                      {filteredNodes.filter(n => n.track === '120-day').length} Nodes
+                    </span>
+                  </div>
+                  <div className="max-h-[460px] overflow-y-auto pr-1 space-y-2.5 scrollbar-thin scrollbar-thumb-slate-800">
+                    {filteredNodes.filter(n => n.track === '120-day').map(node => {
+                      const isSelected = selectedNodeId === node.id;
+                      return (
+                        <div
+                          key={node.id}
+                          onClick={() => setSelectedNodeId(node.id)}
+                          className={`p-3.5 rounded-2xl border transition-all cursor-pointer backdrop-blur-md relative ${
+                            isSelected
+                              ? 'bg-slate-900 border-amber-400 ring-2 ring-amber-500/30 shadow-[0_0_20px_rgba(245,158,11,0.3)]'
+                              : 'bg-slate-900/60 border-slate-800/90 hover:border-slate-700 hover:bg-slate-900/90'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className="text-[9px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-bold truncate max-w-[120px]">
+                              {node.category}
+                            </span>
+                            <span className="text-[10px] font-bold text-amber-400 font-mono">
+                              120-Day
+                            </span>
+                          </div>
+                          <h4 className="font-bold text-xs sm:text-sm text-white leading-tight">{node.title}</h4>
+                          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-400 font-mono">
+                            <span>Core Skill:</span>
+                            <span className="text-amber-400 font-bold">{node.skills[0]?.name || 'Workflow'}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 

@@ -58,7 +58,7 @@ export default function Navbar() {
                   Verified
                 </span>
               </div>
-              <p className="text-[11px] text-slate-500 font-medium tracking-tight whitespace-nowrap hidden lg:block mt-0.5">
+              <p className="text-[11px] text-slate-500 font-medium tracking-tight whitespace-nowrap hidden 2xl:block mt-0.5">
                 From Zero Knowledge to Your First Career
               </p>
             </div>
@@ -73,7 +73,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap ${
+                  className={`flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap ${
                     isActive
                       ? 'bg-teal-50 text-teal-800'
                       : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
