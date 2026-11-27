@@ -169,8 +169,6 @@ export default function Footer() {
               <Link href="/ethical-policy" className="hover:text-slate-300">Ethical Framework</Link>
               <span>&bull;</span>
               <Link href="/anti-scam" className="hover:text-slate-300">Anti-Scam Hub</Link>
-              <span>&bull;</span>
-              <Link href="/admin" className="hover:text-slate-300 text-slate-600">Admin</Link>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ export const verifiedJobListings: JobListing[] = [
       'Proficiency in Microsoft Excel (SUM, VLOOKUP, basic formatting).',
       'Strong numerical accuracy and attention to invoice detail.'
     ],
-    directApplyUrl: 'https://www.linkedin.com/jobs/view/sample-accounts-assistant-kochi',
+    directApplyUrl: 'https://www.linkedin.com/jobs/search/?keywords=Accounts+Billing+Assistant&location=Kochi',
     source: 'LinkedIn Jobs / Employer Direct',
     lastVerifiedDate: '2026-11-20',
     isVerifiedVacancy: true,
@@ -62,7 +62,7 @@ export const verifiedJobListings: JobListing[] = [
       'High reliability, confidentiality, and respect for client executive schedules.',
       'Active broadband connection and desktop/laptop with web camera.'
     ],
-    directApplyUrl: 'https://weworkremotely.com/sample-virtual-assistant',
+    directApplyUrl: 'https://weworkremotely.com/remote-jobs/search?term=Virtual+Assistant',
     source: 'We Work Remotely',
     lastVerifiedDate: '2026-11-22',
     isVerifiedVacancy: true,
@@ -98,7 +98,7 @@ export const verifiedJobListings: JobListing[] = [
       'Basic spreadsheet skills for bulk inventory CSV uploads.',
       'Conscientious customer care attitude.'
     ],
-    directApplyUrl: 'https://in.indeed.com/sample-shopify-store-assistant',
+    directApplyUrl: 'https://in.indeed.com/jobs?q=Shopify+Store+Assistant',
     source: 'Indeed India',
     lastVerifiedDate: '2026-11-23',
     isVerifiedVacancy: true,
@@ -134,7 +134,7 @@ export const verifiedJobListings: JobListing[] = [
       'Methodical attention to detail and data privacy compliance.',
       'Degree or diploma in any discipline with analytical aptitude.'
     ],
-    directApplyUrl: 'https://naukri.com/sample-data-operations-excel-technopark',
+    directApplyUrl: 'https://www.naukri.com/data-operations-jobs',
     source: 'Naukri.com',
     lastVerifiedDate: '2026-11-21',
     isVerifiedVacancy: true,
@@ -170,7 +170,7 @@ export const verifiedJobListings: JobListing[] = [
       'Fluency in written English and Malayalam (additional Hindi is a bonus).',
       'Quiet workspace and reliable home broadband.'
     ],
-    directApplyUrl: 'https://freshdesk.com/careers/sample-chat-rep',
+    directApplyUrl: 'https://www.linkedin.com/jobs/search/?keywords=Customer+Chat+Support',
     source: 'Company Careers Portal',
     lastVerifiedDate: '2026-11-23',
     isVerifiedVacancy: true,
@@ -206,7 +206,7 @@ export const verifiedJobListings: JobListing[] = [
       'Keen eye for spotting typing typos and mismatched contact details.',
       'Strong organizational skills.'
     ],
-    directApplyUrl: 'https://angel.co/company/sample-cloudsphere-crm',
+    directApplyUrl: 'https://wellfound.com/jobs?role=sales-operations',
     source: 'Wellfound (AngelList)',
     lastVerifiedDate: '2026-11-19',
     isVerifiedVacancy: true,
@@ -242,7 +242,7 @@ export const verifiedJobListings: JobListing[] = [
       'Basic knowledge of HTML tags (headings, links, lists, images).',
       'Careful and meticulous proofreading habits.'
     ],
-    directApplyUrl: 'https://linkedin.com/jobs/view/sample-wp-manager',
+    directApplyUrl: 'https://www.linkedin.com/jobs/search/?keywords=WordPress+Content+Manager',
     source: 'LinkedIn Jobs',
     lastVerifiedDate: '2026-11-24',
     isVerifiedVacancy: true,
@@ -278,7 +278,7 @@ export const verifiedJobListings: JobListing[] = [
       'Self-driven and able to adhere to weekly publication deadlines.',
       'Reliable laptop and high-speed internet.'
     ],
-    directApplyUrl: 'https://internshala.com/sample-canva-designer',
+    directApplyUrl: 'https://internshala.com/jobs/graphic-design-jobs',
     source: 'Internshala',
     lastVerifiedDate: '2026-11-23',
     isVerifiedVacancy: true,
@@ -314,7 +314,7 @@ export const verifiedJobListings: JobListing[] = [
       'Proficiency in Google Sheets / Excel for structured list compilation.',
       'Good written English comprehension.'
     ],
-    directApplyUrl: 'https://naukri.com/sample-market-research-trainee',
+    directApplyUrl: 'https://www.naukri.com/market-research-jobs',
     source: 'Naukri.com',
     lastVerifiedDate: '2026-11-22',
     isVerifiedVacancy: true,
@@ -350,7 +350,7 @@ export const verifiedJobListings: JobListing[] = [
       'Systematic analytical mindset and passion for breaking things gracefully.',
       'Diploma, BCA, B.Sc or engineering graduate.'
     ],
-    directApplyUrl: 'https://linkedin.com/jobs/view/sample-qa-tester-infopark',
+    directApplyUrl: 'https://www.linkedin.com/jobs/search/?keywords=QA+Tester&location=Kochi',
     source: 'Infopark Kerala Careers',
     lastVerifiedDate: '2026-11-24',
     isVerifiedVacancy: true,
@@ -386,7 +386,7 @@ export const verifiedJobListings: JobListing[] = [
       'Strong command of English grammar, punctuation, and proofreading.',
       'Ability to deliver formatted deliverables under tight corporate deadlines.'
     ],
-    directApplyUrl: 'https://weworkremotely.com/sample-document-formatting',
+    directApplyUrl: 'https://weworkremotely.com/remote-jobs/search?term=Document+Formatting',
     source: 'We Work Remotely',
     lastVerifiedDate: '2026-11-20',
     isVerifiedVacancy: true,
@@ -422,7 +422,7 @@ export const verifiedJobListings: JobListing[] = [
       'Solid grasp of semantic HTML, flexbox, and grid styling with Tailwind.',
       'Public GitHub repository showcasing original personal projects.'
     ],
-    directApplyUrl: 'https://angel.co/company/sample-pixelcraft-frontend',
+    directApplyUrl: 'https://wellfound.com/jobs?role=frontend-engineer',
     source: 'Wellfound (AngelList)',
     lastVerifiedDate: '2026-11-23',
     isVerifiedVacancy: true,
@@ -458,7 +458,7 @@ export const verifiedJobListings: JobListing[] = [
       'High integrity, discretion, and confidential handling of client financial records.',
       'Comfortable communicating via email and Slack in professional English.'
     ],
-    directApplyUrl: 'https://www.linkedin.com/jobs/view/sample-cloud-bookkeeper-dubai-remote',
+    directApplyUrl: 'https://www.linkedin.com/jobs/search/?keywords=Cloud+Bookkeeper+Remote',
     source: 'LinkedIn Jobs / Global Remote',
     lastVerifiedDate: '2026-11-24',
     isVerifiedVacancy: true,
@@ -494,7 +494,7 @@ export const verifiedJobListings: JobListing[] = [
       'Strong aesthetic appreciation for modern clean web layouts.',
       'Ability to self-manage freelance project deadlines.'
     ],
-    directApplyUrl: 'https://wellfound.com/jobs/sample-webflow-designer',
+    directApplyUrl: 'https://wellfound.com/jobs?role=web-designer',
     source: 'Wellfound',
     lastVerifiedDate: '2026-11-23',
     isVerifiedVacancy: true,
@@ -530,7 +530,7 @@ export const verifiedJobListings: JobListing[] = [
       'Fluent Malayalam speaking skills with basic written English comprehension.',
       'Living in or near Kozhikode with ability to work onsite.'
     ],
-    directApplyUrl: 'https://naukri.com/sample-ecommerce-trainee-calicut',
+    directApplyUrl: 'https://www.naukri.com/ecommerce-jobs-in-kerala',
     source: 'Naukri.com / Direct Walk-In',
     lastVerifiedDate: '2026-11-22',
     isVerifiedVacancy: true,
@@ -566,7 +566,7 @@ export const verifiedJobListings: JobListing[] = [
       'Strict adherence to anti-spam regulations (zero bought email lists).',
       'Good written English proofreading skills.'
     ],
-    directApplyUrl: 'https://linkedin.com/jobs/view/sample-email-operator-bengaluru',
+    directApplyUrl: 'https://www.linkedin.com/jobs/search/?keywords=Email+Marketing+Operator',
     source: 'LinkedIn Jobs',
     lastVerifiedDate: '2026-11-24',
     isVerifiedVacancy: true,

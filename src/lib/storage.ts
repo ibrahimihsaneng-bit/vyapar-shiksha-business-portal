@@ -152,35 +152,7 @@ export function getApplications(): ApplicationItem[] {
   try {
     const data = localStorage.getItem(STORAGE_KEYS.APPLICATIONS);
     if (!data) {
-      // Seed with initial applications
-      const initial: ApplicationItem[] = [
-        {
-          id: 'app-init-1',
-          jobId: 'job-1',
-          jobTitle: 'Junior Accounts & Billing Assistant',
-          company: 'Malabar Logistics Pvt Ltd',
-          appliedDate: '2026-11-20',
-          status: 'Interview Scheduled',
-          location: 'Kochi, Kerala (Hybrid)',
-          salary: '₹18,000 - ₹25,000 / mo',
-          link: 'https://www.linkedin.com/jobs/view/sample-accounts-assistant-kochi',
-          notes: 'Completed technical simulation test. Interview with Lead Accountant on Thursday 3 PM.'
-        },
-        {
-          id: 'app-init-2',
-          jobId: 'job-2',
-          jobTitle: 'Remote Executive Virtual Assistant',
-          company: 'Nexus Digital Operations',
-          appliedDate: '2026-11-22',
-          status: 'Applied',
-          location: 'Remote (Pan-India)',
-          salary: '₹22,000 - ₹32,000 / mo',
-          link: 'https://weworkremotely.com/sample-virtual-assistant',
-          notes: 'Submitted portfolio of sample executive calendars and travel itineraries.'
-        }
-      ];
-      localStorage.setItem(STORAGE_KEYS.APPLICATIONS, JSON.stringify(initial));
-      return initial;
+      return [];
     }
     return JSON.parse(data);
   } catch {

@@ -245,6 +245,27 @@ export default function ResumeBuilderPage() {
 
         <div className="flex items-center gap-3 shrink-0">
           <button
+            onClick={() => setResume({
+              fullName: '',
+              email: '',
+              phone: '',
+              city: '',
+              country: 'India',
+              summary: '',
+              targetRole: '',
+              skills: [],
+              education: [],
+              projects: [],
+              languages: [],
+              certifications: []
+            })}
+            className="inline-flex items-center gap-1.5 px-3 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-50 transition-colors"
+            title="Start with a blank form"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span>Blank Form</span>
+          </button>
+          <button
             onClick={handleSave}
             className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition-colors shadow-sm"
           >

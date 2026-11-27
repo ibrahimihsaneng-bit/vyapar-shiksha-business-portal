@@ -7,23 +7,23 @@ export const simulationTasks: WorkplaceSimulatorTask[] = [
     "title": "Corporate Bank Statement Reconciliation & Ledger Adjustments",
     "companyName": "Apex Trading Co. (Kochi)",
     "estimatedMinutes": 20,
-    "brief": "Apex Trading Co. has provided their ICICI corporate bank statement ending October 31st and their internal cash book ledger. Compare transactions, identify discrepancies (unpresented cheques, direct credits, uncredited deposits, bank charges), calculate the adjusted cash book and reconciled bank balance, and achieve exact zero-variance reconciliation.",
+    "brief": "Apex Trading Co. has provided their ICICI corporate bank statement ending October 31st and their internal cash book ledger. Compare transactions, identify timing discrepancies (unpresented cheques, direct credits, uncredited deposits, bank charges), calculate the adjusted cash book and reconciled bank balance, and achieve exact zero-variance reconciliation.",
     "instructions": [
-      "Bank statement ending balance is \u20b93,45,850. Internal cash book ending balance is \u20b92,98,400.",
+      "Bank statement ending balance is \u20b93,43,450. Internal cash book ending balance is \u20b92,98,400.",
       "Uncleared cheque deposit: \u20b919,200 deposited on Oct 27 not yet credited by bank.",
-      "Unpresented cheques issued to suppliers: CHQ 40132 (\u20b928,650) and CHQ 40134 (\u20b92,800) not yet cleared.",
+      "Unpresented cheques issued to suppliers: CHQ 40132 (\u20b928,650) and CHQ 40134 (\u20b92,800) not yet cleared (Total = \u20b931,450).",
       "Direct NEFT credit from customer Modern Bakers: \u20b934,000 in bank statement but missing from cash book.",
-      "Auto-sweep interest credit: \u20b91,400 credited by bank but not in cash book.",
+      "Auto-sweep interest credit: \u20b90 for this period.",
       "Quarterly account maintenance fee: \u20b91,200 debited by bank but not recorded in cash book.",
       "Enter the Adjusted Cash Book Balance, Reconciled Bank Balance, and verify Difference is exactly 0."
     ],
     "inputData": {
-      "bankStatementBalance": 345850,
+      "bankStatementBalance": 343450,
       "cashBookBalance": 298400,
       "uncreditedChequeDeposit": 19200,
       "unpresentedChequesTotal": 31450,
       "directCustomerCredit": 34000,
-      "autoSweepInterest": 1400,
+      "autoSweepInterest": 0,
       "bankChargesDebited": 1200,
       "ledgerTransactions": [
         {
@@ -121,20 +121,20 @@ export const simulationTasks: WorkplaceSimulatorTask[] = [
       }
     ],
     "solutionKey": {
-      "adjustedCashBook": 332600,
-      "reconciledBankBalance": 332600,
+      "adjustedCashBook": 331200,
+      "reconciledBankBalance": 331200,
       "reconciliationDifference": 0,
-      "discrepancyCount": "5"
+      "discrepancyCount": "3"
     },
     "gradingRubric": [
       {
         "field": "adjustedCashBook",
-        "criteria": "Cash book adjusted correctly: 2,98,400 + 34,000 + 1,400 - 1,200 = \u20b93,32,600",
+        "criteria": "Cash book adjusted correctly: 2,98,400 + 34,000 - 1,200 = \u20b93,31,200",
         "points": 30
       },
       {
         "field": "reconciledBankBalance",
-        "criteria": "Bank balance adjusted correctly: 3,45,850 + 19,200 - 31,450 = \u20b93,32,600",
+        "criteria": "Bank balance adjusted correctly: 3,43,450 + 19,200 - 31,450 = \u20b93,31,200",
         "points": 30
       },
       {
@@ -144,7 +144,7 @@ export const simulationTasks: WorkplaceSimulatorTask[] = [
       },
       {
         "field": "discrepancyCount",
-        "criteria": "Identified all 5 distinct timing variances",
+        "criteria": "Identified all 3 distinct timing items (deposit in transit, unpresented cheques, unrecorded net items)",
         "points": 10
       },
       {

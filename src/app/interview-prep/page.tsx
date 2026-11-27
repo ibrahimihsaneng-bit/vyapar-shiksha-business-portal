@@ -264,13 +264,13 @@ export default function InterviewPrepPage() {
             </button>
 
             {/* Average Readiness Ring / Badge */}
-            <div className="flex items-center gap-3 p-3 px-5 rounded-2xl bg-indigo-50 border border-indigo-100 shadow-2xs">
+            <div className="flex items-center gap-3 p-3 px-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-2xs">
               <div className="text-right">
-                <span className="text-[10px] uppercase font-bold tracking-wider text-indigo-600 block">
-                  AVERAGE READINESS
+                <span className="text-[10px] uppercase font-bold tracking-wider text-slate-500 block">
+                  PRACTICE READINESS
                 </span>
-                <div className="text-2xl font-black text-slate-900 leading-none">
-                  82 <span className="text-slate-400 text-xs font-semibold">/ 100</span>
+                <div className="text-sm font-bold text-slate-700 leading-none mt-1">
+                  Ready to Start <span className="text-slate-400 text-xs font-normal">• 0 Completed</span>
                 </div>
               </div>
             </div>
@@ -328,98 +328,98 @@ export default function InterviewPrepPage() {
               </p>
             </button>
 
-            {/* Coach 1: Alex */}
+            {/* Practice Scenarios */}
             <div className="p-5 rounded-3xl bg-white border border-slate-200 shadow-2xs flex flex-col justify-between space-y-3">
               <div className="flex items-center justify-between">
                 <div className="w-10 h-10 rounded-2xl bg-indigo-100 flex items-center justify-center text-lg">
-                  👩‍🏫
+                  💼
                 </div>
-                <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 text-[10px] font-black border border-emerald-200">
-                  09/10
+                <span className="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-bold">
+                  Guided Practice
                 </span>
               </div>
               <div>
                 <h4 className="text-xs font-extrabold text-slate-900 leading-tight">
-                  Junior Accounts Assistant
+                  Accounts & Bookkeeping
                 </h4>
-                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">TODAY</span>
+                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">CORE STAR QUESTIONS</span>
               </div>
               <div>
                 <div className="flex items-center gap-1.5 text-[10px] text-slate-500 font-medium mb-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-indigo-600" />
-                  <span>Coach Alex</span>
+                  <span>GST & Ledger Queries</span>
                 </div>
                 <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-indigo-600 rounded-full w-[90%]" />
+                  <div className="h-full bg-indigo-600 rounded-full w-[20%]" />
                 </div>
               </div>
             </div>
 
-            {/* Coach 2: Sam */}
+            {/* Practice Scenario 2 */}
             <div className="p-5 rounded-3xl bg-white border border-slate-200 shadow-2xs flex flex-col justify-between space-y-3">
               <div className="flex items-center justify-between">
                 <div className="w-10 h-10 rounded-2xl bg-purple-100 flex items-center justify-center text-lg">
-                  👨‍💼
+                  📦
                 </div>
-                <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 text-[10px] font-black border border-emerald-200">
-                  08/10
+                <span className="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-bold">
+                  Guided Practice
                 </span>
               </div>
               <div>
                 <h4 className="text-xs font-extrabold text-slate-900 leading-tight">
                   E-Commerce Store Lead
                 </h4>
-                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">YESTERDAY</span>
+                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">CUSTOMER SCENARIOS</span>
               </div>
               <div>
                 <div className="flex items-center gap-1.5 text-[10px] text-slate-500 font-medium mb-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-purple-600" />
-                  <span>Coach Sam</span>
+                  <span>Order & Return Discrepancies</span>
                 </div>
                 <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-purple-600 rounded-full w-[80%]" />
+                  <div className="h-full bg-purple-600 rounded-full w-[20%]" />
                 </div>
               </div>
             </div>
 
-            {/* Coach 3: Jordan */}
+            {/* Practice Scenario 3 */}
             <div className="p-5 rounded-3xl bg-white border border-slate-200 shadow-2xs flex flex-col justify-between space-y-3">
               <div className="flex items-center justify-between">
                 <div className="w-10 h-10 rounded-2xl bg-amber-100 flex items-center justify-center text-lg">
-                  👩‍💻
+                  🎧
                 </div>
-                <span className="px-2 py-0.5 rounded-full bg-amber-50 text-amber-800 text-[10px] font-black border border-amber-200">
-                  07/10
+                <span className="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-bold">
+                  Guided Practice
                 </span>
               </div>
               <div>
                 <h4 className="text-xs font-extrabold text-slate-900 leading-tight">
                   Customer Support Specialist
                 </h4>
-                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">12TH NOV</span>
+                <span className="text-[10px] font-semibold text-slate-400 block mt-0.5">ESCALATIONS</span>
               </div>
               <div>
                 <div className="flex items-center gap-1.5 text-[10px] text-slate-500 font-medium mb-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                  <span>Coach Jordan</span>
+                  <span>De-escalation & Resolution</span>
                 </div>
                 <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-amber-500 rounded-full w-[70%]" />
+                  <div className="h-full bg-amber-500 rounded-full w-[20%]" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Right Stats Sidebar (3 cols: 742 Employers + Goal Setting) */}
+        {/* Right Stats Sidebar (3 cols: Practical Learning Metric + Goal Setting) */}
         <div className="lg:col-span-3 space-y-4">
           <div className="p-5 rounded-3xl bg-white border border-slate-200 shadow-2xs space-y-1 text-center">
-            <span className="text-3xl font-black text-indigo-900">742</span>
+            <span className="text-3xl font-black text-indigo-900">40</span>
             <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-              PARTNER EMPLOYERS & REMOTE HUBS
+              STRUCTURED CAREER PATHWAYS
             </span>
             <p className="text-[11px] text-slate-500 leading-snug pt-1">
-              Hiring freshers directly from verified workplace portfolios.
+              Practical simulation training and interview question breakdowns for beginners.
             </p>
           </div>
 

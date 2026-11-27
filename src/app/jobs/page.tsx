@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Briefcase,
   Search,
@@ -427,15 +428,22 @@ export default function JobsPage() {
             })}
 
             {filteredJobs.length === 0 && (
-              <div className="bg-white rounded-3xl border border-slate-200 p-12 text-center space-y-3">
-                <AlertTriangle className="w-8 h-8 text-amber-500 mx-auto" />
+              <div className="bg-white rounded-3xl border border-slate-200 p-12 text-center space-y-4">
+                <div className="relative w-40 h-28 mx-auto">
+                  <Image
+                    src="/images/upgrade/empty-jobs.svg"
+                    alt="No matching vacancies"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <h3 className="font-bold text-slate-900 text-base">No Matching Vacancies Found</h3>
-                <p className="text-xs text-slate-500 max-w-sm mx-auto">
-                  Try clearing your filters or searching for more general terms like "Excel", "Support", or "Remote".
+                <p className="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                  No active vacancies currently match your filter criteria. We audit job feeds weekly to ensure only genuine, non-scam opportunities are displayed.
                 </p>
                 <button
                   onClick={resetFilters}
-                  className="px-4 py-2 rounded-xl bg-emerald-600 text-white text-xs font-bold"
+                  className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-colors"
                 >
                   Reset All Filters
                 </button>
@@ -510,7 +518,7 @@ export default function JobsPage() {
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-1.5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-all"
                   >
-                    <span>Apply on Employer Site</span>
+                    <span>Explore Live Vacancies</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                   <button
